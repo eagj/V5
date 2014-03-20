@@ -14,7 +14,7 @@ header #contenidohead{
 header #contenidohead > div{
 	display: table-cell;
 	width: 33%;	
-	outline: 1px solid #fff;
+	/*outline: 1px solid rgba(255,255,255,0.5);*/
 	vertical-align: middle;
 }
 
@@ -45,12 +45,32 @@ nav #contenidonav li{
 	float:left;
 	border-left: 1px solid #d9d9d9;
 	border-right: 1px solid #d9d9d9;
-	-webkit-transform: rotate(0deg) scale(1) skew(-14deg) translate(0px);
+	margin-right: -1px;
+	transform:rotate(0deg) scale(1) skew(-20deg) translate(0px);
+	-webkit-transform: rotate(0deg) scale(1) skew(-20deg) translate(0px);	
+	-moz-transform: rotate(0deg) scale(1) skew(-20deg) translate(0px);
+	-o-transform: rotate(0deg) scale(1) skew(-20deg) translate(0px);
+	-ms-transform: rotate(0deg) scale(1) skew(-20deg) translate(0px);
 }
 
 nav #contenidonav li a{
 	width: 100%;
-	text-align: center;
-	padding: 0 30px;
-	-webkit-transform: rotate(0deg) scale(1) skew(14deg) translate(0px);	
+	padding: 10px 23px;
+	float: left;
+	color: #fe0000;
+	transform:rotate(0deg) scale(1) skew(20deg) translate(0px);	
+	-webkit-transform: rotate(0deg) scale(1) skew(20deg) translate(0px);	
+	-moz-transform: rotate(0deg) scale(1) skew(20deg) translate(0px);	
+	-o-transform: rotate(0deg) scale(1) skew(20deg) translate(0px);
+	-ms-transform: rotate(0deg) scale(1) skew(20deg) translate(0px);
+}
+
+nav #contenidonav li.select, nav #contenidonav li:hover{
+	background-color: #fe0000;
+	border-top: 3px solid #fff;
+	margin-top: -3px;
+}
+
+nav #contenidonav li.select a, nav #contenidonav li:hover a{
+	color:#fff;
 }
