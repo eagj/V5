@@ -1,0 +1,56 @@
+header{
+	background-color:#fe0000;
+	height: 106px;
+	width:100%;
+}
+
+header #contenidohead{
+	width: 993px;
+	margin: 0px auto;
+	display: table;
+	height: 106px;
+}
+
+header #contenidohead > div{
+	display: table-cell;
+	width: 33%;	
+	outline: 1px solid #fff;
+	vertical-align: middle;
+}
+
+header #contenidohead #logoaltamira{
+	padding-left: 16px;
+}
+header #contenidohead #zonacentro{
+	text-align: center;
+}
+
+header #contenidohead #logosantander{
+	text-align: right;
+	padding-right: 16px;
+}
+
+nav{
+	width:100%;
+	border-bottom:1px solid #d9d9d9;
+}
+
+nav #contenidonav{
+	width: 993px;
+	margin: 0px auto;
+	display: table;	
+}
+
+nav #contenidonav li{
+	float:left;
+	border-left: 1px solid #d9d9d9;
+	border-right: 1px solid #d9d9d9;
+	-webkit-transform: rotate(0deg) scale(1) skew(-14deg) translate(0px);
+}
+
+nav #contenidonav li a{
+	width: 100%;
+	text-align: center;
+	padding: 0 30px;
+	-webkit-transform: rotate(0deg) scale(1) skew(14deg) translate(0px);	
+}
