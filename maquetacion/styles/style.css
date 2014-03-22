@@ -74,3 +74,11 @@ nav #contenidonav li.select, nav #contenidonav li:hover{
 nav #contenidonav li.select a, nav #contenidonav li:hover a{
 	color:#fff;
 }
+
+nav li.areapriv{
+	background-color:#d2d7db;
+}
+
+nav #contenidonav li.areapriv a{
+	color:#505153;
+}
