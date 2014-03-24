@@ -159,12 +159,13 @@ nav #contenidonav .subnav li:hover a{
 #buscador_top #buscform #buscavanz{	
 	display: table;
 	width: 100%;
+	 display: none;
 }
 
 #buscador_top #buscform #buscavanz #colseleccion{
 	width: 20%;
     height: 400px;
-    display: none;
+   
 }
 
 #buscador_top #buscform #buscavanz #colseleccion li{
