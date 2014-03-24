@@ -16,8 +16,10 @@ html {
  * Remove default margin.
  */
 
-body {
+* {
   margin: 0;
+  padding:0px;
+  
 }
 
 /* HTML5 display definitions

@@ -5,32 +5,212 @@
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="styles/normalize.css">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<script type="text/javascript" charset="utf-8">
+		function showsubmenu(){
+		    document.getElementById("sub1").style="display:block";
+		    document.getElementById("sub1").style.height=36+"px";
+		}
+		function hidesubmenu(){
+            document.getElementById("sub1").style="display:none";
+            document.getElementById("sub1").style="height:0";
+        }
+	</script>	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="include/jquery/nivo_slider/themes/default/default.css" type="text/css" />	
+	<link rel="stylesheet" href="include/jquery/nivo_slider/nivo-slider.css" type="text/css" />
+    <script src="include/jquery/nivo_slider/jquery.nivo.slider.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(window).load(function() {
+            $('#slider').nivoSlider();
+        });
+    </script> 
 </head>
-<body>	
-	<header>
-		<div id="contenidohead">
-			<div id="logoaltamira"><a href="/"><img alt="Altamira santander" src="http://www.altamirainmuebles.com/images/logoaltamiraW.gif"></a></div>
-			<div id="zonacentro">Zona central</div>
-			<div id="logosantander"><a href="#"><img src="https://www.bancosantander.es/CsApps/GrupoSantander/Internet/SantanderComercial/img/logo_SAN.gif"></a></div>
-		</div>
-	
-	</header>
-	<nav>
-		<div id="contenidonav">
-			<ul>
-				<li class="select"><a href="1">Residencial</a></li>
-				<li><a href="#">Terciario</a></li>
-				<li><a href="#">Suelo</a></li>
-				<li><a href="#">Inversores</a></li>
-				<li><a href="#">CampaÒas</a></li>
-				<li><a href="#">Actualidad</a></li>
-				<li><a href="#">Fondo social</a></li>
-				<li class="areapriv"><a href="#">¡Årea privada</a></li>
-			</ul>
-		</div>
-	</nav>
-	<div class="contenedor">
-	</div>
-	
+<body>
+    <div id="index" class="content">
+    	<header>
+    		<div id="contenidohead">
+    			<div id="logoaltamira"><a href="/"><img alt="Altamira santander" src="http://www.altamirainmuebles.com/images/logoaltamiraW.gif"></a></div>
+    			<div id="zonacentro">Zona central</div>
+    			<div id="logosantander"><a href="#"><img src="https://www.bancosantander.es/CsApps/GrupoSantander/Internet/SantanderComercial/img/logo_SAN.gif"></a></div>
+    		</div>
+    	
+    	</header>
+    	<nav>
+    		<div id="contenidonav">
+    			<ul>
+    				<li class="select"><a  onclick="showsubmenu()" href="#">Residencial</a></li>
+    				<li><a onclick="hidesubmenu()" href="#">Terciario</a></li>
+    				<li><a onclick="hidesubmenu()" href="#">Suelo</a></li>
+    				<li><a onclick="hidesubmenu()" href="#">Inversores</a></li>
+    				<li><a onclick="hidesubmenu()" href="#">CampaÒas</a></li>
+    				<li><a onclick="hidesubmenu()" href="#">Actualidad</a></li>
+    				<li><a onclick="hidesubmenu()" href="#">Fondo social</a></li>
+    				<li class="areapriv"><a href="#">¡Årea privada</a></li>
+    			</ul>
+    			<div class="subnav" id="sub1">
+    			    <ul>
+    			    	<li><a href="#">Compra</a></li>
+    			    	<li><a href="#">Alquiler</a></li>
+    			    	<li><a href="#">Alquiler opciÛn a compra</a></li>
+    			    	<li><a href="#">Sobre plano</a></li>
+    			    	<li><a href="#">Novedades</a></li>
+    			    	<li><a href="#">FinanciaciÛn</a></li>
+    			    	<li><a href="#">Alertas</a></li>
+    			    </ul>
+    			</div>
+    		</div>
+    	</nav>
+    	<div id="buscador_top">
+    	    <form id="buscform">
+    	        <div id="buscavanz">
+    	            <div id="colseleccion">
+    	                <ul>
+    	                    <li class="select"><a href="#">B˙squeda avanzada</a></a></li>
+    	                    <li><a href="#">B˙squeda por mapa</a></li>
+    	                    <li><a href="#">B˙squeda por cuota o referencia</a></li>
+    	                </ul>
+    	            </div>
+    	            <div id="col1">
+    	                
+    	            </div>
+    	            <div id="col2">
+    	                
+    	            </div>
+    	        </div>
+    	    </form>
+    	    <p id="showbusc"><a href="#">Buscador <span>&or;</span></a></p>
+    	</div>
+    	<div class="contenedor">
+    	    <div id="carrusel">
+                <div class="slider-wrapper theme-default">
+                    <div class="ribbon"></div>
+                        <div id="slider">
+                            <img src="http://lorempixel.com/963/340/" alt="" data-thumb="http://lorempixel.com/963/340/" />
+                            <img src="http://lorempixel.com/g/963/340/" alt="" data-thumb="http://lorempixel.com/g/963/340/" />
+                            <img src="http://lorempixel.com/963/340/sports/1/" alt="" data-thumb="http://lorempixel.com/963/340/sports/1/" />
+                            <img src="http://lorempixel.com/963/340/sports" alt="" data-thumb="http://lorempixel.com/963/340/sports" />
+                            
+                            
+                        </div>
+                    </div>
+    	       </div> <!-- CARRUSEL -->
+    	       <div id="ultimnove">
+    	           <h3><span>⁄ltimas novedades</span></h3>
+    	           <div id="carrubloq_prev" class="carrubloq_bot"><a href="#"><</a></div>
+    	           <div id="carrubloq">    	               
+    	               <div class="bloquecarru">
+    	                   <div class="img_bloquecarru">
+    	                       <img src="http://lorempixel.com/205/154/" alt="XXX" />    	                       
+    	                   </div>
+    	                   <a class="detalle" href="#">Detalle &raquo;</a>
+    	                   <h4>Pozuelo de AlarcÛn</h4>
+    	                   <p class="direccion">Cer·mica 5, 28233 - Madrid</p>
+    	                   <ul class="detalles">
+                               <li>Chalet adosado</li>
+                               <li>150m<sup>2</sup></li>
+                               <li>2 hab.</li>
+                           </ul>
+                           <div class="destacado">
+                               <div class="col1">
+                                   <p>Compra</p>
+                                   <p>Obra nueva</p>
+                                   <p class="ref">Ref. 000000</p>
+                                   
+                               </div>
+                               <div class="col2">
+                                   <p class="precio">525.000 &euro;</p>
+                                   <p class="precio_ant">570.000 &euro;</p>
+                                   
+                               </div>
+                           </div>                 
+    	               </div>
+    	               <div class="bloquecarru">
+                           <div class="img_bloquecarru">
+                               <img src="http://lorempixel.com/g/205/154/" alt="XXX" />                             
+                           </div>
+                           <a class="detalle" href="#">Detalle &raquo;</a>
+                           <h4>Madrid</h4>
+                           <p class="direccion">Cer·mica 5, 28233 - Madrid</p>
+                           <ul class="detalles">
+                               <li>Chalet</li>
+                               <li>200m<sup>2</sup></li>
+                               <li>4 hab.</li>
+                               <li>3 baÒos</li>
+                           </ul>
+                           <div class="destacado">
+                               <div class="col1">
+                                   <p>Alquiler</p>
+                                   <p>2™ mano</p>
+                                   <p class="ref">Ref. 000000</p>
+                                   
+                               </div>
+                               <div class="col2">
+                                   <p class="precio">650 &euro;/mes</p>
+                                   <p class="precio_ant">700 &euro;/mes</p>
+                                   
+                               </div>
+                           </div>                                               
+                       </div>
+                       <div class="bloquecarru">
+                           <div class="img_bloquecarru">
+                               <img src="http://lorempixel.com/205/154/sports/" alt="XXX" />                             
+                           </div>
+                           <a class="detalle" href="#">Detalle &raquo;</a>
+                           <h4>AlcorcÛn</h4>
+                           <p class="direccion">Cer·mica 5, 28233 - Madrid</p>
+                           <ul class="detalles">
+                               <li>Piso</li>
+                               <li>101m<sup>2</sup></li>
+                               <li>3 hab.</li>
+                               <li>2 baÒos</li>
+                           </ul>
+                           <div class="destacado">
+                               <div class="col1">
+                                   <p>Compra</p>
+                                   <p>2™ mano</p>
+                                   <p class="ref">Ref. 000000</p>
+                                   
+                               </div>
+                               <div class="col2">
+                                   <p class="precio">75.000 &euro;</p>
+                                   <p class="precio_ant">90.000 &euro;</p>
+                                   
+                               </div>
+                           </div>                     
+                       </div>
+                       <div class="bloquecarru">
+                           <div class="img_bloquecarru">
+                               <img src="http://lorempixel.com/205/154/sports/1/" alt="XXX" />                             
+                           </div>
+                           <a class="detalle" href="#">Detalle &raquo;</a>
+                           <h4>Pinto</h4>
+                           <p class="direccion">Cer·mica 5, 28233 - Madrid</p>
+                           <ul class="detalles">
+                               <li>Piso</li>
+                               <li>55m<sup>2</sup></li>
+                               <li>1 hab.</li>
+                               <li>1 baÒo</li>
+                           </ul>
+                           <div class="destacado">
+                               <div class="col1">
+                                   <p>Alquiler</p>
+                                   <p>Obra nueva</p>
+                                   <p class="ref">Ref. 000000</p>
+                                   
+                               </div>
+                               <div class="col2">
+                                   <p class="precio">700 &euro;/mes</p>
+                                   <p class="precio_ant">800 &euro;/mes</p>
+                                   
+                               </div>
+                           </div>                                        
+                       </div>    	                             
+    	           </div> 
+    	           <div id="carrubloq_next" class="carrubloq_bot active"><a href="#">></a></div>         
+    	       </div>
+    	       
+            </div>
+	</div>	
+       
 </body>
 </html>

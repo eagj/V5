@@ -1,20 +1,29 @@
-header{
+.content {
+    margin: 0 auto;
+    width: 993px;
+}
+
+
+
+
+
+/*HEAD*/
+.content header{
 	background-color:#fe0000;
 	height: 106px;
 	width:100%;
 }
 
 header #contenidohead{
-	width: 993px;
-	margin: 0px auto;
+	width: 100%;
 	display: table;
 	height: 106px;
 }
 
 header #contenidohead > div{
 	display: table-cell;
-	width: 33%;	
-	/*outline: 1px solid rgba(255,255,255,0.5);*/
+	width: 33%;
+	
 	vertical-align: middle;
 }
 
@@ -30,14 +39,18 @@ header #contenidohead #logosantander{
 	padding-right: 16px;
 }
 
+
+
+
+/*NAVEGACION*/
 nav{
 	width:100%;
 	border-bottom:1px solid #d9d9d9;
+	margin-bottom: 5px;
 }
 
 nav #contenidonav{
-	width: 993px;
-	margin: 0px auto;
+	width: 100%;	
 	display: table;	
 }
 
@@ -81,4 +94,308 @@ nav li.areapriv{
 
 nav #contenidonav li.areapriv a{
 	color:#505153;
+}
+
+nav .subnav{
+	background-color:#fe0000;
+	float:left;
+	width:100%;
+	display:none;
+	height:0px;
+	margin-bottom: -6px;
+	transition: all 1s ease-in-out 0.1s;
+	-moz-transition: all 1s ease-in-out 0.1s;
+	-webkit-transition: all 1s ease-in-out 0.1s;
+	
+}
+
+nav #contenidonav .subnav li{
+	border:none;
+	padding:0.5em 1em;
+	transform:rotate(0deg) scale(1) skew(0deg) translate(0px);
+	-webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);	
+	-moz-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+	-o-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+	-ms-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+	
+}
+
+nav #contenidonav .subnav li a{
+	color:#fff;
+	padding:0;
+	transform:rotate(0deg) scale(1) skew(0deg) translate(0px);
+	-webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);	
+	-moz-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+	-o-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+	-ms-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+}
+
+nav #contenidonav .subnav li.select, nav #contenidonav .subnav li:hover{
+	background-color: #fe0000;
+	border:0;
+	margin:0px;
+}
+
+nav #contenidonav .subnav li:hover a{
+	text-decoration:underline;
+}
+
+
+
+
+/*BUSCADOR TOP */
+
+#buscador_top{
+	float:left;
+	width:100%;	
+}
+
+#buscador_top #buscform{
+	background-color: #D2D7DB;
+    float: left;
+    width: 100%;    
+}
+
+#buscador_top #buscform #buscavanz{	
+	display: table;
+	width: 100%;
+}
+
+#buscador_top #buscform #buscavanz #colseleccion{
+	width: 20%;
+    height: 400px;
+    display: none;
+}
+
+#buscador_top #buscform #buscavanz #colseleccion li{
+	background-color: #FFFFFF;
+    border-top: 1px solid #CCCCCC;
+    display: table;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+
+#buscador_top #buscform #buscavanz #colseleccion li a{
+    color: #515151;
+    display: table-cell;
+    height: 100%;
+    padding: 0 10%;
+    vertical-align: middle;
+    width: 100%;
+}
+
+#buscador_top #buscform #buscavanz #colseleccion li:last-of-type{
+	text-align:left;
+}
+
+#buscador_top #buscform #buscavanz #col1{
+	
+}
+
+#buscador_top #buscform #buscavanz #col2{
+	
+}
+
+#buscador_top p{
+	float: left;
+    text-align: center;
+    width: 100%;
+    border-top:4px solid #515151;
+}
+
+#buscador_top p a{
+	background-color: #515151;
+    border-radius: 0 0 4px 4px;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 0.1em 1em;
+    text-transform: uppercase;
+}
+
+#buscador_top p a span {
+    font-size: 25px;
+}    	        
+
+
+
+
+
+/********************************* INDEX ***************************************/
+
+.content .contenedor {
+    float: left;
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+
+
+
+/* CARRUSEL */
+.content .contenedor #carrusel {
+    float: left;
+    margin-left:2%;
+    margin-bottom: 25px;
+    width: 96%;
+}
+
+
+
+
+/* CARRUSEL INMUEBLES */
+.content .contenedor #ultimnove{
+	float: left;
+	width: 100%;	
+}
+.content .contenedor #ultimnove h3{
+	background: url("../images/h3_line.png") repeat-x scroll center center rgba(0, 0, 0, 0);
+    color: #FF0000;
+    float: left;
+    text-align: center;
+    width:96%;
+    margin:0 3% 1em;
+    
+}
+.content .contenedor #ultimnove h3 span{
+	background-color: #FFFFFF;
+    color: #FF0000;
+    padding: 0 1em;
+}
+
+.carrubloq_bot{
+	font-size: 3em;
+    text-align: center;
+    width: 4%;
+    margin-top: 50px;
+}
+
+.carrubloq_bot a{
+	color:#515151;
+}
+
+.carrubloq_bot.active a{
+	color:red
+}
+
+#carrubloq_prev {
+    float: left;	
+}
+
+#carrubloq_next{
+    float: right;   
+}
+
+.content .contenedor #ultimnove #carrubloq{
+	float: left;
+    width: 92%;
+}
+
+.content .contenedor #ultimnove #carrubloq .bloquecarru{
+	 float: left;
+    margin: 0 1%;    
+    width: 23%;
+}
+
+.content .contenedor #ultimnove #carrubloq .bloquecarru .img_bloquecarru{
+	border: 1px solid #CCCCCC;
+	border-radius: 4px;
+    height: 154px;
+    overflow: hidden;
+    padding: 5px;
+    text-align: center;
+    width: 205px;
+    margin-bottom: 0.5em;
+}
+
+.content .contenedor #ultimnove #carrubloq .bloquecarru .img_bloquecarru img{}
+
+.content .contenedor #ultimnove #carrubloq .bloquecarru a.detalle{
+	background-color: #FFFFFF;
+    border-radius: 4px;
+    color: #000000;
+    margin-left: 122px;
+    margin-top: -50px;
+    padding: 1px 10px;
+    position: absolute;
+    text-align: center;
+    width: 75px;
+	
+}     	  
+
+.content .contenedor #ultimnove #carrubloq .bloquecarru a.detalle:hover{
+	color:red;
+}
+
+.content .contenedor #ultimnove #carrubloq .bloquecarru h4{
+	color:red;
+	text-transform:uppercase;
+}
+
+.content .contenedor #ultimnove #carrubloq .bloquecarru .direccion{
+	font-size:11px;
+	height: 30px;
+}
+
+.content .contenedor #ultimnove #carrubloq .bloquecarru ul.detalles{}
+
+.content .contenedor #ultimnove #carrubloq .bloquecarru ul.detalles li{
+	border-right: 1px solid #FF0000;
+    float: left;
+    font-size: 10px;
+    height: 12px;
+    margin: 0 2px;
+    padding-right: 2px;
+}
+
+.content .contenedor #ultimnove #carrubloq .bloquecarru ul.detalles li:nth-child(odd) {
+	font-weight:bolder
+}
+
+.content .contenedor #ultimnove #carrubloq .bloquecarru .destacado{
+	border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;    
+   	background-color: #FF0000;
+    float: left;
+    margin-top: 0.5em;
+    padding: 3%;
+    width: 94%;
+    font-size: 12px;
+}
+
+.content .contenedor #ultimnove #carrubloq .bloquecarru .destacado .col1{
+	float: left;
+    width: 50%;
+}
+
+.content .contenedor #ultimnove #carrubloq .bloquecarru .destacado .col1 p{
+	color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.content .contenedor #ultimnove #carrubloq .bloquecarru .destacado .col1 p.ref{
+	color: #000000;
+    font-weight: bolder;
+    margin-top: 0.5em;
+    text-transform: none
+}
+
+.content .contenedor #ultimnove #carrubloq .bloquecarru .destacado .col2{
+	float: right;
+    text-align: right;
+    width: 50%;
+}
+
+.content .contenedor #ultimnove #carrubloq .bloquecarru .destacado .col2 p.precio{
+	color: #FFFFFF;
+    font-size: 20px;
+}
+
+.content .contenedor #ultimnove #carrubloq .bloquecarru .destacado .col2 p.precio_ant{
+	text-decoration:line-through;
+	font-weight: bolder;
+    margin-top: 0.5em;
 }
