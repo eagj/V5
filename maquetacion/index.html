@@ -5,16 +5,7 @@
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="styles/normalize.css">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
-	<script type="text/javascript" charset="utf-8">
-		function showsubmenu(){
-		    document.getElementById("sub1").style="display:block";
-		   	document.getElementById("sub1").style.height=36+"px";
-		}
-		function hidesubmenu(){
-            document.getElementById("sub1").style="display:none";
-            document.getElementById("sub1").style="height:0";
-        }
-	</script>	
+	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
 	<link rel="stylesheet" href="include/jquery/nivo_slider/themes/default/default.css" type="text/css" />	
 	<link rel="stylesheet" href="include/jquery/nivo_slider/nivo-slider.css" type="text/css" />
@@ -23,18 +14,33 @@
         $(window).load(function() {
             $('#slider').nivoSlider();
         });
-    </script> 
+   
+        function showsubmenu(){
+            document.getElementById("sub1").style="display:block";
+            document.getElementById("sub1").style.height=36+"px";
+        }
+        function hidesubmenu(){
+            document.getElementById("sub1").style="display:none";
+            document.getElementById("sub1").style="height:0";
+        }
+        
+        function showovermap(hide,show){
+            document.getElementById(hide).style="display:none";
+            document.getElementById(show).style="display:inline";
+            
+            }
+    </script>   
 </head>
 <body>
     <div id="index" class="content">
-    	<header>
-    		<div id="contenidohead">
-    			<div id="logoaltamira"><a href="/"><img alt="Altamira santander" src="http://www.altamirainmuebles.com/images/logoaltamiraW.gif"></a></div>
+        <header>
+            <div id="contenidohead">
+    			<div id="logoaltamira"><a href="/"><!-- <img alt="Altamira santander" src="http://www.altamirainmuebles.com/images/logoaltamiraW.gisf"> -->Logo altamira</a></div>
     			<div id="zonacentro">Zona central</div>
-    			<div id="logosantander"><a href="#"><img src="https://www.bancosantander.es/CsApps/GrupoSantander/Internet/SantanderComercial/img/logo_SAN.gif"></a></div>
+    			<div id="logosantander"><a href="#"><!-- <img src="https://www.bancosantander.es/CsApps/GrupoSantander/Internet/SantanderComercial/img/logo_SAsN.gif"> -->Logo santander</a></div>
     		</div>
     	
-    	</header>
+        </header>
     	<nav>
     		<div id="contenidonav">
     			<ul>
@@ -81,136 +87,250 @@
     	    <p id="showbusc"><a href="#">Buscador <span>&or;</span></a></p>
     	</div>
     	<div class="contenedor">
-    	    <div id="carrusel">
+            <div id="carrusel">
                 <div class="slider-wrapper theme-default">
                     <div class="ribbon"></div>
-                        <div id="slider">
-                            <img src="http://lorempixel.com/963/340/" alt="" data-thumb="http://lorempixel.com/963/340/" />
-                            <img src="http://lorempixel.com/g/963/340/" alt="" data-thumb="http://lorempixel.com/g/963/340/" />
-                            <img src="http://lorempixel.com/963/340/sports/1/" alt="" data-thumb="http://lorempixel.com/963/340/sports/1/" />
-                            <img src="http://lorempixel.com/963/340/sports" alt="" data-thumb="http://lorempixel.com/963/340/sports" />
-                            
-                            
-                        </div>
-                    </div>
-    	       </div> <!-- CARRUSEL -->
-    	       <div id="ultimnove">
-    	           <h3><span>Últimas novedades</span></h3>
-    	           <div id="carrubloq_prev" class="carrubloq_bot"><a href="#"><</a></div>
-    	           <div id="carrubloq">    	               
-    	               <div class="bloquecarru">
-    	                   <div class="img_bloquecarru">
-    	                       <img src="http://lorempixel.com/205/154/" alt="XXX" />    	                       
-    	                   </div>
-    	                   <a class="detalle" href="#">Detalle &raquo;</a>
-    	                   <h4>Pozuelo de Alarcón</h4>
-    	                   <p class="direccion">Cerámica 5, 28233 - Madrid</p>
-    	                   <ul class="detalles">
+                    <!-- <div id="slider">
+                        <img src="http://lorempixel.com/963/340/" alt="" data-thumb="http://lorempixel.com/963/340/" />
+                        <img src="http://lorempixel.com/g/963/340/" alt="" data-thumb="http://lorempixel.com/g/963/340/" />
+                        <img src="http://lorempixel.com/963/340/sports/1/" alt="" data-thumb="http://lorempixel.com/963/340/sports/1/" />
+                        <img src="http://lorempixel.com/963/340/sports" alt="" data-thumb="http://lorempixel.com/963/340/sports" />
+                        
+                        
+                    </div> -->
+                </div>
+            </div> <!-- CARRUSEL -->
+            <div id="ultimnove">
+                <h3><span>Inmuebles destacados</span></h3>
+                <div id="carrubloq_prev" class="carrubloq_bot"><a href="#"><</a></div>
+                <div id="carrubloq">    	               
+                    <div class="bloquecarru first">
+                        <div class="bloquecarrucontent">
+                            <div class="img_bloquecarru">
+                                <img src="http://placehold.it/193x145" alt="XXX" />    	                       
+                            </div>
+                            <div class="datos_basic">
+                                <h4>Pozuelo de Alarcón</h4>
+                                <p class="direccion">Cerámica 5, 28233 - Madrid</p>
+                                <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                            <div id="geop1" class="geop"><a onmouseover="showovermap('geop1', 'geop_hover1')" href="#"><img src="images/geopo_ico.png"/></a></div>
+                            <div id="geop_hover1" class="geop_hover">
+                                <a href="#">
+                                    <img src="images/geopo_ico_hover.png"/>
+                                    <p onmouseover="showovermap('geop_hover1', 'geop1')">Ver mapa</p>
+                                </a>
+                            </div>
+                            <p class="tipo">Obra nueva</p>
+                            <ul class="detalles">
                                <li>Chalet adosado</li>
                                <li>150m<sup>2</sup></li>
                                <li>2 hab.</li>
                            </ul>
-                           <div class="destacado">
-                               <div class="col1">
-                                   <p>Compra</p>
-                                   <p>Obra nueva</p>
-                                   <p class="ref">Ref. 000000</p>
-                                   
-                               </div>
-                               <div class="col2">
-                                   <p class="precio">525.000 &euro;</p>
-                                   <p class="precio_ant">570.000 &euro;</p>
-                                   
-                               </div>
-                           </div>                 
-    	               </div>
-    	               <div class="bloquecarru">
-                           <div class="img_bloquecarru">
-                               <img src="http://lorempixel.com/g/205/154/" alt="XXX" />                             
+                           <div class="precio">
+                                <p class="valorprecio">525.000&euro;</p>        
+                                <p class="tipgest">Precio Compra</p>
                            </div>
-                           <a class="detalle" href="#">Detalle &raquo;</a>
-                           <h4>Madrid</h4>
-                           <p class="direccion">Cerámica 5, 28233 - Madrid</p>
-                           <ul class="detalles">
-                               <li>Chalet</li>
-                               <li>200m<sup>2</sup></li>
-                               <li>4 hab.</li>
-                               <li>3 baños</li>
-                           </ul>
-                           <div class="destacado">
-                               <div class="col1">
-                                   <p>Alquiler</p>
-                                   <p>2ª mano</p>
-                                   <p class="ref">Ref. 000000</p>
-                                   
+                           <div class="precio2">
+                                <div class="col1">
+                                    <p class="tipgest">Alquiler</p>
+                                    <p class="valorprecio">850&euro;/mes</p>
                                </div>
                                <div class="col2">
-                                   <p class="precio">650 &euro;/mes</p>
-                                   <p class="precio_ant">700 &euro;/mes</p>
-                                   
+                                   <p class="tipgest">A. opc. compra</p>
+                                   <p class="valorprecio">850&euro;/mes</p>
                                </div>
-                           </div>                                               
+                            </div>
+                            <div class="campanas">
+                                <div class="campana">
+                                    <ul>
+                                       <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
+                                       <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
+                                       <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
+                                   </ul>
+                                </div>                          
+                            </div>                               
+                        </div>
+                        <div class="social">
+                            <a href="#"><img src="http://placehold.it/16x16" alt="campaña x" /></a>
+                            <a href="#"><img src="http://placehold.it/16x16" alt="campaña x" /></a>
+                            <a href="#"><img src="http://placehold.it/16x16" alt="campaña x" /></a>
                        </div>
-                       <div class="bloquecarru">
-                           <div class="img_bloquecarru">
-                               <img src="http://lorempixel.com/205/154/sports/" alt="XXX" />                             
+                    </div>
+              
+	             	<div class="bloquecarru">
+	             	    <div class="bloquecarrucontent">
+                            <div class="img_bloquecarru">
+                               <img src="http://placehold.it/193x145" alt="XXX" />                             
                            </div>
-                           <a class="detalle" href="#">Detalle &raquo;</a>
-                           <h4>Alcorcón</h4>
-                           <p class="direccion">Cerámica 5, 28233 - Madrid</p>
+                           <div class="datos_basic">
+                               <h4>Madrid</h4>
+                               <p class="direccion">San Vicente Ferrer, 28233 - Madrid</p>
+                               <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                           </div>
+                          <div id="geop2" class="geop"><a href="#"><img src="images/geopo_ico.png"/></a></div>
+                            <div id="geop_hover2" class="geop_hover">
+                                <a href="#">
+                                    <img src="images/geopo_ico_hover.png"/>
+                                    <p>Ver mapa</p>
+                                </a>
+                            </div>
+                           <p class="tipo">Obra nueva</p>
                            <ul class="detalles">
-                               <li>Piso</li>
-                               <li>101m<sup>2</sup></li>
-                               <li>3 hab.</li>
-                               <li>2 baños</li>
+                               <li>Chalet adosado</li>
+                               <li>150m<sup>2</sup></li>
+                               <li>2 hab.</li>
                            </ul>
-                           <div class="destacado">
-                               <div class="col1">
-                                   <p>Compra</p>
-                                   <p>2ª mano</p>
-                                   <p class="ref">Ref. 000000</p>
-                                   
+                           <div class="precio">
+                                <p class="valorprecio">360.000&euro;</p>        
+                                <p class="tipgest">Precio Compra</p>
+                           </div>
+                           <div class="precio2">
+                                <div class="col1">
+                                    <p class="tipgest">Alquiler</p>
+                                    <p class="valorprecio">700&euro;/mes</p>
                                </div>
                                <div class="col2">
-                                   <p class="precio">75.000 &euro;</p>
-                                   <p class="precio_ant">90.000 &euro;</p>
-                                   
+                                   <p class="tipgest">A. opc. compra</p>
+                                   <p class="valorprecio">650&euro;/mes</p>
                                </div>
-                           </div>                     
-                       </div>
-                       <div class="bloquecarru">
-                           <div class="img_bloquecarru">
-                               <img src="http://lorempixel.com/205/154/sports/1/" alt="XXX" />                             
+                            </div>
+                            <div class="campanas">
+                                <div class="campana">
+                                   <ul>
+                                       <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
+                                       <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
+                                       <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
+                                   </ul>
+                               </div>                          
                            </div>
-                           <a class="detalle" href="#">Detalle &raquo;</a>
-                           <h4>Pinto</h4>
-                           <p class="direccion">Cerámica 5, 28233 - Madrid</p>
-                           <ul class="detalles">
-                               <li>Piso</li>
-                               <li>55m<sup>2</sup></li>
-                               <li>1 hab.</li>
-                               <li>1 baño</li>
-                           </ul>
-                           <div class="destacado">
-                               <div class="col1">
-                                   <p>Alquiler</p>
-                                   <p>Obra nueva</p>
-                                   <p class="ref">Ref. 000000</p>
-                                   
-                               </div>
-                               <div class="col2">
-                                   <p class="precio">700 &euro;/mes</p>
-                                   <p class="precio_ant">800 &euro;/mes</p>
-                                   
-                               </div>
-                           </div>                                        
-                       </div>    	                             
-    	           </div> 
-    	           <div id="carrubloq_next" class="carrubloq_bot active"><a href="#">></a></div>         
-    	       </div>
-    	       
-            </div>
-	</div>	
-       
+                        </div>
+                       <div class="social">
+                            <a href="#"><img src="http://placehold.it/16x16" alt="campaña x" /></a>
+                            <a href="#"><img src="http://placehold.it/16x16" alt="campaña x" /></a>
+                            <a href="#"><img src="http://placehold.it/16x16" alt="campaña x" /></a>
+                        </div>        
+                    </div>
+                    
+                 	<div class="bloquecarru">
+                 	    <div class="bloquecarrucontent">
+                            <div class="img_bloquecarru">
+                               <img src="http://placehold.it/193x145" alt="XXX" />                             
+                            </div>
+                            <div class="datos_basic">
+                                <h4>Alcorcón</h4>
+                                <p class="direccion">Berlín 28922 - Madrid</p>
+                                <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                            <div id="geop3" class="geop"><a href="#"><img src="images/geopo_ico.png"/></a></div>
+                            <div id="geop_hover3" class="geop_hover">
+                                <a href="#">
+                                    <img src="images/geopo_ico_hover.png"/>
+                                    <p>Ver mapa</p>
+                                </a>
+                            </div>
+                            <p class="tipo">Obra nueva</p>
+                            <ul class="detalles">
+                                <li>Chalet adosado</li>
+                                <li>150m<sup>2</sup></li>
+                                <li>2 hab.</li>
+                            </ul>
+                            <div class="precio">
+                                <p class="valorprecio">625&euro;/mes</p>        
+                                <p class="tipgest">Precio Compra</p>
+                            </div>
+                            <div class="precio2">
+                                <div class="col1">
+                                    <p class="tipgest">A. opc. compra</p>
+                                    <p class="valorprecio">550&euro;/mes</p>
+                                </div>
+                                <div class="col2">
+                                    <p class="tipgest">Precio compra</p>
+                                    <p class="consultarprecio">Consultar precio</p>
+                                </div>
+                            </div>
+                            <div class="campanas">
+                                <div class="campana">
+                                    <ul>
+                                        <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
+                                        <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
+                                        <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
+                                    </ul>
+                                </div>                          
+                            </div>
+                        </div>                          
+                        <div class="social">
+                            <a href="#"><img src="http://placehold.it/16x16" alt="campaña x" /></a>
+                            <a href="#"><img src="http://placehold.it/16x16" alt="campaña x" /></a>
+                            <a href="#"><img src="http://placehold.it/16x16" alt="campaña x" /></a>
+                        </div>        
+                    </div>
+                 	<div class="bloquecarru">
+                 	    <div class="bloquecarrucontent">
+                            <div class="img_bloquecarru">
+                                <img src="http://placehold.it/193x145" alt="XXX" />                             
+                            </div>                           
+                            <div class="datos_basic">
+                                <h4>Pinto</h4>
+                                <p class="direccion">Juan Besteiro 28320 - Madrid </p>
+                                <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                            <div id="geop4" class="geop"><a href="#"><img src="images/geopo_ico.png"/></a></div>
+                            <div id="geop_hover4" class="geop_hover">
+                                <a href="#">
+                                    <img src="images/geopo_ico_hover.png"/>
+                                    <p>Ver mapa</p>
+                                </a>
+                            </div>
+                            <p class="tipo">Obra nueva</p>
+                            <ul class="detalles">
+                                <li>Chalet adosado</li>
+                                <li>150m<sup>2</sup></li>
+                                <li>2 hab.</li>
+                            </ul>
+                            <div class="precio">
+                                <p class="consultarprecio">Consultar precio</p>        
+                               
+                            </div>
+                            <div class="precio2">
+                                <div class="col1">
+                                    <p class="tipgest">Alquiler</p>
+                                    <p class="valorprecio">850&euro;/mes</p>
+                                </div>
+                                <div class="col2">
+                                    <p class="tipgest">A. opc. compra</p>
+                                    <p class="valorprecio">850&euro;/mes</p>
+                                </div>
+                                </div>
+                                <div class="campanas">
+                                    <div class="campana">
+                                        <ul>
+                                            <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
+                                            <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
+                                            <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
+                                        </ul>
+                                    </div>                          
+                                </div>
+                            </div>
+                            <div class="social">
+                                <a href="#"><img src="http://placehold.it/16x16" alt="campaña x" /></a>
+                                <a href="#"><img src="http://placehold.it/16x16" alt="campaña x" /></a>
+                                <a href="#"><img src="http://placehold.it/16x16" alt="campaña x" /></a>
+                            </div>        
+                        </div>                 
+                    </div> 
+                    <div id="carrubloq_next" class="carrubloq_bot active"><a href="#">></a></div>         
+                </div><!-- ultimnove -->
+                
+                <div id="banners_home">
+                    <div class="banner">
+                        <a href="#"><img alt="XXX" src="http://placehold.it/460x180"></a>
+                    </div>
+                    <div class="banner last">
+                        <a href="#"><img alt="XXX" src="http://placehold.it/460x180"></a>
+                    </div>
+                </div> 	       
+        </div>
+   </div>	
 </body>
 </html>
