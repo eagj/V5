@@ -338,28 +338,31 @@ nav #contenidonav .subnav li:hover a{
     border-radius: 2px 2px 2px 2px;
     -moz-border-radius: 2px 2px 2px 2px;
     -webkit-border-radius: 2px 2px 2px 2px;
-    padding:4%;
+    padding:10px;
 }
 
 .content .contenedor #ultimnove #carrubloq .bloquecarru.last{
 	margin:0px
 }
+.content .contenedor #ultimnove #carrubloq .bloquecarru.doble{
+	width:44%;
+	}
 
 .content .contenedor #ultimnove #carrubloq .bloquecarru .img_bloquecarru{
 	border: 1px solid #CCCCCC;
 	border-radius: 4px 4px 4px 4px;
 	-webkit-border-radius: 4px 4px 4px 4px;
 	-moz-border-radius: 4px 4px 4px 4px;
-    height: 145px;
-    overflow: hidden;
-    padding: 2%;
+    height: 157px;
+    overflow: hidden;    
     text-align: center;
-    width: 94%;
-    margin-bottom: 0.5em;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .content .contenedor #ultimnove #carrubloq .bloquecarru .img_bloquecarru img{
 	width: 193px;
+	padding: 5px;
 }
 
 .content .contenedor #ultimnove #carrubloq .bloquecarru a.detalle{
@@ -462,15 +465,15 @@ nav #contenidonav .subnav li:hover a{
     -moz-border-radius: 4px 4px 0 0;
     float: left;
     width: 100%;
-    margin-top: 0.5em;
+    margin-top:10px;
     height: 35px;
 }
 
 .content .contenedor #ultimnove #carrubloq .bloquecarru .precio p.valorprecio{
 	float: left;
 	color: #FFFFFF;
-    margin-left: 2%;
-    margin-top: 3%;
+    margin-left: 5px;
+    margin-top: 5px;
     width: 48%;
     font-size: 22px;
 }
@@ -488,8 +491,8 @@ nav #contenidonav .subnav li:hover a{
 .content .contenedor #ultimnove #carrubloq .bloquecarru .precio p.tipgest{
 	float: right;
     font-size: 12px;
-    margin-right: 2%;
-    margin-top: 2%;    
+    margin-right:5px;
+    margin-top: 5px;    
     text-align: right;
     width: 38%;
     color:#fff;
@@ -503,13 +506,13 @@ nav #contenidonav .subnav li:hover a{
     -moz-border-radius: 0px 0px 4px 4px;
     float: left;
     width: 100%;
-    margin-top: 0.5%;
+    margin-top: 1px;
 }
 
 .content .contenedor #ultimnove #carrubloq .bloquecarru .precio2 .col1{
 	border-right: 1px solid #FFFFFF;
     float: left;
-    margin: 2%;
+    margin:5px 0 5px 5px;
     width: 46%;
 }
 
@@ -524,7 +527,7 @@ nav #contenidonav .subnav li:hover a{
 
 .content .contenedor #ultimnove #carrubloq .bloquecarru .precio2 .col2{
 	float: right;
-    margin: 2%;
+    margin:5px 5px 5px 0px;
     text-align: right;
     width: 45%;
 }
