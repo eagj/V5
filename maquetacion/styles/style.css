@@ -325,7 +325,345 @@ nav #contenidonav .subnav li:hover a{
 
 
 
+/****************************** MINIFICHAS****************************************/
+.content .contenedor .bloqueminificha{
+	float:left;
+	width: 22%;
+	margin: 0 1% 0 0;
+	padding: 1%;
+}
+.content .contenedor .bloqueminificha .bloqueminifichacontent{
+	float: left;       
+    width: 100%;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px 2px;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    padding:10px;
+}
 
+.content .contenedor .bloqueminificha.last{
+	margin:0px
+}
+
+.content .contenedor .bloqueminificha .img_bloqueminificha{
+	border: 1px solid #CCCCCC;
+	border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+    height: 157px;
+    overflow: hidden;    
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.content .contenedor .bloqueminificha .img_bloqueminificha img{
+	width: 193px;
+	padding: 5px;
+}
+
+.content .contenedor .bloqueminificha a.detalle{
+	background-color: #FFFFFF;
+    border-radius: 4px;
+    color: #000000;
+    margin-left: 120px;
+    margin-top: -50px;
+    padding: 1px 10px;
+    position: absolute;
+    text-align: center;
+    width: 75px;
+	
+}     	  
+
+.content .contenedor .bloqueminificha a.detalle:hover{
+	color:red;
+}
+
+.content .contenedor .bloqueminificha .datos_basic{
+	height: 93px;
+    overflow: hidden;
+     color: #515151;	
+}
+
+.content .contenedor .bloqueminificha .geop{
+	margin-left:92%;
+    margin-top: -85px;    
+}
+
+.content .contenedor .bloqueminificha .geop_hover{
+	margin-left: 92%;
+    margin-top: -33px;
+    position: relative;
+    width: 100px;
+    visibility:hidden;   
+}
+
+.content .contenedor .bloqueminificha .geop_hover a{
+	color:#3e3e3e;
+}
+	
+.content .contenedor .bloqueminificha .geop_hover p{
+	font-size: 14px;
+    margin-left: 32px;
+    margin-top: -29px;
+}
+
+
+.content .contenedor .bloqueminificha .datos_basic h4{
+	font-size: 21px;
+	font-weight: normal;
+	color:red;
+	text-transform:uppercase;
+	width: 90%;
+	
+}
+
+.content .contenedor .bloqueminificha .direccion{
+	font-size:15px;
+}
+
+.content .contenedor .bloqueminificha .datos_basic p.descrip{
+ 	font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.content .contenedor .bloqueminificha p.tipo{
+	border-bottom: 1px solid #FF0000;
+    border-top: 1px solid #FF0000;
+    color: #FF0000;
+    font-size: 1em;
+    font-weight:bold; 
+    margin:77px 0 0.5em;
+    padding: 0.1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.content .contenedor .bloqueminificha ul.detalles{
+ 	float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%
+}
+
+.content .contenedor .bloqueminificha ul.detalles li{
+	font-family: lucidagrande,arial;
+	border-right: 1px solid #FF0000;
+ 	display: inline-block;
+    font-size: 11px;
+    height: 12px;
+    margin: 0 2px;
+    padding-right: 2px;
+    
+}
+
+.content .contenedor .bloqueminificha ul.detalles li:nth-child(odd) {
+	font-weight:bolder
+}
+
+.content .contenedor .bloqueminificha .precio{
+	background-color: #FF0000;
+    border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    float: left;
+    width: 100%;
+    margin-top:10px;
+    height: 35px;
+}
+
+.content .contenedor .bloqueminificha .precio p.valorprecio{
+	float: left;
+	color: #FFFFFF;
+    margin-left: 5px;
+    margin-top: 0px;
+    width: 48%;
+    font-size: 25px;
+}
+
+.content .contenedor .bloqueminificha .precio p.consultarprecio{
+	float: left;
+	color: #FFFFFF;
+    margin-left: 2%;
+    margin-top: 3%;
+    width: 98%;
+    font-size: 20px;
+    text-align:center;
+}
+
+.content .contenedor .bloqueminificha .precio p.tipgest{
+	float: right;
+    font-size: 14px;
+    margin-right:5px;
+    margin-top: 5px;    
+    text-align: right;
+    width: 38%;
+    color:#fff;
+    line-height: 12px;
+}
+
+.content .contenedor .bloqueminificha .precio2{
+	background-color: #3e3e3e;
+	color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+    -webkit-border-radius: 0px 0px 4px 4px;
+    -moz-border-radius: 0px 0px 4px 4px;
+    float: left;
+    width: 100%;
+    margin-top: 1px;
+    height: 45px;
+}
+
+.content .contenedor .bloqueminificha .precio2 .col1{
+	border-right: 1px solid #FFFFFF;
+    float: left;
+    margin:5px 0 5px 5px;
+    width: 46%;
+}
+
+.content .contenedor .bloqueminificha .precio2 .col1 p.tipgest{
+	font-size: 10px;
+    text-transform: uppercase;
+}
+
+.content .contenedor .bloqueminificha .precio2 .col1 .valorprecio{
+	font-size: 19px;
+}
+
+.content .contenedor .bloqueminificha .precio2 .col2{
+	float: right;
+    margin:5px 5px 5px 0px;
+    text-align: right;
+    width: 45%;
+}
+
+.content .contenedor .bloqueminificha .precio2 .col2 p.tipgest{
+	font-size: 10px;
+    text-transform: uppercase;
+}
+
+.content .contenedor .bloqueminificha .precio2 .col2 p.valorprecio{
+	font-size: 19px;
+}
+
+.content .contenedor .bloqueminificha .precio2 .col2 p.consultarprecio{
+	font-size: 13px;
+}                                      
+                               
+.content .contenedor .bloqueminificha .campanas{
+	float: left;
+    margin-top: 0.5em;
+    width: 100%;
+}
+
+.content .contenedor .bloqueminificha .campanas .campana{
+	text-align: center;
+    width: 100%;
+}
+
+.content .contenedor .bloqueminificha .campanas .campana li{
+	display: inline-block;
+    margin: 0 3%;
+}
+
+.content .contenedor .bloqueminificha .comparar {
+ 	float: left;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.content .contenedor .bloqueminificha .comparar input{
+	vertical-align: middle;
+}
+
+.content .contenedor .bloqueminificha .comparar label{
+	font-size: 14px;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.content .contenedor .bloqueminificha .social {
+	float: right;	
+    margin-top: 10px;
+    text-align: right;
+ 	margin-right: -10px;
+}
+
+.content .contenedor .bloqueminificha .social a{
+	display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: 0 3px;
+    }
+
+.content .contenedor .bloqueminificha .social a.share{
+	background:url("../images/share_minificha.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.content .contenedor .bloqueminificha .social a.share:hover, .content .contenedor  .social a.share.select{
+	background:url("../images/share_hover_minificha.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.content .contenedor .bloqueminificha .social a.mail{
+	background:url("../images/mail_minificha.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0)	
+}
+
+.content .contenedor .bloqueminificha .social a.mail:hover, .content .contenedor  .social a.mail.select{
+	background:url("../images/mail_hover_minificha.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0)	
+}
+
+.content .contenedor .bloqueminificha .social a.favorite{
+		background:url("../images/fav_minificha.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0)	
+}
+.content .contenedor .bloqueminificha .social a.favorite:hover, .content .contenedor  .social a.favorite.select{
+		background:url("../images/fav_hover_minificha.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0)	
+}
+
+
+
+
+/*MIFICHAS DOBLES*/
+.content .contenedor .bloqueminificha.doble{
+	width:47%;
+	}
+
+.content .contenedor .bloqueminificha.doble .img_bloqueminificha img{
+	width:420px;
+}
+
+
+.content .contenedor .bloqueminificha.doble .precio p.valorprecio{
+	width: 70%;
+}
+
+
+.content .contenedor .bloqueminificha.doble .precio p.tipgest{
+	margin-top: 10px;
+    width: 27%;
+}
+
+.content .contenedor .bloqueminificha.doble .precio2 .col1, .content .contenedor .bloqueminificha.doble .precio2 .col2{
+	text-align: center;
+}
+
+.content .contenedor .bloqueminificha.doble .precio2 .col1 p.tipgest, .content .contenedor .bloqueminificha.doble .precio2 .col2 p.tipgest {
+	display: inline-block;
+	font-size: 12px;
+    margin-top: 10px;
+	
+}
+
+.content .contenedor .bloqueminificha.doble .precio2 .col1 p.valorprecio, .content .contenedor .bloqueminificha.doble .precio2 .col2 p.valorprecio{
+	display: inline-block;
+}
+
+
+
+/********************************* FIN ELEMENTOS COMUNES ************************/
 
 /********************************* INDEX ***************************************/
 
@@ -402,340 +740,6 @@ nav #contenidonav .subnav li:hover a{
     margin-left: -7px;
 }
 
-.content .contenedor #ultimnove #carrubloq .bloquecarru{
-	float:left;
-	width: 22%;
-	margin: 0 1% 0 0;
-	padding: 1%;
-}
-.content .contenedor #ultimnove #carrubloq .bloquecarru .bloquecarrucontent{
-	float: left;       
-    width: 100%;
-    border: 1px solid #CCCCCC;
-    border-radius: 2px 2px 2px 2px;
-    -moz-border-radius: 2px 2px 2px 2px;
-    -webkit-border-radius: 2px 2px 2px 2px;
-    padding:10px;
-}
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru.last{
-	margin:0px
-}
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru .img_bloquecarru{
-	border: 1px solid #CCCCCC;
-	border-radius: 4px 4px 4px 4px;
-	-webkit-border-radius: 4px 4px 4px 4px;
-	-moz-border-radius: 4px 4px 4px 4px;
-    height: 157px;
-    overflow: hidden;    
-    text-align: center;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru .img_bloquecarru img{
-	width: 193px;
-	padding: 5px;
-}
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru a.detalle{
-	background-color: #FFFFFF;
-    border-radius: 4px;
-    color: #000000;
-    margin-left: 120px;
-    margin-top: -50px;
-    padding: 1px 10px;
-    position: absolute;
-    text-align: center;
-    width: 75px;
-	
-}     	  
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru a.detalle:hover{
-	color:red;
-}
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru .datos_basic{
-	height: 93px;
-    overflow: hidden;
-     color: #515151;	
-}
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru .geop{
-	margin-left:92%;
-    margin-top: -85px;    
-}
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru .geop_hover{
-	margin-left: 92%;
-    margin-top: -33px;
-    position: relative;
-    width: 100px;
-    visibility:hidden;   
-}
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru .geop_hover a{
-	color:#3e3e3e;
-}
-	
-.content .contenedor #ultimnove #carrubloq .bloquecarru .geop_hover p{
-	font-size: 14px;
-    margin-left: 32px;
-    margin-top: -29px;
-}
-
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru .datos_basic h4{
-	font-size: 21px;
-	font-weight: normal;
-	color:red;
-	text-transform:uppercase;
-	width: 90%;
-	
-}
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru .direccion{
-	font-size:15px;
-}
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru .datos_basic p.descrip{
- 	font-size: 15px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru p.tipo{
-	border-bottom: 1px solid #FF0000;
-    border-top: 1px solid #FF0000;
-    color: #FF0000;
-    font-size: 1em;
-    font-weight:bold; 
-    margin:77px 0 0.5em;
-    padding: 0.1em;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru ul.detalles{
- 	float: left;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 100%
-}
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru ul.detalles li{
-	font-family: lucidagrande,arial;
-	border-right: 1px solid #FF0000;
- 	display: inline-block;
-    font-size: 11px;
-    height: 12px;
-    margin: 0 2px;
-    padding-right: 2px;
-    
-}
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru ul.detalles li:nth-child(odd) {
-	font-weight:bolder
-}
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru .precio{
-	background-color: #FF0000;
-    border-radius: 4px 4px 0 0;
-    -webkit-border-radius: 4px 4px 0 0;
-    -moz-border-radius: 4px 4px 0 0;
-    float: left;
-    width: 100%;
-    margin-top:10px;
-    height: 35px;
-}
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru .precio p.valorprecio{
-	float: left;
-	color: #FFFFFF;
-    margin-left: 5px;
-    margin-top: 0px;
-    width: 48%;
-    font-size: 25px;
-}
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru .precio p.consultarprecio{
-	float: left;
-	color: #FFFFFF;
-    margin-left: 2%;
-    margin-top: 3%;
-    width: 98%;
-    font-size: 20px;
-    text-align:center;
-}
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru .precio p.tipgest{
-	float: right;
-    font-size: 14px;
-    margin-right:5px;
-    margin-top: 5px;    
-    text-align: right;
-    width: 38%;
-    color:#fff;
-    line-height: 12px;
-}
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru .precio2{
-	background-color: #3e3e3e;
-	color: #FFFFFF;
-    border-radius: 0px 0px 4px 4px;
-    -webkit-border-radius: 0px 0px 4px 4px;
-    -moz-border-radius: 0px 0px 4px 4px;
-    float: left;
-    width: 100%;
-    margin-top: 1px;
-    height: 45px;
-}
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru .precio2 .col1{
-	border-right: 1px solid #FFFFFF;
-    float: left;
-    margin:5px 0 5px 5px;
-    width: 46%;
-}
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru .precio2 .col1 p.tipgest{
-	font-size: 10px;
-    text-transform: uppercase;
-}
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru .precio2 .col1 .valorprecio{
-	font-size: 19px;
-}
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru .precio2 .col2{
-	float: right;
-    margin:5px 5px 5px 0px;
-    text-align: right;
-    width: 45%;
-}
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru .precio2 .col2 p.tipgest{
-	font-size: 10px;
-    text-transform: uppercase;
-}
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru .precio2 .col2 p.valorprecio{
-	font-size: 19px;
-}
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru .precio2 .col2 p.consultarprecio{
-	font-size: 13px;
-}                                      
-                               
-.content .contenedor #ultimnove #carrubloq .bloquecarru .campanas{
-	float: left;
-    margin-top: 0.5em;
-    width: 100%;
-}
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru .campanas .campana{
-	text-align: center;
-    width: 100%;
-}
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru .campanas .campana li{
-	display: inline-block;
-    margin: 0 3%;
-}
-
-.content .contenedor #ultimnove #carrubloq .comparar {
- 	float: left;
-    margin-left: 10px;
-    margin-top: 8px;
-}
-
-.content .contenedor #ultimnove #carrubloq .comparar input{
-	vertical-align: middle;
-}
-
-.content .contenedor #ultimnove #carrubloq .comparar label{
-	font-size: 14px;
-    text-transform: uppercase;
-    vertical-align: middle;
-}
-
-.content .contenedor #ultimnove #carrubloq .social {
-	float: right;	
-    margin-top: 10px;
-    text-align: right;
- 	margin-right: -10px;
-}
-
-.content .contenedor #ultimnove #carrubloq .social a{
-	display: inline-block;
-    height: 16px;
-    width: 16px;
-    margin: 0 3px;
-    }
-
-.content .contenedor #ultimnove #carrubloq .social a.share{
-	background:url("../images/share_minificha.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-}
-
-.content .contenedor #ultimnove #carrubloq .social a.share:hover, .content .contenedor #ultimnove #carrubloq .social a.share.select{
-	background:url("../images/share_hover_minificha.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-}
-
-.content .contenedor #ultimnove #carrubloq .social a.mail{
-	background:url("../images/mail_minificha.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0)	
-}
-
-.content .contenedor #ultimnove #carrubloq .social a.mail:hover, .content .contenedor #ultimnove #carrubloq .social a.mail.select{
-	background:url("../images/mail_hover_minificha.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0)	
-}
-
-.content .contenedor #ultimnove #carrubloq .social a.favorite{
-		background:url("../images/fav_minificha.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0)	
-}
-.content .contenedor #ultimnove #carrubloq .social a.favorite:hover, .content .contenedor #ultimnove #carrubloq .social a.favorite.select{
-		background:url("../images/fav_hover_minificha.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0)	
-}
-
-
-
-
-/*CAJAS DOBLES*/
-.content .contenedor #ultimnove #carrubloq .bloquecarru.doble{
-	width:47%;
-	}
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru.doble .img_bloquecarru img{
-	width:420px;
-}
-
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru.doble .precio p.valorprecio{
-	width: 70%;
-}
-
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru.doble .precio p.tipgest{
-	margin-top: 10px;
-    width: 27%;
-}
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru.doble .precio2 .col1, .content .contenedor #ultimnove #carrubloq .bloquecarru.doble .precio2 .col2{
-	text-align: center;
-}
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru.doble .precio2 .col1 p.tipgest, .content .contenedor #ultimnove #carrubloq .bloquecarru.doble .precio2 .col2 p.tipgest {
-	display: inline-block;
-	font-size: 12px;
-    margin-top: 10px;
-	
-}
-
-.content .contenedor #ultimnove #carrubloq .bloquecarru.doble .precio2 .col1 p.valorprecio, .content .contenedor #ultimnove #carrubloq .bloquecarru.doble .precio2 .col2 p.valorprecio{
-	display: inline-block;
-}
 
 /* BANNER*/
 .content .contenedor #banners_home{
