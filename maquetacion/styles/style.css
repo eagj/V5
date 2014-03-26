@@ -1,29 +1,65 @@
 /*FONT FACE */
-@font-face
-{
-font-family: "rotis";
-/*src:url('../styles/fonts/ROTSEM.TTF') format('truetype');*/
-src:url('fonts/Rotis.TTF');
-
+@font-face {
+    font-family: "rotis";
+    src: url(fonts/Rotis.woff);
 }
 
-/* PARA IE 
-  @font-face {
-    font-family: rotis_ie;
-    font-style:  normal;
-    font-weight: normal;
-    src: url(fonts/Rotis.eot);
-  }*/
-
+@font-face {
+    font-family: "lucidagrande";
+    src: url(fonts/LucidaGrande.woff);
+}
 
 
 html{
-	font-family: "rotis",rotis_ie,trebuchet MS;
+	font-family: "rotis",trebuchet MS;
 	text-rendering: optimizelegibility;
 }
 
 
+/*************************** ICOS SOCIALES**************************/
 
+/* ICO PIE RSS*/
+li#rss{
+	background:url("../images/rss_foot.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0)
+}
+
+li#rss:hover{
+	background:url("../images/rss_hover_foot.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0)
+}
+
+/* ICO PIE TWITTER*/
+li#tweet{
+	background:url("../images/tweet_foot.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0)
+	
+}
+
+li#tweet:hover{
+	background:url("../images/tweet_hover_foot.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0)
+	
+}
+
+/* ICO PIE FACEBOOK*/
+li#fb{
+	background:url("../images/fb_foot.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0)
+	
+}
+
+li#fb:hover{
+	background:url("../images/fb_hover_foot.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0)
+	
+}
+
+/* ICO PIE YOUTUBE*/
+li#yt{
+	background:url("../images/youtube_foot.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0)
+	
+}
+
+li#yt:hover{
+	background:url("../images/youtube_hover_foot.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0)
+	
+}
+                
 
 
 .content {
@@ -58,9 +94,47 @@ header #contenidohead > div{
 header #contenidohead #logoaltamira{
 	padding-left: 16px;
 }
+
 header #contenidohead #zonacentro{
 	text-align: center;
 }
+
+header #contenidohead #zonacentro a p{color:#fff}
+
+header #contenidohead #zonacentro #tfnohead p {
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+header #contenidohead #zonacentro #tfnohead p img {
+    vertical-align: top;
+}
+
+header #contenidohead #zonacentro #tfnohead p.leyenda {
+    font-size: 13px;
+    text-indent: 28px;
+}
+
+header #contenidohead #zonacentro #socialhead{
+	margin-top: 5px;
+    text-indent: 25px;
+}
+
+
+header #contenidohead #zonacentro #socialhead li{
+	display: inline-block;
+    height: 29px;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+    width: 29px;    
+}
+
+header #contenidohead #zonacentro #socialhead li a{
+	float:left;
+	width:100%;
+}
+
 
 header #contenidohead #logosantander{
 	text-align: right;
@@ -99,6 +173,7 @@ nav #contenidonav li a{
 	padding: 10px 23px;
 	float: left;
 	color: #fe0000;
+	 font-size: 18px;
 	transform:rotate(0deg) scale(1) skew(20deg) translate(0px);	
 	-webkit-transform: rotate(0deg) scale(1) skew(20deg) translate(0px);	
 	-moz-transform: rotate(0deg) scale(1) skew(20deg) translate(0px);	
@@ -239,8 +314,9 @@ nav #contenidonav .subnav li:hover a{
     border-radius: 0 0 4px 4px;
     color: #FFFFFF;
     display: inline-block;
-    padding: 0.1em 1em;
+    padding: 0 1em;
     text-transform: uppercase;
+     font-size: 18px;
 }
 
 #buscador_top p a span {
@@ -293,7 +369,7 @@ nav #contenidonav .subnav li:hover a{
 	background-color: #FFFFFF;
     color: #FF0000;
     padding: 0 0.5em;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 100;
 }
 
@@ -323,6 +399,7 @@ nav #contenidonav .subnav li:hover a{
 .content .contenedor #ultimnove #carrubloq{
 	float: left;
     width: 94%;
+    margin-left: -7px;
 }
 
 .content .contenedor #ultimnove #carrubloq .bloquecarru{
@@ -344,9 +421,6 @@ nav #contenidonav .subnav li:hover a{
 .content .contenedor #ultimnove #carrubloq .bloquecarru.last{
 	margin:0px
 }
-.content .contenedor #ultimnove #carrubloq .bloquecarru.doble{
-	width:44%;
-	}
 
 .content .contenedor #ultimnove #carrubloq .bloquecarru .img_bloquecarru{
 	border: 1px solid #CCCCCC;
@@ -383,22 +457,22 @@ nav #contenidonav .subnav li:hover a{
 }
 
 .content .contenedor #ultimnove #carrubloq .bloquecarru .datos_basic{
-	height: 80px;
+	height: 93px;
     overflow: hidden;
      color: #515151;	
 }
 
 .content .contenedor #ultimnove #carrubloq .bloquecarru .geop{
-	 margin-left: 185px;
-    margin-top: -85px;
-    position: absolute
+	margin-left:92%;
+    margin-top: -85px;    
 }
 
 .content .contenedor #ultimnove #carrubloq .bloquecarru .geop_hover{
-	margin-left: 184px;
-    margin-top: -90px;
-    position: absolute;
-    display:none;
+	margin-left: 92%;
+    margin-top: -33px;
+    position: relative;
+    width: 100px;
+    visibility:hidden;   
 }
 
 .content .contenedor #ultimnove #carrubloq .bloquecarru .geop_hover a{
@@ -413,7 +487,7 @@ nav #contenidonav .subnav li:hover a{
 
 
 .content .contenedor #ultimnove #carrubloq .bloquecarru .datos_basic h4{
-	font-size: 20px;
+	font-size: 21px;
 	font-weight: normal;
 	color:red;
 	text-transform:uppercase;
@@ -422,11 +496,11 @@ nav #contenidonav .subnav li:hover a{
 }
 
 .content .contenedor #ultimnove #carrubloq .bloquecarru .direccion{
-	font-size:11px;
+	font-size:15px;
 }
 
 .content .contenedor #ultimnove #carrubloq .bloquecarru .datos_basic p.descrip{
- 	font-size: 11px;
+ 	font-size: 15px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -436,22 +510,31 @@ nav #contenidonav .subnav li:hover a{
 	border-bottom: 1px solid #FF0000;
     border-top: 1px solid #FF0000;
     color: #FF0000;
-    font-size: 1em;    
-    margin: 0.5em 0;
+    font-size: 1em;
+    font-weight:bold; 
+    margin:77px 0 0.5em;
     padding: 0.1em;
     text-align: center;
     text-transform: uppercase;
 }
 
-.content .contenedor #ultimnove #carrubloq .bloquecarru ul.detalles{}
+.content .contenedor #ultimnove #carrubloq .bloquecarru ul.detalles{
+ 	float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%
+}
 
 .content .contenedor #ultimnove #carrubloq .bloquecarru ul.detalles li{
+	font-family: lucidagrande,arial;
 	border-right: 1px solid #FF0000;
-    float: left;
-    font-size: 10px;
+ 	display: inline-block;
+    font-size: 11px;
     height: 12px;
     margin: 0 2px;
     padding-right: 2px;
+    
 }
 
 .content .contenedor #ultimnove #carrubloq .bloquecarru ul.detalles li:nth-child(odd) {
@@ -473,9 +556,9 @@ nav #contenidonav .subnav li:hover a{
 	float: left;
 	color: #FFFFFF;
     margin-left: 5px;
-    margin-top: 5px;
+    margin-top: 0px;
     width: 48%;
-    font-size: 22px;
+    font-size: 25px;
 }
 
 .content .contenedor #ultimnove #carrubloq .bloquecarru .precio p.consultarprecio{
@@ -490,12 +573,13 @@ nav #contenidonav .subnav li:hover a{
 
 .content .contenedor #ultimnove #carrubloq .bloquecarru .precio p.tipgest{
 	float: right;
-    font-size: 12px;
+    font-size: 14px;
     margin-right:5px;
     margin-top: 5px;    
     text-align: right;
     width: 38%;
     color:#fff;
+    line-height: 12px;
 }
 
 .content .contenedor #ultimnove #carrubloq .bloquecarru .precio2{
@@ -507,6 +591,7 @@ nav #contenidonav .subnav li:hover a{
     float: left;
     width: 100%;
     margin-top: 1px;
+    height: 45px;
 }
 
 .content .contenedor #ultimnove #carrubloq .bloquecarru .precio2 .col1{
@@ -517,12 +602,12 @@ nav #contenidonav .subnav li:hover a{
 }
 
 .content .contenedor #ultimnove #carrubloq .bloquecarru .precio2 .col1 p.tipgest{
-	font-size: 9px;
+	font-size: 10px;
     text-transform: uppercase;
 }
 
 .content .contenedor #ultimnove #carrubloq .bloquecarru .precio2 .col1 .valorprecio{
-	font-size: 16px;
+	font-size: 19px;
 }
 
 .content .contenedor #ultimnove #carrubloq .bloquecarru .precio2 .col2{
@@ -533,16 +618,16 @@ nav #contenidonav .subnav li:hover a{
 }
 
 .content .contenedor #ultimnove #carrubloq .bloquecarru .precio2 .col2 p.tipgest{
-	font-size: 9px;
+	font-size: 10px;
     text-transform: uppercase;
 }
 
 .content .contenedor #ultimnove #carrubloq .bloquecarru .precio2 .col2 p.valorprecio{
-	font-size: 16px;
+	font-size: 19px;
 }
 
 .content .contenedor #ultimnove #carrubloq .bloquecarru .precio2 .col2 p.consultarprecio{
-	font-size: 12px;
+	font-size: 13px;
 }                                      
                                
 .content .contenedor #ultimnove #carrubloq .bloquecarru .campanas{
@@ -561,27 +646,108 @@ nav #contenidonav .subnav li:hover a{
     margin: 0 3%;
 }
 
+.content .contenedor #ultimnove #carrubloq .comparar {
+ 	float: left;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.content .contenedor #ultimnove #carrubloq .comparar input{
+	vertical-align: middle;
+}
+
+.content .contenedor #ultimnove #carrubloq .comparar label{
+	font-size: 14px;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
 .content .contenedor #ultimnove #carrubloq .social {
-	float: left;
-	width:100%;
+	float: right;	
     margin-top: 10px;
     text-align: right;
+ 	margin-right: -10px;
+}
+
+.content .contenedor #ultimnove #carrubloq .social a{
+	display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: 0 3px;
+    }
+
+.content .contenedor #ultimnove #carrubloq .social a.share{
+	background:url("../images/share_minificha.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.content .contenedor #ultimnove #carrubloq .social a.share:hover, .content .contenedor #ultimnove #carrubloq .social a.share.select{
+	background:url("../images/share_hover_minificha.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.content .contenedor #ultimnove #carrubloq .social a.mail{
+	background:url("../images/mail_minificha.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0)	
+}
+
+.content .contenedor #ultimnove #carrubloq .social a.mail:hover, .content .contenedor #ultimnove #carrubloq .social a.mail.select{
+	background:url("../images/mail_hover_minificha.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0)	
+}
+
+.content .contenedor #ultimnove #carrubloq .social a.favorite{
+		background:url("../images/fav_minificha.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0)	
+}
+.content .contenedor #ultimnove #carrubloq .social a.favorite:hover, .content .contenedor #ultimnove #carrubloq .social a.favorite.select{
+		background:url("../images/fav_hover_minificha.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0)	
 }
 
 
 
 
+/*CAJAS DOBLES*/
+.content .contenedor #ultimnove #carrubloq .bloquecarru.doble{
+	width:47%;
+	}
+
+.content .contenedor #ultimnove #carrubloq .bloquecarru.doble .img_bloquecarru img{
+	width:420px;
+}
+
+
+.content .contenedor #ultimnove #carrubloq .bloquecarru.doble .precio p.valorprecio{
+	width: 70%;
+}
+
+
+.content .contenedor #ultimnove #carrubloq .bloquecarru.doble .precio p.tipgest{
+	margin-top: 10px;
+    width: 27%;
+}
+
+.content .contenedor #ultimnove #carrubloq .bloquecarru.doble .precio2 .col1, .content .contenedor #ultimnove #carrubloq .bloquecarru.doble .precio2 .col2{
+	text-align: center;
+}
+
+.content .contenedor #ultimnove #carrubloq .bloquecarru.doble .precio2 .col1 p.tipgest, .content .contenedor #ultimnove #carrubloq .bloquecarru.doble .precio2 .col2 p.tipgest {
+	display: inline-block;
+	font-size: 12px;
+    margin-top: 10px;
+	
+}
+
+.content .contenedor #ultimnove #carrubloq .bloquecarru.doble .precio2 .col1 p.valorprecio, .content .contenedor #ultimnove #carrubloq .bloquecarru.doble .precio2 .col2 p.valorprecio{
+	display: inline-block;
+}
 
 /* BANNER*/
 .content .contenedor #banners_home{
     float: left;
     margin-bottom: 2em;
-    margin-left: 3%;
-    width: 94%;;
+    margin-left: 4%;
+    width: 93%;;
 }
+
 .content .contenedor #banners_home .banner{
 	float: left;
-	width:460px;
+	width:455px;
 	height: 180px;
 	overflow: hidden;
    	border: 1px solid rgba(0, 0, 0, 0);
@@ -589,8 +755,115 @@ nav #contenidonav .subnav li:hover a{
     -webkit-border-radius: 8px 8px 8px 8px;
     -moz-border-radius: 8px 8px 8px 8px;
 }
+
 .content .contenedor #banners_home .banner.last{
 	float: right;
 }
 
- 
+
+
+
+
+/****************************************************** PIE *******************************/
+
+footer{
+	float:left;
+	width:100%;
+}
+
+footer p.mapaweb{
+ 	background-color: #515151;
+    border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    float: right;
+    margin-right: 50px;
+    padding: 2px 30px;
+}
+
+footer p.mapaweb a{
+ 	color: #FFFFFF;
+    float: left;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+footer .footercontent{
+	display: table;
+	width: 100%;
+	background-color: #515151;
+	
+}
+
+footer .footercontent .col1{
+	display: table-cell;   
+    vertical-align: middle;
+    width: 27%;
+}
+
+footer .footercontent .col1 a.logofoot{
+ 	border-radius: 4px 4px 4px 4px;
+    float: left;
+    text-align: center;
+    width: 120px;
+    margin: 10px 5px;
+}
+
+footer .footercontent .col1 a.logofoot img {
+    display: table-cell;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+footer .footercontent .col1 a.logofoot.openbank{
+	 background-color: #FFFFFF;
+}
+
+footer .footercontent .col1 a.logofoot.santander{
+	 background-color: red;
+}
+
+footer .footercontent .col2{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 52%;
+}
+
+footer .footercontent .col2 li{
+	display: inline-block;
+	font-size:12px;
+	border-right: 1px solid #FF0000;
+ 	padding-right: 5px;
+    vertical-align: middle;
+}
+
+footer .footercontent .col2 li a{
+	color:#fff;
+}	
+
+footer .footercontent .col2 li a:hover{
+	color:red;
+}
+
+footer .footercontent .col3{
+   	display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 24%;
+}
+
+footer .footercontent .col3 li{
+	display: inline-block;
+    height: 29px;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+    width: 29px;    
+}
+
+footer .footercontent .col3 li a{
+	float:left;
+	width:100%;
+}
+

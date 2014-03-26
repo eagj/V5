@@ -10,7 +10,10 @@
 	<link rel="stylesheet" href="include/jquery/nivo_slider/themes/default/default.css" type="text/css" />	
 	<link rel="stylesheet" href="include/jquery/nivo_slider/nivo-slider.css" type="text/css" />
     <script src="include/jquery/nivo_slider/jquery.nivo.slider.js" type="text/javascript"></script>
-    <script type="text/javascript">
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    <script>
         $(window).load(function() {
             $('#slider').nivoSlider();
         });
@@ -25,8 +28,8 @@
         }
         
         function showovermap(hide,show){
-            document.getElementById(hide).style="display:none";
-            document.getElementById(show).style="display:inline";
+            document.getElementById(hide).style="visibility:hidden";
+            document.getElementById(show).style="visibility:visible";
             
             }
     </script>   
@@ -35,16 +38,30 @@
     <div id="index" class="content">
         <header>
             <div id="contenidohead">
-    			<div id="logoaltamira"><a href="/"><!-- <img alt="Altamira santander" src="http://www.altamirainmuebles.com/images/logoaltamiraW.gisf"> -->Logo altamira</a></div>
-    			<div id="zonacentro">Zona central</div>
-    			<div id="logosantander"><a href="#"><!-- <img src="https://www.bancosantander.es/CsApps/GrupoSantander/Internet/SantanderComercial/img/logo_SAsN.gif"> -->Logo santander</a></div>
+    			<div id="logoaltamira"><a href="/"><img alt="Altamira santander" src="images/logo_altamira.png" alt="Logotipo Inmuebles Altamira"></a></div>
+    			<div id="zonacentro">
+    			    <a href="#">
+    			        <div id="tfnohead">    			            
+    			            <p><img src="images/tfno_head.png">902 509 559</p>
+    			            <p class="leyenda">Teléfono y vídeollamada</p>
+    			        </div>    			        
+    			    </a>
+    			    <div id="socialhead">
+    			    	 <ul>
+                        <li id="tweet"><a href="#">&nbsp;</a></li>
+                        <li id="fb"><a href="#">&nbsp;</a></li>
+                        <li id="yt"><a href="#">&nbsp;</a></li>
+                    </ul>
+    			    </div>
+    			</div>
+    			<div id="logosantander"><a href="#"><img src="images/logo_santander.png" alt="Logotipo Banco de Santander"></a></div>
     		</div>
     	
         </header>
     	<nav>
     		<div id="contenidonav">
     			<ul>
-    				<li class="select"><a  onclick="showsubmenu()" href="#">Residencial</a></li>
+    				<li class="first select"><a  onclick="showsubmenu()" href="#">Residencial</a></li>
     				<li><a onclick="hidesubmenu()" href="#">Terciario</a></li>
     				<li><a onclick="hidesubmenu()" href="#">Suelo</a></li>
     				<li><a onclick="hidesubmenu()" href="#">Inversores</a></li>
@@ -104,10 +121,10 @@
                 <h3><span>Inmuebles destacados</span></h3>
                 <div id="carrubloq_prev" class="carrubloq_bot"><a href="#"><</a></div>
                 <div id="carrubloq">    	               
-                    <div class="bloquecarru">
+                    <!-- <div class="bloquecarru doble">
                         <div class="bloquecarrucontent">
                             <div class="img_bloquecarru">
-                                <img src="http://placehold.it/193x145" alt="XXX" />    	                       
+                                <img src="http://placehold.it/420x145" alt="XXX" />    	                       
                             </div>
                             <div class="datos_basic">
                                 <h4>Pozuelo de Alarcón</h4>
@@ -128,16 +145,16 @@
                                <li>2 hab.</li>
                            </ul>
                            <div class="precio">
-                                <p class="valorprecio">525.000&euro;</p>        
+                                <p class="valorprecio">10 chalets desde 525.000&euro;</p>        
                                 <p class="tipgest">Precio Compra</p>
                            </div>
                            <div class="precio2">
                                 <div class="col1">
-                                    <p class="tipgest">Alquiler</p>
+                                    <p class="tipgest">Alquiler desde</p>
                                     <p class="valorprecio">850&euro;/mes</p>
                                </div>
                                <div class="col2">
-                                   <p class="tipgest">A. opc. compra</p>
+                                   <p class="tipgest">A. opc. compra desde</p>
                                    <p class="valorprecio">850&euro;/mes</p>
                                </div>
                             </div>
@@ -152,12 +169,67 @@
                             </div>                               
                         </div>
                         <div class="social">
-                            <a href="#"><img src="http://placehold.it/16x16" alt="campaña x" /></a>
-                            <a href="#"><img src="http://placehold.it/16x16" alt="campaña x" /></a>
-                            <a href="#"><img src="http://placehold.it/16x16" alt="campaña x" /></a>
+                            <a href="#" id="share1" class="share"></a>
+                            <a href="#" id="mail1" class="mail"></a>
+                            <a href="#" id="favorite1" class="favorite select"></a>
                        </div>
+                    </div> -->
+                    <div class="bloquecarru">
+                        <div class="bloquecarrucontent">
+                            <div class="img_bloquecarru">
+                               <img src="http://placehold.it/193x145" alt="XXX" />                             
+                           </div>
+                           <div class="datos_basic">
+                               <h4>Madrid</h4>
+                               <p class="direccion">San Vicente Ferrer, 28233 - Madrid</p>
+                               <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                           </div>
+                          <div id="geop2" class="geop"><a href="#"><img src="images/geopo_ico.png"/></a></div>
+                            <div id="geop_hover2" class="geop_hover">
+                                <a href="#">
+                                    <img src="images/geopo_ico_hover.png"/>
+                                    <p>Ver mapa</p>
+                                </a>
+                            </div>
+                           <p class="tipo">Obra nueva</p>
+                           <ul class="detalles">
+                               <li>Chalet adosado</li>
+                               <li>150m<sup>2</sup></li>
+                               <li>2 hab.</li>
+                           </ul>
+                           <div class="precio">
+                                <p class="valorprecio">360.000&euro;</p>        
+                                <p class="tipgest">Precio Compra</p>
+                           </div>
+                           <div class="precio2">
+                                <div class="col1">
+                                    <p class="tipgest">Alquiler</p>
+                                    <p class="valorprecio">700&euro;/mes</p>
+                               </div>
+                               <div class="col2">
+                                   <p class="tipgest">A. opc. compra</p>
+                                   <p class="valorprecio">650&euro;/mes</p>
+                               </div>
+                            </div>
+                            <div class="campanas">
+                                <div class="campana">
+                                   <ul>                                       
+                                       <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
+                                   </ul>
+                               </div>                          
+                           </div>
+                        </div>
+                        <div class="comparar">
+                            <input type="checkbox" />
+                            <label>Comparar</label>                            
+                        </div>
+                        <div class="social">
+                            <a href="#" id="share1" class="share"></a>
+                            <a href="#" id="mail1" class="mail"></a>
+                            <a href="#" id="favorite1" class="favorite"></a>
+                       </div>    
                     </div>
-              
+                    
 	             	<div class="bloquecarru">
 	             	    <div class="bloquecarrucontent">
                             <div class="img_bloquecarru">
@@ -197,19 +269,21 @@
                             </div>
                             <div class="campanas">
                                 <div class="campana">
-                                   <ul>
-                                       <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
-                                       <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
+                                   <ul>                                       
                                        <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
                                    </ul>
                                </div>                          
                            </div>
                         </div>
-                       <div class="social">
-                            <a href="#"><img src="http://placehold.it/16x16" alt="campaña x" /></a>
-                            <a href="#"><img src="http://placehold.it/16x16" alt="campaña x" /></a>
-                            <a href="#"><img src="http://placehold.it/16x16" alt="campaña x" /></a>
-                        </div>        
+                        <div class="comparar">
+                            <input type="checkbox" />
+                            <label>Comparar</label>                            
+                        </div>
+                        <div class="social">
+                            <a href="#" id="share2" class="share"></a>
+                            <a href="#" id="mail2" class="mail"></a>
+                            <a href="#" id="favorite2" class="favorite"></a>
+                       </div>    
                     </div>
                     
                  	<div class="bloquecarru">
@@ -253,17 +327,19 @@
                                 <div class="campana">
                                     <ul>
                                         <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
-                                        <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
-                                        <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
-                                    </ul>
+                                        <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>                                        
                                 </div>                          
                             </div>
-                        </div>                          
+                        </div>
+                        <div class="comparar">
+                            <input type="checkbox" />
+                            <label>Comparar</label>                            
+                        </div>                     
                         <div class="social">
-                            <a href="#"><img src="http://placehold.it/16x16" alt="campaña x" /></a>
-                            <a href="#"><img src="http://placehold.it/16x16" alt="campaña x" /></a>
-                            <a href="#"><img src="http://placehold.it/16x16" alt="campaña x" /></a>
-                        </div>        
+                            <a href="#" id="share3" class="share"></a>
+                            <a href="#" id="mail3" class="mail"></a>
+                            <a href="#" id="favorite3" class="favorite"></a>
+                       </div>      
                     </div>
                  	<div class="bloquecarru">
                  	    <div class="bloquecarrucontent">
@@ -305,18 +381,20 @@
                                 <div class="campanas">
                                     <div class="campana">
                                         <ul>
-                                            <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
-                                            <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
-                                            <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
+                                            <li><img alt="No hay campañas" src="images/no_campana.png"></li>                                            
                                         </ul>
                                     </div>                          
                                 </div>
                             </div>
+                            <div class="comparar">
+                                <input type="checkbox" />
+                             <label>Comparar</label>                            
+                            </div>
                             <div class="social">
-                                <a href="#"><img src="http://placehold.it/16x16" alt="campaña x" /></a>
-                                <a href="#"><img src="http://placehold.it/16x16" alt="campaña x" /></a>
-                                <a href="#"><img src="http://placehold.it/16x16" alt="campaña x" /></a>
-                            </div>        
+                                <a href="#" id="share4" class="share"></a>
+                                <a href="#" id="mail4" class="mail"></a>
+                                <a href="#" id="favorite4" class="favorite select"></a>
+                            </div>      
                         </div>                 
                     </div> 
                     <div id="carrubloq_next" class="carrubloq_bot active"><a href="#">></a></div>         
@@ -324,13 +402,37 @@
                 
                 <div id="banners_home">
                     <div class="banner">
-                        <a href="#"><img alt="XXX" src="http://placehold.it/460x180"></a>
+                        <a href="#"><img alt="XXX" src="http://placehold.it/455x180"></a>
                     </div>
                     <div class="banner last">
-                        <a href="#"><img alt="XXX" src="http://placehold.it/460x180"></a>
+                        <a href="#"><img alt="XXX" src="http://placehold.it/455x180"></a>
                     </div>
                 </div> 	       
         </div>
+        <footer>
+            <p class="mapaweb"><a href="#">mapa web <span>&and;</span></a></p>
+            <div class="footercontent">
+                <div class="col1">
+                     <a href="#" class="logofoot openbank"><img alt="Logotipo Openbank" src="images/logo_openbank_foot.png"></a>
+                    <a href="#" class="logofoot santander"><img alt="Logotipo Banco de Santander" src="images/logo_altamira_foot.png"></a>
+                </div>
+                <div class="col2">
+                    <ul>
+                        <li><a href="#">&copy; Altamira Santander Real Estate 2013 </a></li>
+                        <li><a href="#">Aviso legal</a></li>
+                        <li><a href="#">Sobre Altamira Santander </a></li>
+                    </ul>
+                </div>
+                <div class="col3">
+                    <ul>
+                        <li id="rss"><a href="#">&nbsp;</a></li>
+                        <li id="tweet"><a href="#">&nbsp;</a></li>
+                        <li id="fb"><a href="#">&nbsp;</a></li>
+                        <li id="yt"><a href="#">&nbsp;</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
    </div>	
 </body>
 </html>
