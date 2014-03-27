@@ -1,14 +1,24 @@
 /*FONT FACE */
 @font-face {
     font-family: "rotis";
-    src: url(fonts/Rotis.woff);
+    src: url('fonts/Rotis.woff');
 }
 
 @font-face {
     font-family: "lucidagrande";
-    src: url(fonts/LucidaGrande.woff);
+    src: url('fonts/LucidaGrande.woff');
 }
 
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?-51d2gl');
+	src:url('fonts/icomoon.eot?#iefix-51d2gl') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-51d2gl') format('woff'),
+		url('fonts/icomoon.ttf?-51d2gl') format('truetype'),
+		url('fonts/icomoon.svg?-51d2gl#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
 html{
 	font-family: "rotis",trebuchet MS;
@@ -329,7 +339,7 @@ nav #contenidonav .subnav li:hover a{
 .content .contenedor .bloqueminificha{
 	float:left;
 	width: 22%;
-	margin: 0 1% 0 0;
+	margin: 0 1% 1% 0;
 	padding: 1%;
 }
 .content .contenedor .bloqueminificha .bloqueminifichacontent{
@@ -344,6 +354,10 @@ nav #contenidonav .subnav li:hover a{
 
 .content .contenedor .bloqueminificha.last{
 	margin:0px
+}
+
+.content .contenedor .bloqueminificha #inmulink{
+	cursor: pointer;
 }
 
 .content .contenedor .bloqueminificha .img_bloqueminificha{
@@ -663,9 +677,132 @@ nav #contenidonav .subnav li:hover a{
 
 
 
+/*MIGAS*/
+#migas{
+  	border: 1px solid #CCCCCC;
+    border-radius: 8px 8px 8px 8px;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    float: left;
+    padding: 0.5%;
+    width: 99%;
+}
+
+#migas ul{
+	 background-color: #F9F9F9;
+	 width:100%;
+	 float:left;
+}
+
+#migas ul li{
+   float:left;
+    height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+ 	margin-left: -1px;
+ 	font-family: arial;
+}
+
+#migas ul li a{
+	color: #515151;
+	padding:0 40px;
+ 	float: left;
+    margin-top: 7px;
+    -moz-transform: rotate(0deg) scale(1) skew(20deg) translate(0px);
+	-webkit-transform: rotate(0deg) scale(1) skew(20deg) translate(0px);
+	-ms-transform: rotate(0deg) scale(1) skew(20deg) translate(0px);
+	transform: rotate(0deg) scale(1) skew(20deg) translate(0px); 	
+    font-size: 12px;
+    margin-top: 10px;
+   
+}
+
+/*TIPOS DE MIGAS*/
+#migas ul li.bread1{
+	background-color:#c6c6c6;
+	margin-right: -7px;
+}
+
+#migas ul li.bread1 a{
+	-moz-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+	-webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+	-ms-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+	transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+}
+
+#migas ul li.bread2{	
+	-moz-transform: rotate(0deg) scale(1) skew(-20deg) translate(0px);
+	-webkit-transform: rotate(0deg) scale(1) skew(-20deg) translate(0px);
+	transform: rotate(0deg) scale(1) skew(-20deg) translate(0px);
+	-ms-transform: rotate(0deg) scale(1) skew(-20deg) translate(0px);
+	background-color:#d4d4d4;
+}
+
+#migas ul li.bread3{	
+	-moz-transform: rotate(0deg) scale(1) skew(-20deg) translate(0px);
+	-webkit-transform: rotate(0deg) scale(1) skew(-20deg) translate(0px);
+	transform: rotate(0deg) scale(1) skew(-20deg) translate(0px);
+	-ms-transform: rotate(0deg) scale(1) skew(-20deg) translate(0px);
+	background-color:#e2e2e2;
+}
+
+#migas ul li.bread4{	
+	-moz-transform: rotate(0deg) scale(1) skew(-20deg) translate(0px);
+	-webkit-transform: rotate(0deg) scale(1) skew(-20deg) translate(0px);
+	transform: rotate(0deg) scale(1) skew(-20deg) translate(0px);
+	-ms-transform: rotate(0deg) scale(1) skew(-20deg) translate(0px);
+	background-color:#f1f1f1;
+}
+/**/
+#migas ul li.sub a::after{
+	content: "\e6cf";
+	color: #FF0000;
+    font-family: icomoon;
+    font-size: 20px;
+    margin-top: -1px;
+    position: absolute;	
+	
+}
+
+.submigas{
+	display:none;
+	-moz-transform: rotate(0deg) scale(1) skew(20deg) translate(0px);
+	-webkit-transform: rotate(0deg) scale(1) skew(20deg) translate(0px);
+	-ms-transform: rotate(0deg) scale(1) skew(20deg) translate(0px);
+	transform: rotate(0deg) scale(1) skew(20deg) translate(0px);	
+  	background-color: #FFFFFF;    
+    margin-left: 5px;
+    margin-top: 35px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    padding: 5px 0;
+ 	border-bottom: 1px solid #CCCCCC;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+}
+
+.submigas >*{
+ 	border: medium none;
+    font-size: 12px;
+    width: 84%;
+}
+
+
+
+
+
 /********************************* FIN ELEMENTOS COMUNES ************************/
 
+
+
+
 /********************************* INDEX ***************************************/
+
+
+
 
 .content .contenedor {
     float: left;
@@ -765,6 +902,138 @@ nav #contenidonav .subnav li:hover a{
 }
 
 
+
+
+/********************************* RESULTADO BUSQUEDA ***************************************/
+
+/*FILTRADOR*/
+.contenedor #filtrador {
+    float: left;
+    margin-left: 3%;
+    margin-top: 40px;
+    width: 95%;
+	border-bottom: 1px solid #FF0000;
+    padding-bottom: 25px;
+}
+
+.contenedor #filtrador .col1{
+	float:left;
+	width:24%;
+ 	margin-right: 1%;
+	
+}
+
+.contenedor #filtrador .col2{
+	float:left;
+	width:50%; 	
+	
+}
+
+
+
+
+/*PAGINACION*/
+.contenedor #pagyorden{
+ 	float: left;
+    margin:45px 0 45px 3%;
+    width: 95%;
+}
+
+.contenedor #pagyorden #paginacion{
+ 	float: left;
+    font-family: lucidagrande;
+    font-size: 12px;
+ 	margin-top: 5px;
+}
+
+.contenedor #pagyorden #paginacion p{
+	color: #FF0000;
+    display: inline-block;
+}
+
+.contenedor #pagyorden #paginacion ul{
+	display: inline-block;
+	
+}
+
+.contenedor #pagyorden #paginacion li{
+	display: inline-block;    
+    margin: 0 5px;
+}
+
+.contenedor #pagyorden #paginacion li a{color: #515151;}
+
+.contenedor #pagyorden #paginacion li.select a, .contenedor #pagyorden #paginacion li a:hover{
+	color:red;
+	text-decoration:underline;
+ 	font-weight: bold;
+}
+
+
+
+
+/*BOTONES EN ZONA PAGINACION */
+.contenedor #pagyorden #botones{
+	float: left;
+	margin-left:20px;
+}
+
+.contenedor #pagyorden #botones a{
+    background-color: #DDDDDD;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    float: left;
+    margin: 0 5px;
+    padding:5px 10px;
+  	text-transform: uppercase;
+  	font-size:13px;
+ 	color: #515151;
+ 	text-indent: 25px;
+}
+
+.contenedor #pagyorden #botones a#verinmumapa{
+	background: url("../images/verinmumapa_ico.png") no-repeat scroll 5px center #DDDDDD;
+}
+
+.contenedor #pagyorden #botones a#verinmumapa:hover{
+	background: url("../images/verinmumapa_hover_ico.png") no-repeat scroll 5px center red;
+	color:#fff;
+}
+
+
+.contenedor #pagyorden #botones a#compboton{
+	background: url("../images/compboton_ico.png") no-repeat scroll 5px center #DDDDDD;
+}
+
+.contenedor #pagyorden #botones a#compboton:hover{
+	background: url("../images/compboton_hover_ico.png") no-repeat scroll 5px center red;
+	color:#fff;
+}
+
+
+
+/*ORDENAR POR*/
+.contenedor #pagyorden #ordenarpor{
+	float:right;
+	
+}
+
+.contenedor #pagyorden #ordenarpor label{
+	color:#666666;
+	font-size:12px;
+ 	margin-right: 10px;
+}
+
+.contenedor #pagyorden #ordenarpor select{
+	border: 1px solid #CCCCCC;
+    color: #FF0000;
+    font-size:13px;
+}
+
+.contenedor #pagyorden #ordenarpor select option {
+    padding: 0 5px;
+}
 
 
 
@@ -870,4 +1139,9 @@ footer .footercontent .col3 li a{
 	float:left;
 	width:100%;
 }
+
+
+
+
+
 
