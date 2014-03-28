@@ -959,6 +959,7 @@ nav #contenidonav .subnav li:hover a{
 
 .contenedor #pagyorden #paginacion ul{
 	display: inline-block;
+	width: 250px;
 	
 }
 
