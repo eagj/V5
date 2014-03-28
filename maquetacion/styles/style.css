@@ -400,29 +400,24 @@ nav #contenidonav .subnav li:hover a{
      color: #515151;	
 }
 
+
 .content .contenedor .bloqueminificha .geop{
-	margin-left:92%;
-    margin-top: -100px;    
-}
-
-.content .contenedor .bloqueminificha .geop_hover{
-	margin-left: 92%;
-    margin-top: -33px;
+ 	margin-left:92%;
+    margin-top: -139px;
     position: relative;
-    width: 100px;
-    visibility:hidden;   
+    z-index: 100;
+    cursor:pointer;
+}    
+.content .contenedor .bloqueminificha .geop:after {
+    color: #000000;
+    content: "\e600";
+    font-family: icomoon;
+    font-size: 24px;
 }
 
-.content .contenedor .bloqueminificha .geop_hover a{
-	color:#3e3e3e;
+.content .contenedor .bloqueminificha .geop:hover::after{
+	color:red;
 }
-	
-.content .contenedor .bloqueminificha .geop_hover p{
-	font-size: 14px;
-    margin-left: 32px;
-    margin-top: -29px;
-}
-
 
 .content .contenedor .bloqueminificha .datos_basic h4{
 	font-size: 21px;
@@ -444,13 +439,14 @@ nav #contenidonav .subnav li:hover a{
     white-space: nowrap;
 }
 
+
 .content .contenedor .bloqueminificha p.tipo{
 	border-bottom: 1px solid #FF0000;
     border-top: 1px solid #FF0000;
     color: #FF0000;
     font-size: 1em;
     font-weight:bold; 
-    margin:77px 0 0.5em;
+    margin:10px 0 0.5em;
     padding: 0.1em;
     text-align: center;
     text-transform: uppercase;
@@ -649,6 +645,9 @@ nav #contenidonav .subnav li:hover a{
 	width:420px;
 }
 
+.content .contenedor .bloqueminificha.doble .geop{
+	 margin-left: 96%;
+}
 
 .content .contenedor .bloqueminificha.doble .precio p.valorprecio{
 	width: 70%;
@@ -680,9 +679,9 @@ nav #contenidonav .subnav li:hover a{
 /*MIGAS*/
 #migas{
   	border: 1px solid #CCCCCC;
-    border-radius: 8px 8px 8px 8px;
-    -webkit-border-radius: 8px 8px 8px 8px;
-    -moz-border-radius: 8px 8px 8px 8px;
+    border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
     float: left;
     padding: 0.5%;
     width: 99%;
@@ -703,6 +702,10 @@ nav #contenidonav .subnav li:hover a{
     border-right: 1px solid #CCCCCC;
  	margin-left: -1px;
  	font-family: arial;
+ 	-moz-transform: rotate(0deg) scale(1) skew(-20deg) translate(0px);
+	-webkit-transform: rotate(0deg) scale(1) skew(-20deg) translate(0px);
+	transform: rotate(0deg) scale(1) skew(-20deg) translate(0px);
+	-ms-transform: rotate(0deg) scale(1) skew(-20deg) translate(0px);
 }
 
 #migas ul li a{
@@ -723,6 +726,10 @@ nav #contenidonav .subnav li:hover a{
 #migas ul li.bread1{
 	background-color:#c6c6c6;
 	margin-right: -7px;
+	-moz-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+	-webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+	transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+	-ms-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
 }
 
 #migas ul li.bread1 a{
@@ -732,38 +739,37 @@ nav #contenidonav .subnav li:hover a{
 	transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
 }
 
-#migas ul li.bread2{	
-	-moz-transform: rotate(0deg) scale(1) skew(-20deg) translate(0px);
-	-webkit-transform: rotate(0deg) scale(1) skew(-20deg) translate(0px);
-	transform: rotate(0deg) scale(1) skew(-20deg) translate(0px);
-	-ms-transform: rotate(0deg) scale(1) skew(-20deg) translate(0px);
+#migas ul li.bread2{
 	background-color:#d4d4d4;
 }
 
-#migas ul li.bread3{	
-	-moz-transform: rotate(0deg) scale(1) skew(-20deg) translate(0px);
-	-webkit-transform: rotate(0deg) scale(1) skew(-20deg) translate(0px);
-	transform: rotate(0deg) scale(1) skew(-20deg) translate(0px);
-	-ms-transform: rotate(0deg) scale(1) skew(-20deg) translate(0px);
+#migas ul li.bread3{
 	background-color:#e2e2e2;
 }
 
-#migas ul li.bread4{	
-	-moz-transform: rotate(0deg) scale(1) skew(-20deg) translate(0px);
-	-webkit-transform: rotate(0deg) scale(1) skew(-20deg) translate(0px);
-	transform: rotate(0deg) scale(1) skew(-20deg) translate(0px);
-	-ms-transform: rotate(0deg) scale(1) skew(-20deg) translate(0px);
+#migas ul li.bread4{
 	background-color:#f1f1f1;
 }
-/**/
+
+
+
+
+
+/*SUBMIGAS*/
 #migas ul li.sub a::after{
 	content: "\e6cf";
 	color: #FF0000;
     font-family: icomoon;
     font-size: 20px;
-    margin-top: -1px;
+    margin-top: -2px;
     position: absolute;	
 	
+}
+
+#migas ul li.sub.desple a::after{
+	
+	content: "\e6d0";
+    
 }
 
 .submigas{
@@ -1036,6 +1042,89 @@ nav #contenidonav .subnav li:hover a{
 }
 
 
+#minifichas {
+    float: left;
+    margin-left: 3%;
+    width: 94%;
+}
+
+
+
+
+/****************************************************** FICHA INMUEBLE *******************************/
+#fichacontent{
+ 	float: left;
+    height: 400px;
+    margin-bottom: 20px;
+    margin-left: 0.5%;
+    margin-top: 20px;
+    width: 99%;
+}
+
+
+
+
+
+/*COLUMNA 1*/
+#fichacontent #fichacontent_col1{
+ 	float: left;
+    outline: 1px solid green;
+    width: 34%;
+    margin-right:2%;
+    height: 100%;
+}
+
+#fichacontent #fichacontent_col1 #carruficha{
+    display: block;    
+    margin: 5px auto;
+    max-height: 245px;
+    max-width: 330px;
+    overflow: hidden;
+}
+
+#fichacontent #fichacontent_col1 #carruficha img{
+	width:100%;
+}                        
+
+
+#fichacontent #fichacontent_col1 #carruficha .theme-default .nivoSlider{
+    height: 245px !important;
+	
+}
+
+#fichacontent #fichacontent_col1 #carruficha .slider-wrapper.theme-default {
+    max-height: 245px !important;
+    overflow: hidden;
+}
+
+#fichacontent #fichacontent_col1 #carruficha .nivo-controlNav {
+    padding:0;
+    position: absolute;
+    text-align: center;
+    width: 17%;
+    z-index: 1002;
+}
+
+/*COLUMNA 2*/
+#fichacontent #fichacontent_col2{
+	float: left;
+    outline: 1px solid purple;
+    width: 37%;
+    margin-right:2%;
+    height: 100%;
+}
+
+
+
+
+/*COLUMNA 3*/
+#fichacontent #fichacontent_col3{
+	float: left;
+    outline: 1px solid blue;
+    width: 25%;
+    height: 100%;
+
+}
 
 /****************************************************** PIE *******************************/
 

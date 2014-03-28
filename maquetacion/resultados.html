@@ -17,27 +17,37 @@
     <!-- jquery slider CSS -->
     <link rel="stylesheet" href="include/jslider/css/jslider.css" type="text/css">
     <link rel="stylesheet" href="include/jslider/css/jslider.round.plastic.css" type="text/css">
-     
-     <!-- jquery bubbletip CSS -->
-     <link href="include/jquery/bubbletip/bubbletip/bubbletip.css" rel="stylesheet" type="text/css" />
-
-	<!--[if IE]>
-	<link href="include/jquery/bubbletip/bubbletip/bubbletip.css" rel="stylesheet" type="text/css" />
-	<![endif]-->
-	
-    <!-- jquery slider JS -->    
+      <!-- jquery slider JS -->    
     <script type="text/javascript" src="include/jslider/js/jshashtable-2.1_src.js"></script>
     <script type="text/javascript" src="include/jslider/js/jquery.numberformatter-1.2.3.js"></script>
     <script type="text/javascript" src="include/jslider/js/tmpl.js"></script>
     <script type="text/javascript" src="include/jslider/js/jquery.dependClass-0.1.js"></script>
     <script type="text/javascript" src="include/jslider/js/draggable-0.1.js"></script>
     <script type="text/javascript" src="include/jslider/js/jquery.slider.js"></script>
-  <!-- end -->
-  
-  	<!-- jquery bubbletip JS -->
+    	
+   
+     <!-- jquery bubbletip CSS -->
+     <link href="include/jquery/bubbletip/bubbletip/bubbletip.css" rel="stylesheet" type="text/css" />
+     <!--[if IE]>
+    <link href="include/jquery/bubbletip/bubbletip/bubbletip.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+ 	<!-- jquery bubbletip JS -->
   	<script src="include/jquery/bubbletip/jQuery.bubbletip-1.0.6.js" type="text/javascript"></script>
 	
-    <script>      
+    <script type="text/javascript">
+        // FUNCIONES PARA BUBBLETIP
+        $(window).bind('load', function() {
+            $('#geop1').bubbletip($('#tip1_left'), {
+                deltaDirection: 'right',
+            });
+            $('#geop2').bubbletip($('#tip2_left'), {
+                deltaDirection: 'right',
+            });
+            $('#geop3').bubbletip($('#tip3_left'), {
+                deltaDirection: 'right',
+            });
+        });
+                             
         function showsubmenu(){
             document.getElementById("sub1").style.display="inline";
             document.getElementById("sub1").style.height=36+"px";
@@ -47,14 +57,17 @@
             document.getElementById("sub1").style.height=0;
         }
         
-        function showovermap(hide,show){
-            document.getElementById(hide).style.visibility="hidden";
-            document.getElementById(show).style.visibility="visible";
-            
-            }
+        // function showovermap(hide,show){
+            // document.getElementById(hide).style.visibility="hidden";
+            // document.getElementById(show).style.visibility="visible";
+//             
+            // }
             
         function showosubmigas(idsubmenu){
-            document.getElementById(idsubmenu).style.display="block";            
+            document.getElementById(idsubmenu).style.display="block";
+            document.getElementById(idsubmenu).parentNode.classList.add("desple");//NO FUNCIONA EN IE
+            
+                  
             
             }
     </script>   
@@ -132,10 +145,22 @@
             <div id="migas">
                 <ul>
                     <li class="bread1"><a href="#">Inicio</a></li>
-                    <li class="bread2 "><a href="#">Residencial</a>                     
-                    <li class="bread3"><a href="#">Compra</a></li>
-                    <li class="bread4 sub"><a href="#" onclick="showosubmigas('submigas1')">Madrid</a>
+                    <li class="bread2 sub"><a href="#" onclick="showosubmigas('submigas1')">Residencial</a>
                         <div class="submigas" id="submigas1">
+                            <select id="tuprovincia" name="tuprovincia">
+                                <option value="1">Lorem</option><option value="2">Ipsum</option><option value="3">Dolore</option><option value="4">Sit amet</option>
+                            </select>
+                        </div>
+                    </li>                    
+                    <li class="bread3 sub"><a href="#" onclick="showosubmigas('submigas2')">Compra</a>
+                        <div class="submigas" id="submigas2">
+                            <select id="tuprovincia" name="tuprovincia">
+                                <option value="1">Álava</option><option value="2">Albacete</option><option value="3">Alicante</option><option value="4">Almería</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="bread4 sub"><a href="#" onclick="showosubmigas('submigas3')">Madrid</a>
+                        <div class="submigas" id="submigas3">
                             <select id="tuprovincia" name="tuprovincia">
                                 <option value="1">Álava</option><option value="2">Albacete</option><option value="3">Alicante</option><option value="4">Almería</option>
                             </select>
@@ -200,568 +225,120 @@
                         <option value="3">Superficie</option>
                     </select>
                 </div>                
-            </div>  
-            <div class="bloqueminificha">
-                <div class="bloqueminifichacontent">
-                    <div class="img_bloqueminificha">
-                        <img src="http://placehold.it/193x145" alt="XXX" />                             
-                    </div>
-                    <div class="datos_basic">
-                        <h4>Madrid</h4>
-                        <p class="direccion">San Vicente Ferrer, 28233 - Madrid</p>
-                        <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                    <div id="geop2" class="geop">
-                    	<script type="text/javascript">
-    						$(window).bind('load', function() {
-        						$('#geop1').bubbletip($('#tip1_left'), {
-									deltaDirection: 'right',
-									animationDuration: 50,
-									offsetLeft: -10,
-									offsetTop: -10
-								});
-							});
-						</script>
-                        <a id="geop1" href="#"><img src="images/geopo_ico.png"/></a>
-                        <div id="tip1_left" style="display:none;"><p style="font-size:12px;color:#3e3e3e">Ver en mapa</p></div>
-                        <!-- <a href="#" onmouseover="showovermap('geop2', 'geop_hover2')" onclick="alert('click en geoposicion')"><img src="images/geopo_ico.png"/></a> -->
-                    </div>
-                    <div id="geop_hover2" class="geop_hover">
-                        <a href="#">
-                            <img src="images/geopo_ico_hover.png"/>
-                            <p onmouseover="showovermap('geop_hover2', 'geop2')" onclick="alert('click en geoposicion')">Ver mapa</p>
-                        </a>
-                    </div>
-                    <p class="tipo">Obra nueva</p>
-                    <ul class="detalles">
-                        <li>Chalet adosado</li>
-                        <li>150m<sup>2</sup></li>
-                        <li>2 hab.</li>
-                    </ul>
-                    <div class="precio">
-                        <p class="valorprecio">360.000&euro;</p>        
-                        <p class="tipgest">Precio Compra</p>
-                    </div>
-                    <div class="precio2">
-                        <div class="col1">
-                            <p class="tipgest">Alquiler</p>
-                            <p class="valorprecio">700&euro;/mes</p>
-                        </div>
-                        <div class="col2">
-                            <p class="tipgest">A. opc. compra</p>
-                            <p class="valorprecio">650&euro;/mes</p>
-                        </div>
-                    </div>
-                    <div class="campanas">
-                        <div class="campana">
-                            <ul>                                       
-                                <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
+            </div>
+            <div id="minifichas">
+                <div class="bloqueminificha">
+                    <div class="bloqueminifichacontent">
+                        <a id="inmulink1" onclick="alert('Click inmueble');return false;" href="#">
+                            <div class="img_bloqueminificha">
+                                <img src="http://placehold.it/193x145" alt="XXX" />                             
+                            </div>
+                            <div class="datos_basic">
+                                <h4>Madrid</h4>
+                                <p class="direccion">San Vicente Ferrer, 28233 - Madrid</p>
+                                <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>                                                          
+                            <p class="tipo">Obra nueva</p>
+                            <ul class="detalles">
+                                <li>Chalet adosado</li>
+                                <li>150m<sup>2</sup></li>
+                                <li>2 hab.</li>
                             </ul>
-                        </div>                          
-                    </div>
-                </div>
-                <div class="comparar">
-                    <input type="checkbox" />
-                    <label>Comparar</label>                            
-                </div>
-                <div class="social">
-                    <a href="#" id="share1" class="share"></a>
-                    <a href="#" id="mail1" class="mail"></a>
-                    <a href="#" id="favorite1" class="favorite"></a>
-                </div>    
-            </div>
-            <div class="bloqueminificha doble">
-                <div class="bloqueminifichacontent">
-                    <div class="img_bloqueminificha">
-                        <img src="http://placehold.it/420x145" alt="XXX" />                            
-                    </div>
-                    <div class="datos_basic">
-                        <h4>Pozuelo de Alarcón</h4>
-                        <p class="direccion">Cerámica 5, 28233 - Madrid</p>
-                        <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                    <div id="geop1" class="geop"><a onmouseover="showovermap('geop1', 'geop_hover1')" href="#"><img src="images/geopo_ico.png"/></a></div>
-                    <div id="geop_hover1" class="geop_hover">
-                        <a href="#">
-                            <img src="images/geopo_ico_hover.png"/>
-                            <p onmouseover="showovermap('geop_hover1', 'geop1')">Ver mapa</p>
+                            <div class="precio">
+                                <p class="valorprecio">360.000&euro;</p>        
+                                <p class="tipgest">Precio Compra</p>
+                            </div>
+                            <div class="precio2">
+                                <div class="col1">
+                                    <p class="tipgest">Alquiler</p>
+                                    <p class="valorprecio">700&euro;/mes</p>
+                                </div>
+                                <div class="col2">
+                                    <p class="tipgest">A. opc. compra</p>
+                                    <p class="valorprecio">650&euro;/mes</p>
+                                </div>
+                            </div>
                         </a>
-                    </div>
-                    <p class="tipo">Obra nueva</p>
-                    <ul class="detalles">
-                        <li>Chalet adosado</li>
-                        <li>150m<sup>2</sup></li>
-                        <li>2 hab.</li>
-                    </ul>
-                    <div class="precio">
-                        <p class="valorprecio">10 chalets desde 525.000&euro;</p>        
-                        <p class="tipgest">Precio Compra</p>
-                    </div>
-                    <div class="precio2">
-                    <div class="col1">
-                        <p class="tipgest">Alquiler desde</p>
-                        <p class="valorprecio">850&euro;/mes</p>
-                    </div>
-                    <div class="col2">
-                        <p class="tipgest">A. opc. compra desde</p>
-                        <p class="valorprecio">850&euro;/mes</p>
-                    </div>
-                </div>
-                <div class="campanas">
-                    <div class="campana">
-                        <ul>
-                            <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
-                            <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
-                            <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
-                        </ul>
-                    </div>                          
-                </div>                               
-            </div>
-            <div class="social">
-                <a href="#" id="share1" class="share"></a>
-                <a href="#" id="mail1" class="mail"></a>
-                <a href="#" id="favorite1" class="favorite select"></a>
-            </div>
-        </div>
-            <div class="bloqueminificha">
-                <div class="bloqueminifichacontent">
-                    <div class="img_bloqueminificha">
-                       <img src="http://placehold.it/193x145" alt="XXX" />                             
-                   </div>
-                   <div class="datos_basic">
-                       <h4>Madrid</h4>
-                       <p class="direccion">San Vicente Ferrer, 28233 - Madrid</p>
-                       <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                   </div>
-                  <div id="geop2" class="geop"><a href="#"><img src="images/geopo_ico.png"/></a></div>
-                    <div id="geop_hover2" class="geop_hover">
-                        <a href="#">
-                            <img src="images/geopo_ico_hover.png"/>
-                            <p>Ver mapa</p>
-                        </a>
-                    </div>
-                   <p class="tipo">Obra nueva</p>
-                   <ul class="detalles">
-                       <li>Chalet adosado</li>
-                       <li>150m<sup>2</sup></li>
-                       <li>2 hab.</li>
-                   </ul>
-                   <div class="precio">
-                        <p class="valorprecio">360.000&euro;</p>        
-                        <p class="tipgest">Precio Compra</p>
-                   </div>
-                   <div class="precio2">
-                        <div class="col1">
-                            <p class="tipgest">Alquiler</p>
-                            <p class="valorprecio">700&euro;/mes</p>
-                       </div>
-                       <div class="col2">
-                           <p class="tipgest">A. opc. compra</p>
-                           <p class="valorprecio">650&euro;/mes</p>
-                       </div>
-                    </div>
-                    <div class="campanas">
-                        <div class="campana">
-                           <ul>                                       
-                               <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
-                           </ul>
-                       </div>                          
-                   </div>
-                </div>
-                <div class="comparar">
-                    <input type="checkbox" />
-                    <label>Comparar</label>                            
-                </div>
-                <div class="social">
-                    <a href="#" id="share2" class="share"></a>
-                    <a href="#" id="mail2" class="mail"></a>
-                    <a href="#" id="favorite2" class="favorite"></a>
-               </div>    
-            </div>
-            <div class="bloqueminificha">
-                <div class="bloqueminifichacontent">
-                    <div class="img_bloqueminificha">
-                       <img src="http://placehold.it/193x145" alt="XXX" />                             
-                    </div>
-                    <div class="datos_basic">
-                        <h4>Alcorcón</h4>
-                        <p class="direccion">Berlín 28922 - Madrid</p>
-                        <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                    <div id="geop3" class="geop"><a href="#"><img src="images/geopo_ico.png"/></a></div>
-                    <div id="geop_hover3" class="geop_hover">
-                        <a href="#">
-                            <img src="images/geopo_ico_hover.png"/>
-                            <p>Ver mapa</p>
-                        </a>
-                    </div>
-                    <p class="tipo">Obra nueva</p>
-                    <ul class="detalles">
-                        <li>Chalet adosado</li>
-                        <li>150m<sup>2</sup></li>
-                        <li>2 hab.</li>
-                    </ul>
-                    <div class="precio">
-                        <p class="valorprecio">625&euro;/mes</p>        
-                        <p class="tipgest">Precio Compra</p>
-                    </div>
-                    <div class="precio2">
-                        <div class="col1">
-                            <p class="tipgest">A. opc. compra</p>
-                            <p class="valorprecio">550&euro;/mes</p>
-                        </div>
-                        <div class="col2">
-                            <p class="tipgest">Precio compra</p>
-                            <p class="consultarprecio">Consultar precio</p>
-                        </div>
-                    </div>
-                    <div class="campanas">
-                        <div class="campana">
-                            <ul>
-                                <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
-                                <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>                                        
-                        </div>                          
-                    </div>
-                </div>
-                <div class="comparar">
-                    <input type="checkbox" />
-                    <label>Comparar</label>                            
-                </div>                     
-                <div class="social">
-                    <a href="#" id="share3" class="share"></a>
-                    <a href="#" id="mail3" class="mail"></a>
-                    <a href="#" id="favorite3" class="favorite"></a>
-               </div>      
-            </div>
-            <div class="bloqueminificha">
-                <div class="bloqueminifichacontent">
-                    <div class="img_bloqueminificha">
-                        <img src="http://placehold.it/193x145" alt="XXX" />                             
-                    </div>                           
-                    <div class="datos_basic">
-                        <h4>Pinto</h4>
-                        <p class="direccion">Juan Besteiro 28320 - Madrid </p>
-                        <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                    <div id="geop4" class="geop"><a href="#"><img src="images/geopo_ico.png"/></a></div>
-                    <div id="geop_hover4" class="geop_hover">
-                        <a href="#">
-                            <img src="images/geopo_ico_hover.png"/>
-                            <p>Ver mapa</p>
-                        </a>
-                    </div>
-                    <p class="tipo">Obra nueva</p>
-                    <ul class="detalles">
-                        <li>Chalet adosado</li>
-                        <li>150m<sup>2</sup></li>
-                        <li>2 hab.</li>
-                    </ul>
-                    <div class="precio">
-                        <p class="consultarprecio">Consultar precio</p>        
-                       
-                    </div>
-                    <div class="precio2">
-                        <div class="col1">
-                            <p class="tipgest">Alquiler</p>
-                            <p class="valorprecio">850&euro;/mes</p>
-                        </div>
-                        <div class="col2">
-                            <p class="tipgest">A. opc. compra</p>
-                            <p class="valorprecio">850&euro;/mes</p>
-                        </div>
-                        </div>
+                        <div id="geop1" class="geop" onclick="alert('Has hecho click en geopo')">                       
+                            <div id="tip1_left" style="display:none;"><p style="font-size:12px;color:#3e3e3e">Ver en mapa</p></div>
+                        </div>                                
                         <div class="campanas">
                             <div class="campana">
-                                <ul>
-                                    <li><img alt="No hay campañas" src="images/no_campana.png"></li>                                            
+                                <ul>                                       
+                                    <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
                                 </ul>
                             </div>                          
                         </div>
                     </div>
                     <div class="comparar">
                         <input type="checkbox" />
-                     <label>Comparar</label>                            
+                        <label>Comparar</label>                            
                     </div>
                     <div class="social">
-                        <a href="#" id="share4" class="share"></a>
-                        <a href="#" id="mail4" class="mail"></a>
-                        <a href="#" id="favorite4" class="favorite select"></a>
-                    </div>      
+                        <a href="#" id="share1" class="share"></a>
+                        <a href="#" id="mail1" class="mail"></a>
+                        <a href="#" id="favorite1" class="favorite"></a>
+                    </div>    
                 </div>
+                
                 <div class="bloqueminificha doble">
-                <div class="bloqueminifichacontent">
-                    <div class="img_bloqueminificha">
-                        <img src="http://placehold.it/420x145" alt="XXX" />                            
-                    </div>
-                    <div class="datos_basic">
-                        <h4>Pozuelo de Alarcón</h4>
-                        <p class="direccion">Cerámica 5, 28233 - Madrid</p>
-                        <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                    <div id="geop1" class="geop"><a onmouseover="showovermap('geop1', 'geop_hover1')" href="#"><img src="images/geopo_ico.png"/></a></div>
-                    <div id="geop_hover1" class="geop_hover">
-                        <a href="#">
-                            <img src="images/geopo_ico_hover.png"/>
-                            <p onmouseover="showovermap('geop_hover1', 'geop1')">Ver mapa</p>
+                    <div class="bloqueminifichacontent">
+                        <a id="inmulink1" onclick="alert('Click inmueble');return false;" href="#">
+                            <div class="img_bloqueminificha">
+                                <img src="http://placehold.it/420x145" alt="XXX" />                            
+                            </div>
+                            <div class="datos_basic">
+                                <h4>Pozuelo de Alarcón</h4>
+                                <p class="direccion">Cerámica 5, 28233 - Madrid</p>
+                                <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>                            
+                            <p class="tipo">Obra nueva</p>
+                            <ul class="detalles">
+                               <li>Chalet adosado</li>
+                               <li>150m<sup>2</sup></li>
+                               <li>2 hab.</li>
+                           </ul>
+                           <div class="precio">
+                                <p class="valorprecio">10 chalets desde 525.000&euro;</p>        
+                                <p class="tipgest">Precio Compra</p>
+                           </div>
+                           <div class="precio2">
+                                <div class="col1">
+                                    <p class="tipgest">Alquiler desde</p>
+                                    <p class="valorprecio">850&euro;/mes</p>
+                               </div>
+                               <div class="col2">
+                                   <p class="tipgest">A. opc. compra desde</p>
+                                   <p class="valorprecio">850&euro;/mes</p>
+                               </div>
+                            </div>
                         </a>
-                    </div>
-                    <p class="tipo">Obra nueva</p>
-                    <ul class="detalles">
-                        <li>Chalet adosado</li>
-                        <li>150m<sup>2</sup></li>
-                        <li>2 hab.</li>
-                    </ul>
-                    <div class="precio">
-                        <p class="valorprecio">10 chalets desde 525.000&euro;</p>        
-                        <p class="tipgest">Precio Compra</p>
-                    </div>
-                    <div class="precio2">
-                    <div class="col1">
-                        <p class="tipgest">Alquiler desde</p>
-                        <p class="valorprecio">850&euro;/mes</p>
-                    </div>
-                    <div class="col2">
-                        <p class="tipgest">A. opc. compra desde</p>
-                        <p class="valorprecio">850&euro;/mes</p>
-                    </div>
-                </div>
-                <div class="campanas">
-                    <div class="campana">
-                        <ul>
-                            <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
-                            <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
-                            <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
-                        </ul>
-                    </div>                          
-                </div>                               
-            </div>
-            <div class="social">
-                <a href="#" id="share1" class="share"></a>
-                <a href="#" id="mail1" class="mail"></a>
-                <a href="#" id="favorite1" class="favorite select"></a>
-            </div>
-        </div>
-        <div class="bloqueminificha">
-                <div class="bloqueminifichacontent">
-                    <div class="img_bloqueminificha">
-                        <img src="http://placehold.it/193x145" alt="XXX" />                             
-                    </div>                           
-                    <div class="datos_basic">
-                        <h4>Pinto</h4>
-                        <p class="direccion">Juan Besteiro 28320 - Madrid </p>
-                        <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                    <div id="geop4" class="geop"><a href="#"><img src="images/geopo_ico.png"/></a></div>
-                    <div id="geop_hover4" class="geop_hover">
-                        <a href="#">
-                            <img src="images/geopo_ico_hover.png"/>
-                            <p>Ver mapa</p>
-                        </a>
-                    </div>
-                    <p class="tipo">Obra nueva</p>
-                    <ul class="detalles">
-                        <li>Chalet adosado</li>
-                        <li>150m<sup>2</sup></li>
-                        <li>2 hab.</li>
-                    </ul>
-                    <div class="precio">
-                        <p class="consultarprecio">Consultar precio</p>        
-                       
-                    </div>
-                    <div class="precio2">
-                        <div class="col1">
-                            <p class="tipgest">Alquiler</p>
-                            <p class="valorprecio">850&euro;/mes</p>
-                        </div>
-                        <div class="col2">
-                            <p class="tipgest">A. opc. compra</p>
-                            <p class="valorprecio">850&euro;/mes</p>
-                        </div>
-                        </div>
+                        <div id="geop2" class="geop" onclick="alert('Has hecho click en geopo')">                       
+                            <div id="tip2_left" style="display:none;"><p style="font-size:12px;color:#3e3e3e">Ver en mapa</p></div>
+                        </div> 
                         <div class="campanas">
                             <div class="campana">
                                 <ul>
-                                    <li><img alt="No hay campañas" src="images/no_campana.png"></li>                                            
+                                    <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
+                                    <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
+                                    <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
                                 </ul>
                             </div>                          
-                        </div>
+                        </div>                               
                     </div>
                     <div class="comparar">
                         <input type="checkbox" />
-                     <label>Comparar</label>                            
+                        <label>Comparar</label>                            
                     </div>
                     <div class="social">
-                        <a href="#" id="share4" class="share"></a>
-                        <a href="#" id="mail4" class="mail"></a>
-                        <a href="#" id="favorite4" class="favorite select"></a>
-                    </div>      
+                        <a href="#" id="share1" class="share"></a>
+                        <a href="#" id="mail1" class="mail"></a>
+                        <a href="#" id="favorite1" class="favorite select"></a>
+                    </div>
                 </div>
-                <div class="bloqueminificha">
-                <div class="bloqueminifichacontent">
-                    <div class="img_bloqueminificha">
-                        <img src="http://placehold.it/193x145" alt="XXX" />                             
-                    </div>                           
-                    <div class="datos_basic">
-                        <h4>Pinto</h4>
-                        <p class="direccion">Juan Besteiro 28320 - Madrid </p>
-                        <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                    <div id="geop4" class="geop"><a href="#"><img src="images/geopo_ico.png"/></a></div>
-                    <div id="geop_hover4" class="geop_hover">
-                        <a href="#">
-                            <img src="images/geopo_ico_hover.png"/>
-                            <p>Ver mapa</p>
-                        </a>
-                    </div>
-                    <p class="tipo">Obra nueva</p>
-                    <ul class="detalles">
-                        <li>Chalet adosado</li>
-                        <li>150m<sup>2</sup></li>
-                        <li>2 hab.</li>
-                    </ul>
-                    <div class="precio">
-                        <p class="consultarprecio">Consultar precio</p>        
-                       
-                    </div>
-                    <div class="precio2">
-                        <div class="col1">
-                            <p class="tipgest">Alquiler</p>
-                            <p class="valorprecio">850&euro;/mes</p>
-                        </div>
-                        <div class="col2">
-                            <p class="tipgest">A. opc. compra</p>
-                            <p class="valorprecio">850&euro;/mes</p>
-                        </div>
-                        </div>
-                        <div class="campanas">
-                            <div class="campana">
-                                <ul>
-                                    <li><img alt="No hay campañas" src="images/no_campana.png"></li>                                            
-                                </ul>
-                            </div>                          
-                        </div>
-                    </div>
-                    <div class="comparar">
-                        <input type="checkbox" />
-                     <label>Comparar</label>                            
-                    </div>
-                    <div class="social">
-                        <a href="#" id="share4" class="share"></a>
-                        <a href="#" id="mail4" class="mail"></a>
-                        <a href="#" id="favorite4" class="favorite select"></a>
-                    </div>      
-                </div>
-                <div class="bloqueminificha">
-                <div class="bloqueminifichacontent">
-                    <div class="img_bloqueminificha">
-                        <img src="http://placehold.it/193x145" alt="XXX" />                             
-                    </div>                           
-                    <div class="datos_basic">
-                        <h4>Pinto</h4>
-                        <p class="direccion">Juan Besteiro 28320 - Madrid </p>
-                        <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                    <div id="geop4" class="geop"><a href="#"><img src="images/geopo_ico.png"/></a></div>
-                    <div id="geop_hover4" class="geop_hover">
-                        <a href="#">
-                            <img src="images/geopo_ico_hover.png"/>
-                            <p>Ver mapa</p>
-                        </a>
-                    </div>
-                    <p class="tipo">Obra nueva</p>
-                    <ul class="detalles">
-                        <li>Chalet adosado</li>
-                        <li>150m<sup>2</sup></li>
-                        <li>2 hab.</li>
-                    </ul>
-                    <div class="precio">
-                        <p class="consultarprecio">Consultar precio</p>        
-                       
-                    </div>
-                    <div class="precio2">
-                        <div class="col1">
-                            <p class="tipgest">Alquiler</p>
-                            <p class="valorprecio">850&euro;/mes</p>
-                        </div>
-                        <div class="col2">
-                            <p class="tipgest">A. opc. compra</p>
-                            <p class="valorprecio">850&euro;/mes</p>
-                        </div>
-                        </div>
-                        <div class="campanas">
-                            <div class="campana">
-                                <ul>
-                                    <li><img alt="No hay campañas" src="images/no_campana.png"></li>                                            
-                                </ul>
-                            </div>                          
-                        </div>
-                    </div>
-                    <div class="comparar">
-                        <input type="checkbox" />
-                     <label>Comparar</label>                            
-                    </div>
-                    <div class="social">
-                        <a href="#" id="share4" class="share"></a>
-                        <a href="#" id="mail4" class="mail"></a>
-                        <a href="#" id="favorite4" class="favorite select"></a>
-                    </div>      
-                </div>
-                <div class="bloqueminificha">
-                <div class="bloqueminifichacontent">
-                    <div class="img_bloqueminificha">
-                        <img src="http://placehold.it/193x145" alt="XXX" />                             
-                    </div>                           
-                    <div class="datos_basic">
-                        <h4>Pinto</h4>
-                        <p class="direccion">Juan Besteiro 28320 - Madrid </p>
-                        <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                    <div id="geop4" class="geop"><a href="#"><img src="images/geopo_ico.png"/></a></div>
-                    <div id="geop_hover4" class="geop_hover">
-                        <a href="#">
-                            <img src="images/geopo_ico_hover.png"/>
-                            <p>Ver mapa</p>
-                        </a>
-                    </div>
-                    <p class="tipo">Obra nueva</p>
-                    <ul class="detalles">
-                        <li>Chalet adosado</li>
-                        <li>150m<sup>2</sup></li>
-                        <li>2 hab.</li>
-                    </ul>
-                    <div class="precio">
-                        <p class="consultarprecio">Consultar precio</p>        
-                       
-                    </div>
-                    <div class="precio2">
-                        <div class="col1">
-                            <p class="tipgest">Alquiler</p>
-                            <p class="valorprecio">850&euro;/mes</p>
-                        </div>
-                        <div class="col2">
-                            <p class="tipgest">A. opc. compra</p>
-                            <p class="valorprecio">850&euro;/mes</p>
-                        </div>
-                        </div>
-                        <div class="campanas">
-                            <div class="campana">
-                                <ul>
-                                    <li><img alt="No hay campañas" src="images/no_campana.png"></li>                                            
-                                </ul>
-                            </div>                          
-                        </div>
-                    </div>
-                    <div class="comparar">
-                        <input type="checkbox" />
-                     <label>Comparar</label>                            
-                    </div>
-                    <div class="social">
-                        <a href="#" id="share4" class="share"></a>
-                        <a href="#" id="mail4" class="mail"></a>
-                        <a href="#" id="favorite4" class="favorite select"></a>
-                    </div>      
-                </div>
-                <div id="pagyorden">
+            </div><!-- minifichas contenedo -->
+             
+            <div id="pagyorden">
                 <div id="paginacion">
                     <p>Página:</p>
                     <ul>                        
