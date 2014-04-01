@@ -1574,6 +1574,11 @@ nav #contenidonav .subnav li:hover a{
 	color:#3d3d3d;
 }
 
+#fichacontent #fichacontent_col2 .tipolista ul li span span{
+	color:red;
+	font-weight:bold;
+}
+
 #fichacontent #fichacontent_col2 .tipolista ul li:nth-child(odd) {
 	background-color:#f4f4f4;
 	-moz-border-radius:4px 4px 4px 4px;
@@ -1955,6 +1960,27 @@ nav #contenidonav .subnav li:hover a{
 #fichacontent #fichacontent_col2 #infourba p{
 	background:url("../images/ico_infourba.png") no-repeat scroll 10px center rgba(0, 0, 0, 0)
 }
+
+
+
+
+/****************************************************** FICHA PROMO *******************************/
+
+#fichacontent #fichacontent_col2 .tipolista ul li span span{
+	color:red;
+	font-weight:bold;
+}
+
+#fichacontent #fichacontent_col2 #promociones ul{
+	overflow-y:scroll;
+	height: 180px;
+}
+
+
+
+
+
+
 /****************************************************** PIE *******************************/
 
 footer{
