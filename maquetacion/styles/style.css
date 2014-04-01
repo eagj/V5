@@ -1299,7 +1299,7 @@ nav #contenidonav .subnav li:hover a{
 #fichacontent #fichacontent_col1 #maps #pest li{
  	float: left;
     margin: 0 5px;
-    padding: 10px;
+    padding: 5px 20px;
 }
 
 #fichacontent #fichacontent_col1 #maps #pest li a{
@@ -1325,6 +1325,27 @@ nav #contenidonav .subnav li:hover a{
 #fichacontent #fichacontent_col1 #maps #mapabox > *{
 	float:left;
 }
+
+#fichacontent #fichacontent_col1 #likeit{
+ 	float: left;
+    margin: 20px 0;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+
+#fichacontent #fichacontent_col1 #likeit .btn_share{	
+   	display: inline-block;
+    height: 25px;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+
+
+
+
+
+
 
 /*COLUMNA 2*/
 #fichacontent #fichacontent_col2{
@@ -1376,9 +1397,9 @@ nav #contenidonav .subnav li:hover a{
     width: 54%;
 }
 
-#fichacontent #fichacontent_col2 #preciobox #superior .colizqda #precio{
- 
-    font-size: 40px
+#fichacontent #fichacontent_col2 #preciobox #superior .colizqda #precio{ 
+    font-size: 40px;     
+     line-height: 40px;
 }
 
 
@@ -1396,7 +1417,6 @@ nav #contenidonav .subnav li:hover a{
 #fichacontent #fichacontent_col2 #preciobox #superior .coldcha{
 	color: #FFFFFF;
     float: right;
-    margin-top: 8px;
     padding: 2%;
 }
 
@@ -1415,6 +1435,7 @@ nav #contenidonav .subnav li:hover a{
 
 #fichacontent #fichacontent_col2 #preciobox #superior .coldcha #descuento{
 	text-transform:uppercase;
+	font-size: 12px;
 }
 
 
@@ -1433,7 +1454,8 @@ nav #contenidonav .subnav li:hover a{
     padding: 0 2%;
     width: 71%;
     text-transform: uppercase;
-  	vertical-align: middle
+  	vertical-align: middle;
+  	font-size: 12px;
 }
 
 #fichacontent #fichacontent_col2 #preciobox p.right{
@@ -1503,38 +1525,39 @@ nav #contenidonav .subnav li:hover a{
     margin-right: 5px;
 }
 
-#fichacontent #fichacontent_col2 #descripcion{
+#fichacontent #fichacontent_col2 .contenido{
 	float:left;
 	width:100%;
+ 	margin: 10px 0;
 }
 
-#fichacontent #fichacontent_col2 p.titulo{
+#fichacontent #fichacontent_col2 .contenido p.titulo{
 	color: #FF0000;
     font-size: 20px;
     font-weight: bold;
+     margin-bottom: 10px;
 }
 
 #fichacontent #fichacontent_col2 #descripcion p#descrip{
 	font-size: 13px;
-    height: 60px;
+    height: 62px;
     overflow: hidden;
 }
 
-#fichacontent #fichacontent_col2 #masinfo, #fichacontent #fichacontent_col2 #menosinfo{
-	font-size: 13px;
+.masinfo, .menosinfo{
+	font-size: 12px !important;
     font-weight: bold;
     text-align: right;
     text-transform: uppercase;
+    height: auto !important;
+	font-family: rotis !important;
 }
 
-#fichacontent #fichacontent_col2 #masinfo a, #fichacontent #fichacontent_col2 #menosinfo a{
+.masinfo a, .menosinfo a{
 	color:red;
+	margin-right: 5px;
 }
 
-#fichacontent #fichacontent_col2 #caracteristicas{
-	float:left;
-	width:100%;
-}
 
 #fichacontent #fichacontent_col2 #caracteristicas ul li{
     color: #FF0000;
@@ -1542,7 +1565,7 @@ nav #contenidonav .subnav li:hover a{
     font-weight: bold;
     list-style-position: inside;
     list-style-type: disc;
-    margin: 10px 0 10px 15px;
+    margin: 5px 0 5px 15px;
     padding: 5px;
     text-transform: uppercase;
 }
@@ -1558,13 +1581,215 @@ nav #contenidonav .subnav li:hover a{
 	border-radius:4px 4px 4px 4px;
 	
 }
+
+
+#fichacontent #fichacontent_col2 #certificado p.texto{
+	float: left;
+    font-size: 12px;
+    margin-right: 1%;
+    width: 77%;
+    margin-top: 10px;
+}
+
+#fichacontent #fichacontent_col2 #certificado img{
+	float: left;
+}
+
+#fichacontent #fichacontent_col2 #memcal a{
+ 	background-color: #FF0000;
+    border-radius: 8px 0 0 8px;
+    color: #FFFFFF;
+    float: left;
+    font-size: 16px;
+    margin-right: -3px;
+    margin-top: 15px;
+    padding: 2px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 85%;
+}
+
+#fichacontent #fichacontent_col2 #memcal img{
+	float: left;
+}
+
+
+#fichacontent #fichacontent_col2 #propietario p.texto{
+	font-size:12px;
+}
+
+#fichacontent #fichacontent_col2 #propietario .imagen{  
+	border: 1px dashed #515151;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    float: left;
+    margin: 20px 0;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+
 /*COLUMNA 3*/
 #fichacontent #fichacontent_col3{
-	float: left;
-    outline: 1px solid blue;
+	float: left;   
     width: 25%;
     height: 100%;
 
+}
+
+#fichacontent #fichacontent_col3 #calculadorahipo{
+ 	background-color: #eeeeef;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    float: left;
+    width: 100%;
+}
+
+#fichacontent #fichacontent_col3 #calculadorahipo p.titulo{
+	color: #515151;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+     margin: 10px 0;
+}
+
+#fichacontent #fichacontent_col3 #calculadorahipo p.titulo::before{
+	content:"\e8df"	;
+	font-family: icomoon;
+	font-size: 21px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+#fichacontent #fichacontent_col3 .bloque{
+ 	float: left;
+    margin-left: 5%;
+    width: 90%;
+ 	margin-bottom: 20px
+}
+
+#fichacontent #fichacontent_col3 .bloque label{
+	float:left;
+	color:red;
+	width: 100%;
+	margin-bottom:20px;
+	font-size:18px;
+}
+
+#fichacontent #fichacontent_col3 .bloque2{
+ 	float: left;
+    margin-left: 5%;
+    width: 90%;
+ 	margin-bottom: 20px
+}
+
+#fichacontent #fichacontent_col3 .bloque2 label{
+  	color: #515151;
+    float: left;
+    font-size: 18px;
+    margin-right: 20px;
+    width: 85px;
+}
+
+#fichacontent #fichacontent_col3 .bloque2 select{
+ 	border: 1px solid #CCCCCC;
+    float: left;
+    padding: 2px;
+    width: 111px;
+    font-size: 14px;
+}
+
+#fichacontent #fichacontent_col3 .bloque2 p#tiempo{
+  	background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    float: left;
+    padding: 2px;
+    width: 105px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#fichacontent #fichacontent_col3 .bloque2 p#tiempo span{
+	float: left;
+	width:100%;
+}
+
+#fichacontent #fichacontent_col3 p.ventajas a{
+	color: #FF0000;
+    float: left;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    width: 100%;
+ 	margin-bottom: 20px;
+}
+
+#fichacontent #fichacontent_col3 #contactar{
+	-moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    float: left;
+    width:100%;
+    background-color: red;
+    margin:20px 0;
+}
+
+#fichacontent #fichacontent_col3 #contactar p{
+ 	color: #FFFFFF;
+    font-size: 15px;
+    margin: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#fichacontent #fichacontent_col3 #contactar p::before{
+	content: '\e817';
+	font-family:icomoon;
+	font-size: 20px;
+    margin-left: -15px;
+    margin-right: 5px;
+}
+
+#fichacontent #fichacontent_col3 #contactar a{
+	background-color: #FFFFFF;
+   	-moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    color: #FF0000;
+    float: left;
+    font-size: 15px;
+    margin: 10px 0 10px 5%;
+    padding: 3px 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 90%;
+}
+
+#fichacontent #fichacontent_col3 .aviso{
+  	float: left;
+    margin: 10px 0;
+    width: 100%;
+}
+
+#fichacontent #fichacontent_col3 .aviso p.titulo{
+	color: #515151;
+    font-size: 12px;
+    height: auto;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-family:rotis
+}
+
+#fichacontent #fichacontent_col3 .aviso p{
+   	color: #A2A2A2;
+    font-size: 11px;
+    height: 59px;
+    overflow: hidden;
+    font-family:Arial;
 }
 
 /****************************************************** PIE *******************************/

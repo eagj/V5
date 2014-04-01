@@ -15,15 +15,15 @@
         <![endif]-->
     
     <!-- jquery slider CSS -->
-    <link rel="stylesheet" href="include/jslider/css/jslider.css" type="text/css">
-    <link rel="stylesheet" href="include/jslider/css/jslider.round.plastic.css" type="text/css">
+    <link rel="stylesheet" href="include/jquery/jslider/css/jslider.css" type="text/css">
+    <link rel="stylesheet" href="include/jquery/jslider/css/jslider.round.plastic.css" type="text/css">
       <!-- jquery slider JS -->    
-    <script type="text/javascript" src="include/jslider/js/jshashtable-2.1_src.js"></script>
-    <script type="text/javascript" src="include/jslider/js/jquery.numberformatter-1.2.3.js"></script>
-    <script type="text/javascript" src="include/jslider/js/tmpl.js"></script>
-    <script type="text/javascript" src="include/jslider/js/jquery.dependClass-0.1.js"></script>
-    <script type="text/javascript" src="include/jslider/js/draggable-0.1.js"></script>
-    <script type="text/javascript" src="include/jslider/js/jquery.slider.js"></script>
+    <script type="text/javascript" src="include/jquery/jslider/js/jshashtable-2.1_src.js"></script>
+    <script type="text/javascript" src="include/jquery/jslider/js/jquery.numberformatter-1.2.3.js"></script>
+    <script type="text/javascript" src="include/jquery/jslider/js/tmpl.js"></script>
+    <script type="text/javascript" src="include/jquery/jslider/js/jquery.dependClass-0.1.js"></script>
+    <script type="text/javascript" src="include/jquery/jslider/js/draggable-0.1.js"></script>
+    <script type="text/javascript" src="include/jquery/jslider/js/jquery.slider.js"></script>
     	
    
      <!-- jquery bubbletip CSS -->
@@ -250,7 +250,24 @@
                         <div id="mapabox">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.970974948102!2d-3.667256800000024!3d40.43164159999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228b680bc6bf5%3A0x719cc865d1b3c160!2sCalle+Londres!5e0!3m2!1ses!2s!4v1396255570298" width="318" height="237" frameborder="0" style="border:0"></iframe>
                         </div>
-                    </div>         
+                    </div>
+                    <div id="likeit">
+                        <div class="btn_share">
+                            <div id="fb-root"></div>
+                            <script>(function(d, s, id) {
+                              var js, fjs = d.getElementsByTagName(s)[0];
+                              if (d.getElementById(id)) return;
+                              js = d.createElement(s); js.id = id;
+                              js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1&appId=429143090523894";
+                              fjs.parentNode.insertBefore(js, fjs);
+                            }(document, 'script', 'facebook-jssdk'));</script>
+                            <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                        </div>                    
+                        <div class="btn_share">
+                            <a href="https://twitter.com/share" class="twitter-share-button" data-lang="es">Tweet</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                        </div>      
+                    </div>
                 </div>
                 <div id="fichacontent_col2">
                     <p id="calle">Calle Londres, nº2, 4ºA</p>
@@ -294,14 +311,14 @@
                         	<li><a href=""><img src="http://placehold.it/80x80" alt="Campana x" /></a></li>
                         </ul>
                     </div>
-                    <div id="descripcion">
+                    <div id="descripcion" class="contenido">
                         <p class="titulo">Descripción:</p>
                         <p id="descrip">Piso todo exterior muy luminoso segunda planta. Dispone de hall recibidor con armario gabanero de gran capacidad tres dormitorios con armarios empotrados en el principal Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p id="masinfo"><a href="#" onclick="showmasinfo();return false;">+ info</a></p>
-                        <p id="menosinfo" style="display:none;"><a href="#" onclick="hideinfo();return false;">- info</a></p>                        
+                        <p id="masinfo" class="masinfo"><a href="#" onclick="showmasinfo();return false;">+ info</a></p>
+                        <p id="menosinfo" class="masinfo" style="display:none;"><a href="#" onclick="hideinfo();return false;">- info</a></p>                        
                     </div>
                     
-                    <div id="caracteristicas">
+                    <div id="caracteristicas" class="contenido"> 
                         <p class="titulo">Características:</p>
                         <ul>
                         	<li><span>Area construida: 150m<sup>2</sup></span></li>
@@ -312,22 +329,316 @@
                         </ul>
                     </div>
                     
-                    <div id="cetificado">
+                    <div id="certificado" class="contenido">
                         <p class="titulo">Certificación energética:</p>
-                        <p>Calificación de eficiencia energética de vivienda terminado según RD 235/2013 de 5 de abril.</p>
-                        <img src="http://placehold.it/80xg60" alt="calificación energética X" />
-                        
+                        <p class="texto">Calificación de eficiencia energética de vivienda terminado según RD 235/2013 de 5 de abril.</p>
+                        <img src="http://placehold.it/80xg60" alt="calificación energética X" />                        
                     </div>
                     
+                     <div id="memcal" class="contenido">
+                        <p class="titulo">Memoria de calidades</p>
+                        <a href="#">Descargar PDF memoria de calidades</a>
+                        <img src="images/pdf_ico.png" alt=Descargar PDF memoria de calidades"" />
+                    </div>   
+                    
+                    <div id="propietario" class="contenido">
+                        <p class="titulo">Propietario:</p>
+                        <p class="texto">Altamira Real Estate</p>
+                        <p class="texto">Paseo de Pereda, 9-12, Santander (Cantabria) CIF: A-39000013</p>
+                        <div class="imagen">
+                            <img src="http://www.altamirainmuebles.com/agencias/logos/2_logo.jpg" alt="Propietario" />
+                        </div>                        
+                    </div>
                                     
                 </div>
                 <div id="fichacontent_col3">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </div>
-              
-            </div><!-- minifichas contenedo -->
+                    <div id="calculadorahipo">
+                        <p class="titulo">Calculadora hipotecaria</p>
+                        <div class="bloque">
+                            <label>Cantidad a financiar</label>
+                            <div class="layout-slider" style="width: 100%;margin-left: 1%;">
+                                <span style="display: inline-block; width: 93%; padding: 0 5px;">
+                                    <input id="SliderSingle" type="slider" name="price" value="20" />
+                                </span>
+                            </div>
+                            <script type="text/javascript" charset="utf-8">
+                              jQuery("#SliderSingle").slider({ from: 0, to: 250000, step: 500, round: 1, format: { format: '##.0', locale: 'es' }, dimension: '&nbsp;&euro;', skin: "round_plastic" });
+                            </script>
+                        </div>
                         
-            
+                        <div class="bloque">
+                            <label>Plazo</label>
+                           <div class="layout-slider" style="width: 100%;margin-left: 1%;">
+                                <span style="display: inline-block; width: 93%; padding: 0 5px;">
+                                    <input id="SliderSingle2" type="slider" name="price" value="1" />
+                                </span>
+                            </div>
+                            <script type="text/javascript" charset="utf-8">
+                              jQuery("#SliderSingle2").slider({ from: 1, to: 40, step:1, round: 1, format: { format: '##.0', locale: 'es' }, dimension: '&nbsp;año/s;', skin: "round_plastic" });
+                            </script>
+                        </div>
+                        
+                        <div class="bloque2">
+                            <label>Tipo Euribor</label>
+                            <select onchange="calcularCuota();" id="euribor" size="1" name="euribor">
+                                <option value="0">+ 0%</option>
+                                <option value="0.10">+ 0,10%</option>
+                                <option value="0.20">+ 0,20%</option>
+                                <option value="0.30">+ 0,30%</option>
+                                <option value="0.40">+ 0,40%</option>
+                                <option selected="selected" value="0.5">+ 0,5%</option>                                
+                                <option value="4">+ 4%</option>
+                            </select>
+                        </div>
+                        
+                        <div class="bloque2">
+                            <label>Cuota mensual</label>
+                           <p id="tiempo"> 152&euro; <span>27 años</span></p>
+                        </div> 
+                        <p class="ventajas"><a href="#">Ventajas financiación Altamira</a></p>                        
+                    </div> <!-- calculadorahipo -->
+                    <div id="contactar">
+                        <p>Me interesa el inmueble</p>
+                        <a href="#">Contactar ></a>
+                    </div>
+                    <div class="aviso">
+                        <p class="titulo">aviso legal 1</p>
+                        <p id="aviso1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p id="masinfo" class="masinfo"><a href="#">+ info</a></p>
+                        <p id="menosinfo" class="masinfo" style="display:none;"><a href="#" onclick="hideinfo();return false;">- info</a></p>
+                    </div>
+                    <div class="aviso">
+                        <p class="titulo">aviso legal 2</p>
+                        <p id="aviso2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p id="masinfo" class="masinfo"><a href="#">+ info</a></p>
+                        <p id="menosinfo" class="masinfo" style="display:none;"><a href="#" onclick="hideinfo();return false;">- info</a></p>
+                    </div>
+                </div><!-- minifichas contenedor -->
+                        
+             <div id="ultimnove">
+                <h3><span>Inmuebles relacionados</span></h3>
+                <div id="carrubloq_prev" class="carrubloq_bot"><a href="#"><</a></div>
+                <div id="carrubloq">                      
+                  
+                    <div class="bloqueminificha">
+                        <div class="bloqueminifichacontent">
+                            <a id="inmulink1" onclick="alert('Click inmueble');return false;" href="#">
+                                <div class="img_bloqueminificha">
+                                    <img src="http://placehold.it/193x145" alt="XXX" />                             
+                                </div>
+                                <div class="datos_basic">
+                                   <h4>Madrid</h4>
+                                   <p class="direccion">San Vicente Ferrer, 28233 - Madrid</p>
+                                   <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>                                                          
+                                <p class="tipo">Obra nueva</p>
+                                <ul class="detalles">
+                                    <li>Chalet adosado</li>
+                                    <li>150m<sup>2</sup></li>
+                                    <li>2 hab.</li>
+                                </ul>
+                                <div class="precio">
+                                    <p class="valorprecio">360.000&euro;</p>        
+                                    <p class="tipgest">Precio Compra</p>
+                                </div>
+                                <div class="precio2">
+                                    <div class="col1">
+                                        <p class="tipgest">Alquiler</p>
+                                        <p class="valorprecio">700&euro;/mes</p>
+                                    </div>
+                                    <div class="col2">
+                                        <p class="tipgest">A. opc. compra</p>
+                                        <p class="valorprecio">650&euro;/mes</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <div id="geop1" class="geop" onclick="alert('Has hecho click en geopo')">                       
+                                <div id="tip1_left" style="display:none;"><p style="font-size:12px;color:#3e3e3e">Ver en mapa</p></div>
+                            </div>                                
+                            <div class="campanas">
+                                <div class="campana">
+                                   <ul>                                       
+                                       <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
+                                   </ul>
+                               </div>                          
+                           </div>
+                        </div>
+                        <div class="comparar">
+                            <input type="checkbox" />
+                            <label>Comparar</label>                            
+                        </div>
+                        <div class="social">
+                            <a href="#" id="share1" class="share"></a>
+                            <a href="#" id="mail1" class="mail"></a>
+                            <a href="#" id="favorite1" class="favorite"></a>
+                       </div>    
+                    </div>
+                    
+                     <div class="bloqueminificha">
+                        <div class="bloqueminifichacontent">
+                            <a id="inmulink1" onclick="alert('Click inmueble');return false;" href="#">
+                                <div class="img_bloqueminificha">
+                                    <img src="http://placehold.it/193x145" alt="XXX" />                             
+                                </div>
+                                <div class="datos_basic">
+                                   <h4>Madrid</h4>
+                                   <p class="direccion">San Vicente Ferrer, 28233 - Madrid</p>
+                                   <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>                                                          
+                                <p class="tipo">Obra nueva</p>
+                                <ul class="detalles">
+                                    <li>Chalet adosado</li>
+                                    <li>150m<sup>2</sup></li>
+                                    <li>2 hab.</li>
+                                </ul>
+                                <div class="precio">
+                                    <p class="valorprecio">360.000&euro;</p>        
+                                    <p class="tipgest">Precio Compra</p>
+                                </div>
+                                <div class="precio2">
+                                    <div class="col1">
+                                        <p class="tipgest">Alquiler</p>
+                                        <p class="valorprecio">700&euro;/mes</p>
+                                    </div>
+                                    <div class="col2">
+                                        <p class="tipgest">A. opc. compra</p>
+                                        <p class="valorprecio">650&euro;/mes</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <div id="geop2" class="geop" onclick="alert('Has hecho click en geopo')">                       
+                                <div id="tip2_left" style="display:none;"><p style="font-size:12px;color:#3e3e3e">Ver en mapa</p></div>
+                            </div>                                
+                            <div class="campanas">
+                                <div class="campana">
+                                   <ul>                                       
+                                       <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
+                                       <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
+                                       <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
+                                   </ul>
+                               </div>                          
+                           </div>
+                        </div>
+                        <div class="comparar">
+                            <input type="checkbox" />
+                            <label>Comparar</label>                            
+                        </div>
+                        <div class="social">
+                            <a href="#" id="share1" class="share"></a>
+                            <a href="#" id="mail1" class="mail"></a>
+                            <a href="#" id="favorite1" class="favorite"></a>
+                       </div>    
+                    </div>
+                    
+                    <div class="bloqueminificha">
+                        <div class="bloqueminifichacontent">
+                            <a id="inmulink1" onclick="alert('Click inmueble');return false;" href="#">
+                                <div class="img_bloqueminificha">
+                                    <img src="http://placehold.it/193x145" alt="XXX" />                             
+                                </div>
+                                <div class="datos_basic">
+                                   <h4>Madrid</h4>
+                                   <p class="direccion">San Vicente Ferrer, 28233 - Madrid</p>
+                                   <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>                                                          
+                                <p class="tipo">Obra nueva</p>
+                                <ul class="detalles">
+                                    <li>Chalet adosado</li>
+                                    <li>150m<sup>2</sup></li>
+                                    <li>2 hab.</li>
+                                </ul>
+                                <div class="precio">
+                                    <p class="valorprecio">360.000&euro;</p>        
+                                    <p class="tipgest">Precio Compra</p>
+                                </div>
+                                <div class="precio2">
+                                    <div class="col1">
+                                        <p class="tipgest">Alquiler</p>
+                                        <p class="valorprecio">700&euro;/mes</p>
+                                    </div>
+                                    <div class="col2">
+                                        <p class="tipgest">A. opc. compra</p>
+                                        <p class="valorprecio">650&euro;/mes</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <div id="geop3" class="geop" onclick="alert('Has hecho click en geopo')">                       
+                                <div id="tip3_left" style="display:none;"><p style="font-size:12px;color:#3e3e3e">Ver en mapa</p></div>
+                            </div>                                
+                            <div class="campanas">
+                                <div class="campana">
+                                   <ul>                                       
+                                       <li><img src="images/no_campana.png" alt="No hay campañas"></li>
+                                   </ul>
+                               </div>                          
+                           </div>
+                        </div>
+                        <div class="comparar">
+                            <input type="checkbox" />
+                            <label>Comparar</label>                            
+                        </div>
+                        <div class="social">
+                            <a href="#" id="share1" class="share"></a>
+                            <a href="#" id="mail1" class="mail"></a>
+                            <a href="#" id="favorite1" class="favorite"></a>
+                       </div>    
+                    </div>
+                    <div class="bloqueminificha">
+                        <div class="bloqueminifichacontent">
+                            <a id="inmulink1" onclick="alert('Click inmueble');return false;" href="#">
+                                <div class="img_bloqueminificha">
+                                    <img src="http://placehold.it/193x145" alt="XXX" />                             
+                                </div>
+                                <div class="datos_basic">
+                                   <h4>Madrid</h4>
+                                   <p class="direccion">San Vicente Ferrer, 28233 - Madrid</p>
+                                   <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>                                                          
+                                <p class="tipo">Obra nueva</p>
+                                <ul class="detalles">
+                                    <li>Chalet adosado</li>
+                                    <li>150m<sup>2</sup></li>
+                                    <li>2 hab.</li>
+                                </ul>
+                               <div class="precio">
+                                    <p class="consultarprecio">Consultar precio</p>
+                                </div>
+                                <div class="precio2">
+                                    <div class="col1">
+                                        <p class="tipgest">Alquiler</p>
+                                        <p class="valorprecio">700&euro;/mes</p>
+                                    </div>
+                                    <div class="col2">
+                                        <p class="tipgest">A. opc. compra</p>
+                                        <p class="valorprecio">650&euro;/mes</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <div id="geop4" class="geop" onclick="alert('Has hecho click en geopo')">                       
+                                <div id="tip4_left" style="display:none;"><p style="font-size:12px;color:#3e3e3e">Ver en mapa</p></div>
+                            </div>                                
+                            <div class="campanas">
+                                <div class="campana">
+                                   <ul>                                       
+                                       <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
+                                       <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
+                                   </ul>
+                               </div>                          
+                           </div>
+                        </div>
+                        <div class="comparar">
+                            <input type="checkbox" />
+                            <label>Comparar</label>                            
+                        </div>
+                        <div class="social">
+                            <a href="#" id="share1" class="share"></a>
+                            <a href="#" id="mail1" class="mail"></a>
+                            <a href="#" id="favorite1" class="favorite select"></a>
+                       </div>    
+                    </div>                 
+                </div> 
+                <div id="carrubloq_next" class="carrubloq_bot active"><a href="#">></a></div>         
+                </div><!-- ultimnove -->
                                  
         </div><!--contenedor-->
         <footer>
