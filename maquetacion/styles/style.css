@@ -1361,7 +1361,7 @@ nav #contenidonav .subnav li:hover a{
     font-weight: bold
 }
 
-#fichacontent #fichacontent_col2 p#cp{
+#fichacontent #fichacontent_col2 p.normal{
 	color:#515151;
 	font-size:20px;
 }
@@ -1383,6 +1383,7 @@ nav #contenidonav .subnav li:hover a{
 
 #fichacontent #fichacontent_col2 #preciobox #superior{
 	background-color: #FF0000;
+	color: #FFFFFF;
    	-moz-border-radius: 8px 8px 0 0;
    	-webkit-border-radius: 8px 8px 0 0;
    	border-radius: 8px 8px 0 0;
@@ -1390,8 +1391,7 @@ nav #contenidonav .subnav li:hover a{
     width: 100%;
 }
 
-#fichacontent #fichacontent_col2 #preciobox #superior .colizqda{
-	color: #FFFFFF;
+#fichacontent #fichacontent_col2 #preciobox #superior .colizqda{	
 	float: left;    
     padding: 2%;
     width: 54%;
@@ -1471,6 +1471,7 @@ nav #contenidonav .subnav li:hover a{
 #fichacontent #fichacontent_col2 #preciobox #inferior{
 	float: left;
     width: 100%;
+    color: #3E3E3E;
 }
 
 #fichacontent #fichacontent_col2 p#vermas{
@@ -1559,10 +1560,9 @@ nav #contenidonav .subnav li:hover a{
 }
 
 
-#fichacontent #fichacontent_col2 #caracteristicas ul li{
+#fichacontent #fichacontent_col2 .tipolista ul li{
     color: #FF0000;
-    font-size: 13px;
-    font-weight: bold;
+    font-size: 13px;   
     list-style-position: inside;
     list-style-type: disc;
     margin: 5px 0 5px 15px;
@@ -1570,11 +1570,11 @@ nav #contenidonav .subnav li:hover a{
     text-transform: uppercase;
 }
 
-#fichacontent #fichacontent_col2 #caracteristicas ul li span{
+#fichacontent #fichacontent_col2 .tipolista ul li span{
 	color:#3d3d3d;
 }
 
-#fichacontent #fichacontent_col2 #caracteristicas ul li:nth-child(odd) {
+#fichacontent #fichacontent_col2 .tipolista ul li:nth-child(odd) {
 	background-color:#f4f4f4;
 	-moz-border-radius:4px 4px 4px 4px;
 	-webkit-border-radius:4px 4px 4px 4px;
@@ -1792,6 +1792,169 @@ nav #contenidonav .subnav li:hover a{
     font-family:Arial;
 }
 
+
+
+
+
+
+/****************************************************** FICHA SUELO *******************************/
+#fichacontent .tipobot{
+  	float: left;
+    margin: 15px 0 15px 2%;
+    width: 96%;
+}
+
+
+#fichacontent .tipobot a{
+	background-color: #515151;
+    border-radius: 4px 0 0 4px;
+    color: #FFFFFF;
+    float: left;
+    font-size: 16px;
+    margin-right: -3px;
+    margin-top: 10px;
+    padding: 2px 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 275px;
+}
+
+#fichacontent .tipobot a:hover{
+	background-color: red;
+	color:#fff;
+}
+
+#fichacontent .tipobot .icono{
+  	float: left;
+    height: 41px;
+    width: 36px;
+}
+
+#descpdf .icono{
+	background:transparent url('../images/pdf_ico_grey.png') no-repeat;
+}
+
+#descpdf:hover .icono{
+	background:transparent url('../images/pdf_ico.png') no-repeat;
+}
+
+
+#descebook .icono{
+	background:transparent url('../images/ebook_ico_grey.png') no-repeat;
+}
+
+#descebook:hover .icono{
+	background:transparent url('../images/ebook_ico.png') no-repeat;
+}
+
+#preciobox .onecol{
+	float: left;
+    padding: 2%;
+}
+    
+#preciobox .onecol #precio {
+    font-size: 40px;
+    line-height: 40px;
+}
+
+#preciobox .onecol #almes {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+#preciobox .onecol #almes span {
+    font-size: 22px;
+    margin-right: 10px;
+    text-transform: none;
+}
+
+
+#fichacontent #fichacontent_col2 .tipodesp{
+	float: left;
+    height: 45px;
+    overflow: hidden;
+    width: 100%;
+}
+
+#fichacontent #fichacontent_col2 .tipodesp .cabecera{
+	background-color: #515151;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    float: left;
+    width: 100%;
+}
+
+#fichacontent #fichacontent_col2 .tipodesp .cabecera p{
+	 font-size: 18px;
+	 float: left;
+	 width: 100%;
+}
+
+
+#fichacontent #fichacontent_col2 .tipodesp .cabecera p a{
+ 	color: #FFFFFF;
+    float: left;
+    padding: 1%;
+    text-indent: 38px;
+    width: 99%;
+}
+
+#fichacontent #fichacontent_col2 .tipodesp .cabecera:hover{
+	background-color: red;
+}
+
+#fichacontent #fichacontent_col2 .tipodesp .cabecera p a::after{
+	content:"\e6d1";
+ 	float: right;
+    font-family: icomoon;
+  	font-size: 20px;
+  	margin-right: 10px;
+}
+
+#fichacontent #fichacontent_col2 .tipodesp .contenido{
+	margin-left: 2%;
+    width: 96%;
+}
+
+#fichacontent #fichacontent_col2 .tipodesp .contenido p{
+	 font-size: 12px;
+}
+
+
+/*DESPLEGADO*/
+#fichacontent #fichacontent_col2 .tipodesp.desp{
+	height:auto;
+}
+
+#fichacontent #fichacontent_col2 .tipodesp.desp .cabecera{
+	background-color: red;
+}
+
+#fichacontent #fichacontent_col2 .tipodesp.desp .cabecera p a::after{
+	content:"\e6cf";
+ 	float: right;
+    font-family: icomoon;
+  	font-size: 20px;
+  	margin-right: 10px;
+}
+
+
+#fichacontent #fichacontent_col2 #regycatast p{
+	background:url("../images/ico_regycatast.png") no-repeat scroll 10px bottom rgba(0, 0, 0, 0)
+}
+
+#fichacontent #fichacontent_col2 #emplazamiento p{
+	background:url("../images/ico_emplaza.png") no-repeat scroll 10px center rgba(0, 0, 0, 0)
+}
+
+#fichacontent #fichacontent_col2 #datbasic p{
+	background:url("../images/ico_datbasicactivo.png") no-repeat scroll 10px bottom rgba(0, 0, 0, 0)
+}
+
+#fichacontent #fichacontent_col2 #infourba p{
+	background:url("../images/ico_infourba.png") no-repeat scroll 10px center rgba(0, 0, 0, 0)
+}
 /****************************************************** PIE *******************************/
 
 footer{
