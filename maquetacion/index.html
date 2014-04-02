@@ -62,7 +62,18 @@
 </head>
 <body>
     <div id="index" class="content">
+        <div id="user">
+            <p>estas navegando como <span>empleado</span></p>
+        </div>
         <header>
+            <div id="idioma">
+               <ul>
+               	<li class="select"><a href="#">español</a></li>
+               	<li><a href="#">english</a></li>
+               	<li><a href="#">idioma 3</a></li>
+               	<li class="last"><a href="#">idioma 4</a></li>
+               </ul>
+            </div>
             <div id="contenidohead">
     			<div id="logoaltamira"><a href="/"><img alt="Altamira santander" src="images/logo_altamira.png" alt="Logotipo Inmuebles Altamira"></a></div>
     			<div id="zonacentro">
@@ -107,6 +118,15 @@
     			    	<li><a href="#">Alertas</a></li>
     			    </ul>
     			</div>
+    			<div id="login">
+    			    <p>crea tu área privada <a href="#">aqui</a></p>
+    			    <form>
+    			        <input type="text" placeholder="Email"/>
+    			        <input type="text" placeholder="Contraseña"/>
+    			        <p class="recupass"><a href="#">Recuperar contraseña</a></p>
+                        <input type="submit" value="Entrar >"/>
+					</form>
+    			</div>
     		</div>
     	</nav>
     	<div id="buscador_top">
@@ -138,13 +158,11 @@
                         <img src="http://lorempixel.com/g/963/340/" alt="" data-thumb="http://lorempixel.com/g/963/340/" />
                         <img src="http://lorempixel.com/963/340/sports/1/" alt="" data-thumb="http://lorempixel.com/963/340/sports/1/" />
                         <img src="http://lorempixel.com/963/340/sports" alt="" data-thumb="http://lorempixel.com/963/340/sports" />
-                        
-                        
                     </div>
                 </div>
             </div> <!-- CARRUSEL -->
             <div id="ultimnove">
-                <h3><span>Inmuebles destacados</span></h3>
+                <h3 class="linea"><span>Inmuebles destacados</span></h3>
                 <div id="carrubloq_prev" class="carrubloq_bot"><a href="#"><</a></div>
                 <div id="carrubloq">    	               
                     <!-- <div class="bloquecarru doble">
@@ -205,6 +223,9 @@
                             <a id="inmulink1" onclick="alert('Click inmueble');return false;" href="#">
                                 <div class="img_bloqueminificha">
                                     <img src="http://placehold.it/193x145" alt="XXX" />                             
+                                </div>
+                                <div class="reservado">
+                                    <p>reservado</p>
                                 </div>
                                 <div class="datos_basic">
                                    <h4>Madrid</h4>
@@ -315,6 +336,9 @@
                             <a id="inmulink1" onclick="alert('Click inmueble');return false;" href="#">
                                 <div class="img_bloqueminificha">
                                     <img src="http://placehold.it/193x145" alt="XXX" />                             
+                                </div>
+                                <div class="vendido">
+                                    <p>Vendido</p>
                                 </div>
                                 <div class="datos_basic">
                                    <h4>Madrid</h4>
@@ -431,6 +455,40 @@
         </div>
         <footer>
             <p class="mapaweb"><a href="#">mapa web <span>&and;</span></a></p>
+             <div id="mapaweb">
+                 <div id="colizqda">
+                     <div class="col">
+                         <h5>Residencial</h5>
+                         <ul>
+                            <li><a href="#">Compra</a>
+                                <ul>
+                                    <li><a href="#">Guía de compra</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Alquiler</a>
+                                <ul>
+                                    <li><a href="#">Guía <de></de> alquiler</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Sobre plano</a></li>
+                            <li><a href="#">Novedades</a></li>
+                            <li><a href="#">Financiación</a></li>
+                            <li><a href="#">Alertas</a></li>
+                            <li><a href="#">Pasos a seguir</a></li>
+                         </ul>
+                     </div>
+                     <div class="col">
+                         <h5>Terciario</h5>
+                     </div>
+                     <div class="col">
+                         <h5>Suelo</h5>
+                     </div>
+                     <div class="col">
+                        <h5>Actualidad</h5>
+                     </div>
+                 </div>
+                 <div id="coldcha">ss</div>
+             </div>
             <div class="footercontent">
                 <div class="col1">
                      <a href="#" class="logofoot openbank"><img alt="Logotipo Openbank" src="images/logo_openbank_foot.png"></a>
