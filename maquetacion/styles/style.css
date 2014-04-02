@@ -136,12 +136,58 @@ li#yt:hover{
 
 
 
+/*USER*/
 
+#user{
+	  background-color: #515151;
+    width: 100%;
+}
+
+#user p{
+	color:#fff;
+	font-size:13px;
+	text-transform:uppercase;
+	padding: 5px 0;
+    text-indent: 20px;
+}
+
+#user p span{
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+.content header #idioma{
+	display: table;
+	width: 100%;
+	text-align: right;
+ 	margin-bottom: -10px;
+}
+.content header #idioma li{
+   	border-right: 1px solid #FFFFFF;
+    display: inline-block;
+    font-size: 11px;
+    margin-right: 5px;
+    padding-right: 10px;
+    text-transform: uppercase;
+}
+
+.content header #idioma li.last{
+	border:none;
+}
+
+.content header #idioma li a{
+	color:#fff;
+}
+
+.content header #idioma li.select a, .content header #idioma li a:hover{
+	text-decoration:underline;
+	font-weight:bold;
+}
 
 /*HEAD*/
 .content header{
 	background-color:#fe0000;
-	height: 106px;
+	/*height: 106px;*/
 	width:100%;
 }
 
@@ -264,6 +310,22 @@ nav li.areapriv{
 
 nav #contenidonav li.areapriv a{
 	color:#505153;
+	margin-left: -10px;
+    margin-right: 10px;
+}
+
+nav li.areapriv:after {
+    color: #515151;
+    content: "\e674";
+    font-family: icomoon;
+    margin-left: -75px;
+    margin-top: 12px;
+    position: absolute;
+    transform: rotate(0deg) scale(1) skew(20deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1) skew(20deg) translate(0px);	
+	-moz-transform: rotate(0deg) scale(1) skew(20deg) translate(0px);	
+	-o-transform: rotate(0deg) scale(1) skew(20deg) translate(0px);
+	-ms-transform: rotate(0deg) scale(1) skew(20deg) translate(0px);
 }
 
 nav .subnav{
@@ -310,8 +372,59 @@ nav #contenidonav .subnav li:hover a{
 	text-decoration:underline;
 }
 
+nav #contenidonav #login{   	
+    -webkit-border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    border-radius: 8px 8px 8px 8px;
+  	background-color: #D2D7DB;
+    border: 1px solid #FFFFFF;    
+    padding: 20px;
+    position: absolute;
+    width: 265px;
+    z-index: 6;
+ 	margin-left: 635px;
+    margin-top: 43px;
+}
+nav #contenidonav #login p{
+	color: #515151;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+}
 
+nav #contenidonav #login p a{
+	font-weight:bold;
+	color: #515151;
+	text-decoration: underline;	
+}
 
+nav #contenidonav #login input{
+  	border: medium none;
+  	-moz-border-radius: 4px 4px 4px 4px;
+  	-webkit-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    display: inline-block;
+    margin: 5px 0;
+    padding: 2px;
+    width: 100%;
+}
+
+nav #contenidonav #login p.recupass{
+  	float: left;
+    font-size: 11px;
+    margin-top: 9px;
+}
+
+nav #contenidonav #login p.recupass a{
+	font-weight: normal;
+}
+
+nav #contenidonav #login input[type="submit"]{
+	background-color: #FF0000;
+    color: #FFFFFF;
+    float: right;
+    width: 39%;
+	}
 
 /*BUSCADOR TOP */
 
