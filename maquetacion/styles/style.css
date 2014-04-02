@@ -525,6 +525,7 @@ nav #contenidonav .subnav li:hover a{
     height: 12px;
     margin: 0 2px;
     padding-right: 2px;
+ 	color: #515151
     
 }
 
@@ -824,6 +825,23 @@ nav #contenidonav .subnav li:hover a{
 }
 
 
+h3.linea{
+	background: url("../images/h3_line.png") repeat-x scroll center center rgba(0, 0, 0, 0);
+    color: #FF0000;
+    float: left;
+    text-align: center;
+    width:96%;
+    margin:0 2% 1em;
+    
+}
+h3.linea span{
+	background-color: #FFFFFF;
+    color: #FF0000;
+    padding: 0 0.5em;
+    font-size: 28px;
+    font-weight: 100;
+}
+
 
 
 
@@ -864,22 +882,6 @@ nav #contenidonav .subnav li:hover a{
 	width: 100%;
 	margin-bottom: 2em;	
 }
-.content .contenedor #ultimnove h3{
-	background: url("../images/h3_line.png") repeat-x scroll center center rgba(0, 0, 0, 0);
-    color: #FF0000;
-    float: left;
-    text-align: center;
-    width:96%;
-    margin:0 3% 1em;
-    
-}
-.content .contenedor #ultimnove h3 span{
-	background-color: #FFFFFF;
-    color: #FF0000;
-    padding: 0 0.5em;
-    font-size: 28px;
-    font-weight: 100;
-}
 
 .carrubloq_bot{
 	font-size: 3em;
@@ -915,7 +917,7 @@ nav #contenidonav .subnav li:hover a{
 .content .contenedor #banners_home{
     float: left;
     margin-bottom: 2em;
-    margin-left: 4%;
+    margin-left: 34px;
     width: 93%;;
 }
 
@@ -1705,6 +1707,7 @@ nav #contenidonav .subnav li:hover a{
     padding: 2px;
     width: 111px;
     font-size: 14px;
+    text-align: center;
 }
 
 #fichacontent #fichacontent_col3 .bloque2 p#tiempo{
@@ -1977,6 +1980,72 @@ nav #contenidonav .subnav li:hover a{
 }
 
 
+
+
+
+/****************************************************** CAMAPAÑAS *******************************/
+
+#campanas h3{
+	margin:50px 2%;	
+}
+
+#campanas_content{
+	float: left;
+    margin-bottom: 50px;
+    margin-left: 34px;
+    width: 93%;
+}
+
+#campanas_content .campana{
+ 	float: left;
+    width: 49%;
+ 	margin-bottom: 2%;
+}
+
+#campanas_content .campana.right{
+	float:right;
+}
+
+
+#campanas_content .campana a >*{
+	-webkit-border-radius:10px 10px 10px 10px;
+	-moz-border-radius:10px 10px 10px 10px;
+	border-radius:10px 10px 10px 10px;
+	float:left;
+	width:100%;
+}
+#campanas_content .campana img{}
+
+#campanas_content .campana .cinta{
+ 	background-color: #FF0000;
+    float: right;   
+    margin-top: -50px;
+    position: relative;
+    text-align: center;
+    width: 60%;
+    -moz-border-radius: 4px 0 0 4px;
+    -webkit-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+    
+}
+
+#campanas_content .campana .cinta p{	 
+    font-size: 15px;
+    text-transform: uppercase;
+    padding:5px 0;
+}
+
+#campanas_content .campana .cinta p a{
+	color:#fff
+	}
+
+#campanas_content .campana .cinta p a::after{
+	content:"\e6d5";
+	font-family: icomoon;
+  	font-size: 30px;
+    line-height: 15px;    
+    vertical-align: sub;
+}
 
 
 
