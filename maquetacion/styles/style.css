@@ -434,6 +434,51 @@ nav #contenidonav .subnav li:hover a{
 	padding: 5px;
 }
 
+.content .contenedor .bloqueminificha .reservado{
+	-moz-transform: scale(1) rotate(-25deg);
+	-webkit-transform: scale(1) rotate(-25deg);
+	-o-transform: scale(1) rotate(-25deg);
+	-ms-transform: scale(1) rotate(-25deg);
+	transform: scale(1) rotate(-25deg);
+  	background-color: rgba(255, 255, 255, 0.8);
+    border: 5px solid #3E3E3E;
+    margin-top: -85px;
+ 	margin-left: 15px;
+    padding: 5px;
+    position: absolute;
+}
+
+.content .contenedor .bloqueminificha .reservado p{
+	font-size: 25px;
+    color: #3e3e3e;
+    text-transform: uppercase;
+    font-family: arial;
+    font-weight: bold;
+}
+
+.content .contenedor .bloqueminificha .vendido{
+	-moz-transform: scale(1) rotate(25deg);
+	-webkit-transform: scale(1) rotate(25deg);
+	-o-transform: scale(1) rotate(25deg);
+	-ms-transform: scale(1) rotate(25deg);
+	transform: scale(1) rotate(25deg);
+  	background-color: rgba(255, 255, 255, 0.8);
+    border: 5px solid red;
+    margin-top: -76px;
+ 	margin-left: 50px;
+    padding: 5px;
+    position: absolute;
+}
+
+.content .contenedor .bloqueminificha .vendido p{
+	font-size: 25px;
+    color: red;
+    text-transform: uppercase;
+    font-family: arial;
+    font-weight: bold;
+}
+
+
 .content .contenedor .bloqueminificha a.detalle{
 	background-color: #FFFFFF;
     border-radius: 4px;
