@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Comparativa</title>
+	<link rel="stylesheet" type="text/css" href="/styles/normalize.css">
+	<link rel="stylesheet" type="text/css" href="/styles/style.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="/include/jquery/nivo_slider/themes/default/default.css" type="text/css" />	
+	<link rel="stylesheet" href="/include/jquery/nivo_slider/nivo-slider.css" type="text/css" />
+    <script src="/include/jquery/nivo_slider/jquery.nivo.slider.js" type="text/javascript"></script>
+    
+    <!-- jquery bubbletip CSS -->
+     <link href="/include/jquery/bubbletip/bubbletip/bubbletip.css" rel="stylesheet" type="text/css" />
+     <!--[if IE]>
+    <link href="/include/jquery/bubbletip/bubbletip/bubbletip.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <!-- jquery bubbletip JS -->
+    <script src="/include/jquery/bubbletip/jQuery.bubbletip-1.0.6.js" type="text/javascript"></script>
+    
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    <script>
+        // FUNCION PARA NIVOSLIDER
+        $(window).load(function() {
+            $('#slider').nivoSlider();
+        });
+        
+         // FUNCIONES PARA BUBBLETIP
+        $(window).bind('load', function() {
+            $('#geop1').bubbletip($('#tip1_left'), {
+                deltaDirection: 'right',
+            });
+            $('#geop2').bubbletip($('#tip2_left'), {
+                deltaDirection: 'right',
+            });
+            $('#geop3').bubbletip($('#tip3_left'), {
+                deltaDirection: 'right',
+            });
+             $('#geop4').bubbletip($('#tip4_left'), {
+                deltaDirection: 'right',
+            });
+        });
+        
+        function showsubmenu(){
+            document.getElementById("sub1").style.display="inline";
+            document.getElementById("sub1").style.height=36+"px";
+        }
+        function hidesubmenu(){
+            document.getElementById("sub1").style.display="none";
+            document.getElementById("sub1").style.height=0;
+        }
+        
+        function showovermap(hide,show){
+            document.getElementById(hide).style.visibility="hidden";
+            document.getElementById(show).style.visibility="visible";
+            
+            }
+    </script>   
+</head>
+<body>
+    <div id="videollamada" class="content">
+        <header>
+            <div id="contenidohead">
+    			<div id="logoaltamira"><a href="/"><img alt="Altamira santander" src="/images/logo_altamira.png" alt="Logotipo Inmuebles Altamira"></a></div>
+    			<div id="zonacentro">
+    			    <a href="#">
+    			        <div id="tfnohead">    			            
+    			            <p><img src="/images/tfno_head.png">902 509 559</p>
+    			            <p class="leyenda">Teléfono y vídeollamada</p>
+    			        </div>    			        
+    			    </a>
+    			    <div id="socialhead">
+    			    	 <ul>
+                        <li id="tweet"><a href="#">&nbsp;</a></li>
+                        <li id="fb"><a href="#">&nbsp;</a></li>
+                        <li id="yt"><a href="#">&nbsp;</a></li>
+                    </ul>
+    			    </div>
+    			</div>
+    			<div id="logosantander"><a href="#"><img src="/images/logo_santander.png" alt="Logotipo Banco de Santander"></a></div>
+    		</div>
+    	
+        </header>
+    	<nav>
+    		<div id="contenidonav">
+    			<ul>
+    				<li class="first"><a  onclick="showsubmenu()" href="#">Residencial</a></li>
+    				<li><a onclick="hidesubmenu()" href="#">Terciario</a></li>
+    				<li><a onclick="hidesubmenu()" href="#">Suelo</a></li>
+    				<li><a onclick="hidesubmenu()" href="#">Inversores</a></li>
+    				<li class="select"><a onclick="hidesubmenu()" href="#">Campañas</a></li>
+    				<li><a onclick="hidesubmenu()" href="#">Actualidad</a></li>
+    				<li><a onclick="hidesubmenu()" href="#">Fondo social</a></li>
+    				<li class="areapriv"><a href="#">Área privada</a></li>
+    			</ul>
+    			<div class="subnav" id="sub1">
+    			    <ul>
+    			    	<li><a href="#">Compra</a></li>
+    			    	<li><a href="#">Alquiler</a></li>
+    			    	<li><a href="#">Alquiler opción a compra</a></li>
+    			    	<li><a href="#">Sobre plano</a></li>
+    			    	<li><a href="#">Novedades</a></li>
+    			    	<li><a href="#">Financiación</a></li>
+    			    	<li><a href="#">Alertas</a></li>
+    			    </ul>
+    			</div>
+    		</div>
+    	</nav>
+    	<div id="buscador_top">
+    	    <form id="buscform">
+    	        <div id="buscavanz">
+    	            <div id="colseleccion">
+    	                <ul>
+    	                    <li class="select"><a href="#">Búsqueda avanzada</a></a></li>
+    	                    <li><a href="#">Búsqueda por mapa</a></li>
+    	                    <li><a href="#">Búsqueda por cuota o referencia</a></li>
+    	                </ul>
+    	            </div>
+    	            <div id="col1">
+    	                
+    	            </div>
+    	            <div id="col2">
+    	                
+    	            </div>
+    	        </div>
+    	    </form>
+    	    <p id="showbusc"><a href="#">Buscador <span>&or;</span></a></p>
+    	</div>
+    	<div class="contenedor">
+    	    <div id="migas">
+                <ul>
+                    <li class="bread1"><a href="#">Inicio</a></li>
+                    <li class="bread2 sub"><a href="#" onclick="showosubmigas('submigas1')">Télefono y videollamada</a>
+                        <div class="submigas" id="submigas1">
+                            <select id="tutipoges" name="tutipoges">
+                                <option value="1">Lorem</option><option value="2">Ipsum</option><option value="3">dolore</option>
+                            </select>
+                        </div>
+                    </li>                    
+                   
+                </ul>
+            </div>
+            <h3 class="linea"><span>Llamada, Videollamada y "¡Llamame luego!"</span></h3>
+            <div class="videollamada">
+                <div class="col">
+                    <div class="titulo">
+                        <p>Llamada</p>
+                    </div>
+                    <div class="cuerpo">
+                        <div class="imagen">
+                            <img src="/images/videollamada_tfno.png" alt="Llamada" />
+                        </div>
+                        <p>Puedes llamar a nuestro télefono</p>
+                        <p class="tfno">902 509 559 <span>(Lunes a Viernes 9:00 - 21:00h)</span></p>
+                        <p>donde serás atendido por uno de nuestros teleoperadores.</p>
+                        <div class="imagen">
+                            <img src="/images/videollamada_tfno_2.png" alt="Llamada" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col medio">
+                    <div class="titulo">
+                        <p>Videollamada</p>
+                    </div>
+                    <div class="cuerpo">
+                        <div class="imagen">
+                            <img src="/images/videollamada_videollamada.png" alt="Videollamada" />
+                        </div>
+                        <p>Rellena el formulario y <strong>dinos cuándo quieres que te llamemos.</strong></p>
+                        <p>Aparecerá en tu pantalla una ventana en la que verás a uno de nuestros agentes, pero nadie te verá a ti.</p>
+                        <p>Servicio <span>totalmente gratuito</span></p>
+                        
+                        <div class="formu">
+                            <p class="titulo">Rellena el formulario:</p>
+                            <form>
+                                <input type="text" placeholder="Nombre:" value="Nombre"/>
+                                <input type="text" placeholder="teléfono:" value="Teléfono"/>
+                                <input  type="submit" value="Enviar >"/>
+                                <label><input type="checkbox" /> He leido y acepto el <a href="#">tratamiento de datos personales</a>.</label>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="titulo">
+                        <p>Llámame luego</p>
+                    </div>
+                    <div class="cuerpo">
+                        <div class="imagen">
+                            <img src="/images/videollamada_llamaluego.png" alt="Llámame luego" />
+                        </div>
+                        <p>Puedes dejar tu teléfono y <strong>la hora en que quieres que te llamen</strong>.</p>
+                        <p>Un operador de Altamira se pondrá en contacto contigo a la hora señalada y en el número que nos hayas indicado.</p>
+                        <p>También es <span>totalmente gratuito</span>.</p>
+                        
+                        <div class="formu">
+                            <p class="titulo">Rellena el formulario:</p>
+                            <form>
+                                <input type="text" placeholder="Nombre:" value="Nombre"/>
+                                <input type="text" placeholder="teléfono:" value="Teléfono"/>
+                                <div class="submit_tipo2">
+                                    <p>¿Cuándo quieres que te llamemos?</p>
+                                    <select name="" id="">
+                                        <option>Por la mañana</option>
+                                        <option>Por la tarde</option>
+                                        <option>Lorem Ipsum</option>
+                                    </select>
+                                    <input type="submit" value="Enviar >"/>
+                                 </div>
+                                <label><input type="checkbox" /> He leido y acepto el <a href="#">tratamiento de datos personales</a>.</label>                               
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>         
+            <div class="footercontent">
+                <div class="col1">
+                     <a href="#" class="logofoot openbank"><img alt="Logotipo Openbank" src="/images/logo_openbank_foot.png"></a>
+                    <a href="#" class="logofoot santander"><img alt="Logotipo Banco de Santander" src="/images/logo_altamira_foot.png"></a>
+                </div>
+                <div class="col2">
+                    <ul>
+                        <li><a href="#">&copy; Altamira Santander Real Estate 2013 </a></li>
+                        <li><a href="#">Aviso legal</a></li>
+                        <li><a href="#">Sobre Altamira Santander </a></li>
+                    </ul>
+                </div>
+                <div class="col3">
+                    <ul>
+                        <li id="rss"><a href="#">&nbsp;</a></li>
+                        <li id="tweet"><a href="#">&nbsp;</a></li>
+                        <li id="fb"><a href="#">&nbsp;</a></li>
+                        <li id="yt"><a href="#">&nbsp;</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+   </div>	
+</body>
+</html>

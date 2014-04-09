@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ficha de promocion</title>
+    <link rel="stylesheet" type="text/css" href="/styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="/include/jquery/nivo_slider/themes/default/default.css" type="text/css" />  
+    <link rel="stylesheet" href="/include/jquery/nivo_slider/nivo-slider.css" type="text/css" />
+    <script src="/include/jquery/nivo_slider/jquery.nivo.slider.js" type="text/javascript"></script>
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    
+    <!-- jquery slider CSS -->
+    <link rel="stylesheet" href="/include/jquery/jslider/css/jslider.css" type="text/css">
+    <link rel="stylesheet" href="/include/jquery/jslider/css/jslider.round.plastic.css" type="text/css">
+      <!-- jquery slider JS -->    
+    <script type="text/javascript" src="/include/jquery/jslider/js/jshashtable-2.1_src.js"></script>
+    <script type="text/javascript" src="/include/jquery/jslider/js/jquery.numberformatter-1.2.3.js"></script>
+    <script type="text/javascript" src="/include/jquery/jslider/js/tmpl.js"></script>
+    <script type="text/javascript" src="/include/jquery/jslider/js/jquery.dependClass-0.1.js"></script>
+    <script type="text/javascript" src="/include/jquery/jslider/js/draggable-0.1.js"></script>
+    <script type="text/javascript" src="/include/jquery/jslider/js/jquery.slider.js"></script>
+    	
+   
+     <!-- jquery bubbletip CSS -->
+     <link href="/include/jquery/bubbletip/bubbletip/bubbletip.css" rel="stylesheet" type="text/css" />
+     <!--[if IE]>
+    <link href="/include/jquery/bubbletip/bubbletip/bubbletip.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+ 	<!-- jquery bubbletip JS -->
+  	<script src="/include/jquery/bubbletip/jQuery.bubbletip-1.0.6.js" type="text/javascript"></script>
+	
+    <script type="text/javascript">
+     $(window).load(function() {
+           $('#slider').nivoSlider({
+                effect: 'fade',               // Specify sets like: 'fold,fade,sliceDown'
+                slices: 100,                     // For slice animations
+                boxCols: 4,                     // For box animations
+                boxRows: 2,                     // For box animations
+                animSpeed: 400,                 // Slide transition speed
+                pauseTime: 3000,                // How long each slide will show
+                // startSlide: 0,                  // Set starting Slide (0 index)
+                // directionNav: true,             // Next & Prev navigation
+                // controlNav: true,               // 1,2,3... navigation
+                // controlNavThumbs: false,        // Use thumbnails for Control Nav
+                // pauseOnHover: true,             // Stop animation while hovering
+                manualAdvance: false,           // Force manual transitions
+                // prevText: 'Prev',               // Prev directionNav text
+                // nextText: 'Next',               // Next directionNav text
+                // randomStart: false,             // Start on a random slide
+                // beforeChange: function(){},     // Triggers before a slide transition
+                // afterChange: function(){},      // Triggers after a slide transition
+                // slideshowEnd: function(){},     // Triggers after all slides have been shown
+                // lastSlide: function(){},        // Triggers when last slide is shown
+                // afterLoad: function(){}         // Triggers when slider has loaded
+            });
+        });
+        
+        // FUNCIONES PARA BUBBLETIP
+        $(window).bind('load', function() {
+            $('#vermas').bubbletip($('#tip1_down'), {
+                deltaDirection: 'down',
+                offsetLeft: -0
+            });           
+        });
+                             
+        function showsubmenu(){
+            document.getElementById("sub1").style.display="inline";
+            document.getElementById("sub1").style.height=36+"px";
+        }
+        function hidesubmenu(){
+            document.getElementById("sub1").style.display="none";
+            document.getElementById("sub1").style.height=0;
+        }
+        
+        // function showovermap(hide,show){
+            // document.getElementById(hide).style.visibility="hidden";
+            // document.getElementById(show).style.visibility="visible";
+//             
+            // }
+            
+        function showosubmigas(idsubmenu){
+            document.getElementById(idsubmenu).style.display="block";
+            document.getElementById(idsubmenu).parentNode.classList.add("desple");//NO FUNCIONA EN IE
+            }
+        function showmasinfo(){
+            document.getElementById('descrip').style.height="auto";
+            document.getElementById('masinfo').style.display="none";
+            document.getElementById('menosinfo').style.display="block";
+        }
+        
+        function hideinfo(){
+            document.getElementById('descrip').style.height=60+"px";
+            document.getElementById('masinfo').style.display="block";
+            document.getElementById('menosinfo').style.display="none";
+        }
+    </script>     
+</head>
+<body>
+    <div id="ficha_promo" class="content">
+        <header>
+            <div id="contenidohead">
+                <div id="logoaltamira"><a href="/"><img alt="Altamira santander" src="/images/logo_altamira.png" alt="Logotipo Inmuebles Altamira"></a></div>
+                <div id="zonacentro">
+                    <a href="#">
+                        <div id="tfnohead">                         
+                            <p><img src="/images/tfno_head.png">902 509 559</p>
+                            <p class="leyenda">Teléfono y vídeollamada</p>
+                        </div>                      
+                    </a>
+                    <div id="socialhead">
+                         <ul>
+                        <li id="tweet"><a href="#">&nbsp;</a></li>
+                        <li id="fb"><a href="#">&nbsp;</a></li>
+                        <li id="yt"><a href="#">&nbsp;</a></li>
+                    </ul>
+                    </div>
+                </div>
+                <div id="logosantander"><a href="#"><img src="/images/logo_santander.png" alt="Logotipo Banco de Santander"></a></div>
+            </div>
+        
+        </header>
+        <nav>
+            <div id="contenidonav">
+                <ul>
+                    <li class="first select"><a  onclick="showsubmenu()" href="#">Residencial</a></li>
+                    <li><a onclick="hidesubmenu()" href="#">Terciario</a></li>
+                    <li><a href="#">Suelo</a></li>
+                    <li><a href="#">Inversores</a></li>
+                    <li><a href="#">Campañas</a></li>
+                    <li><a href="#">Actualidad</a></li>
+                    <li><a href="#">Fondo social</a></li>
+                    <li class="areapriv"><a href="#">Área privada</a></li>
+                </ul>
+                <div class="subnav" id="sub1">
+                    <ul>
+                        <li><a href="#">Compra</a></li>
+                        <li><a href="#">Alquiler</a></li>
+                        <li><a href="#">Alquiler opción a compra</a></li>
+                        <li><a href="#">Sobre plano</a></li>
+                        <li><a href="#">Novedades</a></li>
+                        <li><a href="#">Financiación</a></li>
+                        <li><a href="#">Alertas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="buscador_top">
+            <form id="buscform">
+                <div id="buscavanz">
+                    <div id="colseleccion">
+                        <ul>
+                            <li class="select"><a href="#">Búsqueda avanzada</a></a></li>
+                            <li><a href="#">Búsqueda por mapa</a></li>
+                            <li><a href="#">Búsqueda por cuota o referencia</a></li>
+                        </ul>
+                    </div>
+                    <div id="col1">
+                        
+                    </div>
+                    <div id="col2">
+                        
+                    </div>
+                </div>
+            </form>
+            <p id="showbusc"><a href="#">Buscador <span>&or;</span></a></p>
+        </div>
+        <div class="contenedor"> 
+            <div id="migas">
+                <ul>
+                    <li class="bread1"><a href="#">Inicio</a></li>
+                    <li class="bread2 sub"><a href="#" onclick="showosubmigas('submigas1')">Residencial</a>
+                        <div class="submigas" id="submigas1">
+                            <select id="tutipoges" name="tutipoges">
+                                <option value="1">Lorem</option><option value="2">Ipsum</option><option value="3">dolore</option>
+                            </select>
+                        </div>
+                    </li>                     
+                    <li class="bread3 sub"><a href="#" onclick="showosubmigas('submigas2')">Compra</a>
+                        <div class="submigas" id="submigas2">
+                            <select id="tutipoges" name="tutipoges">
+                                <option value="1">Compra</option><option value="2">Alquiler</option><option value="3">Alquiler con opción a compra</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="bread4 sub"><a href="#" onclick="showosubmigas('submigas3')">Madrid</a>
+                        <div class="submigas" id="submigas3">
+                            <select id="tuprovincia" name="tuprovincia">
+                                <option value="1">Álava</option><option value="2">Albacete</option><option value="3">Alicante</option><option value="4">Almería</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="bread5"><a href="#">Calle Londres, nº 2, 4ºA</a>
+                        <div class="submigas" id="submigas5">
+                            <select id="tuprovincia" name="tuprovincia">
+                                <option value="1">Álava</option><option value="2">Albacete</option><option value="3">Alicante</option><option value="4">Almería</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="fichacontent">
+                <div id="opciones">
+                    <div class="left">
+                        <p><a href="#">&laquo; Volver a resultados</a></p>
+                        <p id="pasosaseguir"><a href="#">Pasos a seguir</a></p>
+                    </div>
+                    <div class="right">
+                        <p><a href="#">&laquo; anterior</a></p>
+                        <p><strong>1</strong> de 205 viviendas</p>
+                        <p><a href="#">siguiente &raquo;</a></p>
+                    </div>
+                </div>
+                <div id="fichacontent_col1">
+                    <div id="carruficha">
+                        <div class="slider-wrapper theme-default">
+                            <div class="ribbon"></div>
+                            <div id="slider">
+                                <a href="#"><img alt="campaña x" src="http://placehold.it/330x245"></a>
+                                <a href="#"><img src="http://lorempixel.com/g/330/245/" alt="" data-thumb="http://lorempixel.com/g/330/245/" /></a>
+                                <a href="#"><img src="http://www.altamirainmuebles.com/promociones/fotos/grandes/2/2_2206_1.jpg" alt="" data-thumb="http://www.altamirainmuebles.com/promociones/fotos/grandes/2/2_2206_1.jpg" /></a>
+                                <a href="#"><img src="http://lorempixel.com/330/340/sports" alt="" data-thumb="http://lorempixel.com/330/340/sports" /></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div id="bot_multimedia">
+                        <div class="bot" id="bot_galeria"><a href="#">Ver galería</a></div>
+                        <div class="bot" id="bot_video"><a href="#">Ver vídeo</a></div>
+                        <div class="bot" id="bot_plano"><a href="#">Ver plano</a></div>
+                        <div class="bot" id="bot_visivirt"><a href="#">Visita virtual</a></div>
+                    </div>
+                    <div class="social">
+                        <a class="share" id="share" href="#"></a>
+                        <a class="mail" id="mail" href="#"></a>
+                        <a class="print" id="print" href="#"></a>
+                        <a class="favorite" id="favorite" href="#"></a>
+                    </div>
+                    <div id="maps">
+                        <div id="pest">
+                            <ul>
+                            	<li class="active"><a href="#">mapa 2D</a></li>
+                            	<li><a href="#">street view</a></li>
+                            	<li><a href="#">servicios</a></li>
+                            </ul>
+                        </div>
+                        <div id="mapabox">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.970974948102!2d-3.667256800000024!3d40.43164159999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228b680bc6bf5%3A0x719cc865d1b3c160!2sCalle+Londres!5e0!3m2!1ses!2s!4v1396255570298" width="318" height="237" frameborder="0" style="border:0"></iframe>
+                        </div>
+                    </div>
+                    <div id="likeit">
+                        <div class="btn_share">
+                            <div id="fb-root"></div>
+                            <script>(function(d, s, id) {
+                              var js, fjs = d.getElementsByTagName(s)[0];
+                              if (d.getElementById(id)) return;
+                              js = d.createElement(s); js.id = id;
+                              js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1&appId=429143090523894";
+                              fjs.parentNode.insertBefore(js, fjs);
+                            }(document, 'script', 'facebook-jssdk'));</script>
+                            <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                        </div>                    
+                        <div class="btn_share">
+                            <a href="https://twitter.com/share" class="twitter-share-button" data-lang="es">Tweet</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                        </div>      
+                    </div>
+                </div>
+                <div id="fichacontent_col2">
+                    <p id="calle">Residencial El Prado</p>
+                    <p class="normal">Prado, 28970</p>
+                    <p class="normal">Humanes de Madrid, Madrid</p>
+                    <p id="ref">Ref. 000000</p>
+                    
+                    <div id="preciobox">
+                        <div id="superior">
+                           <div class="onecol">
+                                <p id="precio">desde 350.000&euro;</p>
+                                <p id="almes"><span>desde 820&euro;/mes</span> durante 40 años</p>                                
+                            </div>                            
+                        </div>
+                        <div id="medio">
+                            <p class="left">Alquiler opción A COMPRA desde</p>
+                            <p class="right">330.000&euro;</p>                            
+                        </div>
+                        <div id="inferior">
+                            <p class="left">alquiler / mes desde</p>
+                            <p class="right">700&euro;/mes</p>
+                        </div>
+                    </div>
+                    
+                    <p id="vermas"><a href="#"> Aviso legal</a></p>
+                    <div id="tip1_down" style="display:none;">
+                        <p style="font-size:12px;color:#3e3e3e;width:300px;">*Cuota calculada para un préstamo con garantía hipotecaria por importe de 65.000 euros (financiando el 100% de la compra), plazo de 40 años y tipo de interés del 3,254%: Euribor + 1,25. TAE: 3,316% (según Euribor hipotecario a un año correspondiente al mes de diciembre 2011, publicado en el BOE el 3/1/2012 -2,004%- ) y cuotas mensuales. Comisión de apertura: 0,20%. Comisión de cancelación por desistimiento (en caso de cancelación por subrogación total o parcial) del 0,50% del capital amortizado anticipadamente si la amortización se produce dentro de los 5 primeros años de vida de la operación, y del 0,25% si han transcurrido ya 5 años. Con domiciliación de nómina o pensión y contratación de seguro de daños e incendios de la vivienda hipotecada designando al Banco como beneficiario. Operación sujeta a la previa aprobación por parte de Banco Santander.</p>
+                    </div>
+                     <p id="verprecios"><a href="#">Ver precios en la zona</a></p>
+                    
+                    <div id="campana">
+                        <ul>
+                        	<li><a href=""><img src="http://placehold.it/80x80" alt="Campana x" /></a></li>
+                        	<li><a href=""><img src="http://placehold.it/80x80" alt="Campana x" /></a></li>
+                        	<li><a href=""><img src="http://placehold.it/80x80" alt="Campana x" /></a></li>
+                        	<li><a href=""><img src="http://placehold.it/80x80" alt="Campana x" /></a></li>
+                        </ul>
+                    </div>
+                    <div id="descripcion" class="contenido">
+                        <p class="titulo">Descripción:</p>
+                        <p id="descrip">Piso todo exterior muy luminoso segunda planta. Dispone de hall recibidor con armario gabanero de gran capacidad tres dormitorios con armarios empotrados en el principal Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p id="masinfo" class="masinfo"><a href="#" onclick="showmasinfo();return false;">+ info</a></p>
+                        <p id="menosinfo" class="masinfo" style="display:none;"><a href="#" onclick="hideinfo();return false;">- info</a></p>                        
+                    </div>
+                    
+                    <div id="promociones" class="contenido tipolista"> 
+                        <p class="titulo">Características:</p>
+                        <ul>
+                        	<li><span>Chalet adosado 200 m2 | 3 habitaciones | <span>350.000 &euro;</span></span></li>
+                        	<li><span>Chalet adosado 200 m2 | 3 habitaciones | <span>350.000 &euro;</span></span></li>
+                        	<li><span>Chalet adosado 200 m2 | 3 habitaciones | <span>350.000 &euro;</span></span></li>
+                        	<li><span>Chalet adosado 200 m2 | 3 habitaciones | <span>350.000 &euro;</span></span></li>
+							<li><span>Chalet adosado 200 m2 | 3 habitaciones | <span>350.000 &euro;</span></span></li>
+							<li><span>Chalet adosado 200 m2 | 3 habitaciones | <span>350.000 &euro;</span></span></li>
+							<li><span>Chalet adosado 200 m2 | 3 habitaciones | <span>350.000 &euro;</span></span></li>
+							<li><span>Chalet adosado 200 m2 | 3 habitaciones | <span>350.000 &euro;</span></span></li>
+							<li><span>Chalet adosado 200 m2 | 3 habitaciones | <span>350.000 &euro;</span></span></li>
+							<li><span>Chalet adosado 200 m2 | 3 habitaciones | <span>350.000 &euro;</span></span></li>
+							<li><span>Chalet adosado 200 m2 | 3 habitaciones | <span>350.000 &euro;</span></span></li>
+							<li><span>Chalet adosado 200 m2 | 3 habitaciones | <span>350.000 &euro;</span></span></li>
+							<li><span>Chalet adosado 200 m2 | 3 habitaciones | <span>350.000 &euro;</span></span></li>
+							
+                        </ul>
+                    </div>
+                    
+                    <div id="certificado" class="contenido">
+                        <p class="titulo">Certificación energética:</p>
+                        <p class="texto">Calificación de eficiencia energética de vivienda terminado según RD 235/2013 de 5 de abril.</p>
+                        <img src="http://placehold.it/80xg60" alt="calificación energética X" />                        
+                    </div>
+                    
+                     <div id="memcal" class="contenido">
+                        <p class="titulo">Memoria de calidades</p>
+                        <a href="#">Descargar PDF memoria de calidades</a>
+                        <img src="/images/pdf_ico.png" alt=Descargar PDF memoria de calidades"" />
+                    </div>   
+                    
+                    <div id="propietario" class="contenido">
+                        <p class="titulo">Propietario:</p>
+                        <p class="texto">Altamira Real Estate</p>
+                        <p class="texto">Paseo de Pereda, 9-12, Santander (Cantabria) CIF: A-39000013</p>
+                        <div class="imagen">
+                            <img src="http://www.altamirainmuebles.com/agencias/logos/2_logo.jpg" alt="Propietario" />
+                        </div>                        
+                    </div>
+                                    
+                </div>
+                <div id="fichacontent_col3">
+                    <div id="calculadorahipo">
+                        <p class="titulo">Calculadora hipotecaria</p>
+                        <div class="bloque">
+                            <label>Cantidad a financiar</label>
+                            <div class="layout-slider" style="width: 100%;margin-left: 1%;">
+                                <span style="display: inline-block; width: 93%; padding: 0 5px;">
+                                    <input id="SliderSingle" type="slider" name="price" value="20" />
+                                </span>
+                            </div>
+                            <script type="text/javascript" charset="utf-8">
+                              jQuery("#SliderSingle").slider({ from: 0, to: 250000, step: 500, round: 1, format: { format: '##.0', locale: 'es' }, dimension: '&nbsp;&euro;', skin: "round_plastic" });
+                            </script>
+                        </div>
+                        
+                        <div class="bloque">
+                            <label>Plazo</label>
+                           <div class="layout-slider" style="width: 100%;margin-left: 1%;">
+                                <span style="display: inline-block; width: 93%; padding: 0 5px;">
+                                    <input id="SliderSingle2" type="slider" name="price" value="1" />
+                                </span>
+                            </div>
+                            <script type="text/javascript" charset="utf-8">
+                              jQuery("#SliderSingle2").slider({ from: 1, to: 40, step:1, round: 1, format: { format: '##.0', locale: 'es' }, dimension: '&nbsp;año/s;', skin: "round_plastic" });
+                            </script>
+                        </div>
+                        
+                        <div class="bloque2">
+                            <label>Tipo Euribor</label>
+                            <select onchange="calcularCuota();" id="euribor" size="1" name="euribor">
+                                <option value="0">+ 0%</option>
+                                <option value="0.10">+ 0,10%</option>
+                                <option value="0.20">+ 0,20%</option>
+                                <option value="0.30">+ 0,30%</option>
+                                <option value="0.40">+ 0,40%</option>
+                                <option selected="selected" value="0.5">+ 0,5%</option>                                
+                                <option value="4">+ 4%</option>
+                            </select>
+                        </div>
+                        
+                        <div class="bloque2">
+                            <label>Cuota mensual</label>
+                           <p id="tiempo"> 152&euro; <span>27 años</span></p>
+                        </div> 
+                        <p class="ventajas"><a href="#">Ventajas financiación Altamira</a></p>                        
+                    </div> <!-- calculadorahipo -->
+                    <div id="contactar">
+                        <p>Me interesa el inmueble</p>
+                        <a href="#">Contactar ></a>
+                    </div>
+                    <div class="aviso">
+                        <p class="titulo">aviso legal 1</p>
+                        <p id="aviso1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p id="masinfo" class="masinfo"><a href="#">+ info</a></p>
+                        <p id="menosinfo" class="masinfo" style="display:none;"><a href="#" onclick="hideinfo();return false;">- info</a></p>
+                    </div>
+                    <div class="aviso">
+                        <p class="titulo">aviso legal 2</p>
+                        <p id="aviso2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p id="masinfo" class="masinfo"><a href="#">+ info</a></p>
+                        <p id="menosinfo" class="masinfo" style="display:none;"><a href="#" onclick="hideinfo();return false;">- info</a></p>
+                    </div>
+                </div><!-- minifichas contenedor -->
+                        
+             <div id="ultimnove">
+                <h3 class="linea"><span>Inmuebles relacionados</span></h3>
+                <div id="carrubloq_prev" class="carrubloq_bot"><a href="#"><</a></div>
+                <div id="carrubloq">                      
+                  
+                    <div class="bloqueminificha">
+                        <div class="bloqueminifichacontent">
+                            <a id="inmulink1" onclick="alert('Click inmueble');return false;" href="#">
+                                <div class="img_bloqueminificha">
+                                    <img src="http://placehold.it/193x145" alt="XXX" />                             
+                                </div>
+                                <div class="datos_basic">
+                                   <h4>Madrid</h4>
+                                   <p class="direccion">San Vicente Ferrer, 28233 - Madrid</p>
+                                   <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>                                                          
+                                <p class="tipo">Obra nueva</p>
+                                <ul class="detalles">
+                                    <li>Chalet adosado</li>
+                                    <li>150m<sup>2</sup></li>
+                                    <li>2 hab.</li>
+                                </ul>
+                                <div class="precio">
+                                    <p class="valorprecio">360.000&euro;</p>        
+                                    <p class="tipgest">Precio Compra</p>
+                                </div>
+                                <div class="precio2">
+                                    <div class="col1">
+                                        <p class="tipgest">Alquiler</p>
+                                        <p class="valorprecio">700&euro;/mes</p>
+                                    </div>
+                                    <div class="col2">
+                                        <p class="tipgest">A. opc. compra</p>
+                                        <p class="valorprecio">650&euro;/mes</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <div id="geop1" class="geop" onclick="alert('Has hecho click en geopo')">                       
+                                <div id="tip1_left" style="display:none;"><p style="font-size:12px;color:#3e3e3e">Ver en mapa</p></div>
+                            </div>                                
+                            <div class="campanas">
+                                <div class="campana">
+                                   <ul>                                       
+                                       <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
+                                   </ul>
+                               </div>                          
+                           </div>
+                        </div>
+                        <div class="comparar">
+                            <input type="checkbox" />
+                            <label>Comparar</label>                            
+                        </div>
+                        <div class="social">
+                            <a href="#" id="share1" class="share"></a>
+                            <a href="#" id="mail1" class="mail"></a>
+                            <a href="#" id="favorite1" class="favorite"></a>
+                       </div>    
+                    </div>
+                    
+                     <div class="bloqueminificha">
+                        <div class="bloqueminifichacontent">
+                            <a id="inmulink1" onclick="alert('Click inmueble');return false;" href="#">
+                                <div class="img_bloqueminificha">
+                                    <img src="http://placehold.it/193x145" alt="XXX" />                             
+                                </div>
+                                <div class="datos_basic">
+                                   <h4>Madrid</h4>
+                                   <p class="direccion">San Vicente Ferrer, 28233 - Madrid</p>
+                                   <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>                                                          
+                                <p class="tipo">Obra nueva</p>
+                                <ul class="detalles">
+                                    <li>Chalet adosado</li>
+                                    <li>150m<sup>2</sup></li>
+                                    <li>2 hab.</li>
+                                </ul>
+                                <div class="precio">
+                                    <p class="valorprecio">360.000&euro;</p>        
+                                    <p class="tipgest">Precio Compra</p>
+                                </div>
+                                <div class="precio2">
+                                    <div class="col1">
+                                        <p class="tipgest">Alquiler</p>
+                                        <p class="valorprecio">700&euro;/mes</p>
+                                    </div>
+                                    <div class="col2">
+                                        <p class="tipgest">A. opc. compra</p>
+                                        <p class="valorprecio">650&euro;/mes</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <div id="geop2" class="geop" onclick="alert('Has hecho click en geopo')">                       
+                                <div id="tip2_left" style="display:none;"><p style="font-size:12px;color:#3e3e3e">Ver en mapa</p></div>
+                            </div>                                
+                            <div class="campanas">
+                                <div class="campana">
+                                   <ul>                                       
+                                       <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
+                                       <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
+                                       <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
+                                   </ul>
+                               </div>                          
+                           </div>
+                        </div>
+                        <div class="comparar">
+                            <input type="checkbox" />
+                            <label>Comparar</label>                            
+                        </div>
+                        <div class="social">
+                            <a href="#" id="share1" class="share"></a>
+                            <a href="#" id="mail1" class="mail"></a>
+                            <a href="#" id="favorite1" class="favorite"></a>
+                       </div>    
+                    </div>
+                    
+                    <div class="bloqueminificha">
+                        <div class="bloqueminifichacontent">
+                            <a id="inmulink1" onclick="alert('Click inmueble');return false;" href="#">
+                                <div class="img_bloqueminificha">
+                                    <img src="http://placehold.it/193x145" alt="XXX" />                             
+                                </div>
+                                <div class="datos_basic">
+                                   <h4>Madrid</h4>
+                                   <p class="direccion">San Vicente Ferrer, 28233 - Madrid</p>
+                                   <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>                                                          
+                                <p class="tipo">Obra nueva</p>
+                                <ul class="detalles">
+                                    <li>Chalet adosado</li>
+                                    <li>150m<sup>2</sup></li>
+                                    <li>2 hab.</li>
+                                </ul>
+                                <div class="precio">
+                                    <p class="valorprecio">360.000&euro;</p>        
+                                    <p class="tipgest">Precio Compra</p>
+                                </div>
+                                <div class="precio2">
+                                    <div class="col1">
+                                        <p class="tipgest">Alquiler</p>
+                                        <p class="valorprecio">700&euro;/mes</p>
+                                    </div>
+                                    <div class="col2">
+                                        <p class="tipgest">A. opc. compra</p>
+                                        <p class="valorprecio">650&euro;/mes</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <div id="geop3" class="geop" onclick="alert('Has hecho click en geopo')">                       
+                                <div id="tip3_left" style="display:none;"><p style="font-size:12px;color:#3e3e3e">Ver en mapa</p></div>
+                            </div>                                
+                            <div class="campanas">
+                                <div class="campana">
+                                   <ul>                                       
+                                       <li><img src="/images/no_campana.png" alt="No hay campañas"></li>
+                                   </ul>
+                               </div>                          
+                           </div>
+                        </div>
+                        <div class="comparar">
+                            <input type="checkbox" />
+                            <label>Comparar</label>                            
+                        </div>
+                        <div class="social">
+                            <a href="#" id="share1" class="share"></a>
+                            <a href="#" id="mail1" class="mail"></a>
+                            <a href="#" id="favorite1" class="favorite"></a>
+                       </div>    
+                    </div>
+                    <div class="bloqueminificha">
+                        <div class="bloqueminifichacontent">
+                            <a id="inmulink1" onclick="alert('Click inmueble');return false;" href="#">
+                                <div class="img_bloqueminificha">
+                                    <img src="http://placehold.it/193x145" alt="XXX" />                             
+                                </div>
+                                <div class="datos_basic">
+                                   <h4>Madrid</h4>
+                                   <p class="direccion">San Vicente Ferrer, 28233 - Madrid</p>
+                                   <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>                                                          
+                                <p class="tipo">Obra nueva</p>
+                                <ul class="detalles">
+                                    <li>Chalet adosado</li>
+                                    <li>150m<sup>2</sup></li>
+                                    <li>2 hab.</li>
+                                </ul>
+                               <div class="precio">
+                                    <p class="consultarprecio">Consultar precio</p>
+                                </div>
+                                <div class="precio2">
+                                    <div class="col1">
+                                        <p class="tipgest">Alquiler</p>
+                                        <p class="valorprecio">700&euro;/mes</p>
+                                    </div>
+                                    <div class="col2">
+                                        <p class="tipgest">A. opc. compra</p>
+                                        <p class="valorprecio">650&euro;/mes</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <div id="geop4" class="geop" onclick="alert('Has hecho click en geopo')">                       
+                                <div id="tip4_left" style="display:none;"><p style="font-size:12px;color:#3e3e3e">Ver en mapa</p></div>
+                            </div>                                
+                            <div class="campanas">
+                                <div class="campana">
+                                   <ul>                                       
+                                       <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
+                                       <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
+                                   </ul>
+                               </div>                          
+                           </div>
+                        </div>
+                        <div class="comparar">
+                            <input type="checkbox" />
+                            <label>Comparar</label>                            
+                        </div>
+                        <div class="social">
+                            <a href="#" id="share1" class="share"></a>
+                            <a href="#" id="mail1" class="mail"></a>
+                            <a href="#" id="favorite1" class="favorite select"></a>
+                       </div>    
+                    </div>                 
+                </div> 
+                <div id="carrubloq_next" class="carrubloq_bot active"><a href="#">></a></div>         
+                </div><!-- ultimnove -->
+                                 
+        </div><!--contenedor-->
+        <footer>
+            <p class="mapaweb"><a href="#">mapa web <span>&and;</span></a></p>
+            <div class="footercontent">
+                <div class="col1">
+                     <a href="#" class="logofoot openbank"><img alt="Logotipo Openbank" src="/images/logo_openbank_foot.png"></a>
+                    <a href="#" class="logofoot santander"><img alt="Logotipo Banco de Santander" src="/images/logo_altamira_foot.png"></a>
+                </div>
+                <div class="col2">
+                    <ul>
+                        <li><a href="#">&copy; Altamira Santander Real Estate 2013 </a></li>
+                        <li><a href="#">Aviso legal</a></li>
+                        <li><a href="#">Sobre Altamira Santander </a></li>
+                    </ul>
+                </div>
+                <div class="col3">
+                    <ul>
+                        <li id="rss"><a href="#">&nbsp;</a></li>
+                        <li id="tweet"><a href="#">&nbsp;</a></li>
+                        <li id="fb"><a href="#">&nbsp;</a></li>
+                        <li id="yt"><a href="#">&nbsp;</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+   </div>   
+</body>
+</html>

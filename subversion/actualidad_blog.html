@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Actualidad blog</title>
+	<link rel="stylesheet" type="text/css" href="/styles/normalize.css">
+	<link rel="stylesheet" type="text/css" href="/styles/style.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="/include/jquery/nivo_slider/themes/default/default.css" type="text/css" />	
+	<link rel="stylesheet" href="/include/jquery/nivo_slider/nivo-slider.css" type="text/css" />
+    <script src="/include/jquery/nivo_slider/jquery.nivo.slider.js" type="text/javascript"></script>
+    
+    <!-- JQCLOUD-->
+    <link rel="stylesheet" type="text/css" href="/include/jquery/jqcloud/jqcloud.css" />
+    <script type="text/javascript" src="/include/jquery/jqcloud/jqcloud-1.0.4.js"></script>
+    
+    <script type="text/javascript">
+        var word_list = [
+        {text: "armarios", weight: 2, link: "#"},
+        {text: "arquitectura", weight: 3, link: "#"},
+        {text: "bricolaje", weight: 4, link: "#"},
+        {text: "casa", weight: 8, link: "#"},
+        {text: "colores ", weight: 5, link: "#"},
+        {text: "decora ", weight: 7, link: "#"},
+        {text: "decoración", weight: 10, link: "#"},
+        {text: "diseño", weight: 3, link: "#"},
+        {text: "hogar", weight: 4, link: "#"},
+        {text: "iluminación", weight: 6, link: "#"},
+        {text: "interiores  ", weight: 9, link: "#"},
+        {text: "interiorismo ", weight: 6, link: "#"},
+        {text: "manualidades", weight: 8, link: "#"},
+        {text: "mesa ", weight: 9, link: "#"},
+        {text: "muebles ", weight: 8, link: "#"},
+        {text: "primavera", weight: 4, link: "#"},
+        {text: "reforma ", weight: 7, link: "#"},
+        {text: "restauración  ", weight: 10, link: "#"}   
+        ];
+      $(function() {
+        $("#nube").jQCloud(word_list);
+      });
+    </script>
+    
+    
+    <!-- jquery bubbletip CSS -->
+     <link href="/include/jquery/bubbletip/bubbletip/bubbletip.css" rel="stylesheet" type="text/css" />
+     <!--[if IE]>
+    <link href="/include/jquery/bubbletip/bubbletip/bubbletip.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <!-- jquery bubbletip JS -->
+    <script src="/include/jquery/bubbletip/jQuery.bubbletip-1.0.6.js" type="text/javascript"></script>
+    
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    <script>
+        // FUNCION PARA NIVOSLIDER
+        $(window).load(function() {
+            $('#slider').nivoSlider();
+        });
+        
+         // FUNCIONES PARA BUBBLETIP
+        $(window).bind('load', function() {
+            $('#geop1').bubbletip($('#tip1_left'), {
+                deltaDirection: 'right',
+            });
+            $('#geop2').bubbletip($('#tip2_left'), {
+                deltaDirection: 'right',
+            });
+            $('#geop3').bubbletip($('#tip3_left'), {
+                deltaDirection: 'right',
+            });
+             $('#geop4').bubbletip($('#tip4_left'), {
+                deltaDirection: 'right',
+            });
+        });
+        
+        function showsubmenu(){
+            document.getElementById("sub1").style.display="inline";
+            document.getElementById("sub1").style.height=36+"px";
+        }
+        function hidesubmenu(){
+            document.getElementById("sub1").style.display="none";
+            document.getElementById("sub1").style.height=0;
+        }
+        
+        function showovermap(hide,show){
+            document.getElementById(hide).style.visibility="hidden";
+            document.getElementById(show).style.visibility="visible";
+            
+            }
+    </script>   
+</head>
+<body>
+    <div id="blog_entrada" class="content entrada">
+        <header>
+            <div id="contenidohead">
+    			<div id="logoaltamira"><a href="/"><img alt="Altamira santander" src="/images/logo_altamira.png" alt="Logotipo Inmuebles Altamira"></a></div>
+    			<div id="zonacentro">
+    			    <a href="#">
+    			        <div id="tfnohead">    			            
+    			            <p><img src="/images/tfno_head.png">902 509 559</p>
+    			            <p class="leyenda">Teléfono y vídeollamada</p>
+    			        </div>    			        
+    			    </a>
+    			    <div id="socialhead">
+    			    	 <ul>
+                        <li id="tweet"><a href="#">&nbsp;</a></li>
+                        <li id="fb"><a href="#">&nbsp;</a></li>
+                        <li id="yt"><a href="#">&nbsp;</a></li>
+                    </ul>
+    			    </div>
+    			</div>
+    			<div id="logosantander"><a href="#"><img src="/images/logo_santander.png" alt="Logotipo Banco de Santander"></a></div>
+    		</div>
+    	
+        </header>
+    	<nav>
+    		<div id="contenidonav">
+    			<ul>
+    				<li class="first"><a  onclick="showsubmenu()" href="#">Residencial</a></li>
+    				<li><a onclick="hidesubmenu()" href="#">Terciario</a></li>
+    				<li><a onclick="hidesubmenu()" href="#">Suelo</a></li>
+    				<li><a onclick="hidesubmenu()" href="#">Inversores</a></li>
+    				<li class="select"><a onclick="hidesubmenu()" href="#">Campañas</a></li>
+    				<li><a onclick="hidesubmenu()" href="#">Actualidad</a></li>
+    				<li><a onclick="hidesubmenu()" href="#">Fondo social</a></li>
+    				<li class="areapriv"><a href="#">Área privada</a></li>
+    			</ul>
+    			<div class="subnav" id="sub1">
+    			    <ul>
+    			    	<li><a href="#">Compra</a></li>
+    			    	<li><a href="#">Alquiler</a></li>
+    			    	<li><a href="#">Alquiler opción a compra</a></li>
+    			    	<li><a href="#">Sobre plano</a></li>
+    			    	<li><a href="#">Novedades</a></li>
+    			    	<li><a href="#">Financiación</a></li>
+    			    	<li><a href="#">Alertas</a></li>
+    			    </ul>
+    			</div>
+    		</div>
+    	</nav>
+    	<div id="buscador_top">
+    	    <form id="buscform">
+    	        <div id="buscavanz">
+    	            <div id="colseleccion">
+    	                <ul>
+    	                    <li class="select"><a href="#">Búsqueda avanzada</a></a></li>
+    	                    <li><a href="#">Búsqueda por mapa</a></li>
+    	                    <li><a href="#">Búsqueda por cuota o referencia</a></li>
+    	                </ul>
+    	            </div>
+    	            <div id="col1">
+    	                
+    	            </div>
+    	            <div id="col2">
+    	                
+    	            </div>
+    	        </div>
+    	    </form>
+    	    <p id="showbusc"><a href="#">Buscador <span>&or;</span></a></p>
+    	</div>
+    	<div class="contenedor">
+    	    <div id="migas">
+                <ul>
+                    <li class="bread1"><a href="#">Inicio</a></li>
+                    <li class="bread2 sub"><a href="#" onclick="showosubmigas('submigas1')">Actualidad</a>
+                        <div class="submigas" id="submigas1">
+                            <select id="tutipoges" name="tutipoges">
+                                <option value="1">Lorem</option><option value="2">Ipsum</option><option value="3">dolore</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="bread3 sub"><a href="#" onclick="showosubmigas('submigas1')">Blog</a>
+                        <div class="submigas" id="submigas2">
+                            <select id="tutipoges" name="tutipoges">
+                                <option value="1">Lorem</option><option value="2">Ipsum</option><option value="3">dolore</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="bread4 sub"><a href="#" onclick="showosubmigas('submigas1')">Ideas para ganar metros en un salón</a>
+                        <div class="submigas" id="submigas3">
+                            <select id="tutipoges" name="tutipoges">
+                                <option value="1">Lorem</option><option value="2">Ipsum</option><option value="3">dolore</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div><!--migas-->
+            <div class="paginacion">
+                <p><a href="#">Volver a actualidad</a></p>
+                <ul>
+                	<li><a href="#">&laquo; Anterior post</a></li>
+                	<li><a href="#">...</a></li>
+                	<li class="select"><a href="#">4</a></li>
+                	<li><a href="#">5</a></li>
+                	<li><a href="#">6</a></li>
+                	<li><a href="#">...</a></li>
+                	<li><a href="#">Siguiente post &raquo;</a></li>
+                </ul>
+            </div>
+            <h5>Blog</h5>
+            <article>
+                <header>
+                    <h6>Ideas para ganar metros en un salón</h6>
+                    <div class="social">
+                        <ul>
+                        	<li class="share"><a href="#"></a></li>
+                        	<li class="mail"><a href="#"></a></li>
+                        	<li class="print"><a href="#"></a></li>
+                        </ul>
+                    </div>
+                </header>
+                <p class="escrito">Escrito por: <span>Altamira el 16 de septiembre de 2013</span></p>
+                
+                <img data-thumb="http://lorempixel.com/470/315/" alt="" src="http://lorempixel.com/470/315/">
+                
+                <p>Aunque parezca mentira un salón pequeño no puede disponer de todos los muebles. Solo es cuestión de ser práctico y optar por piezas más pequeñas, de baja altura y colores claros. Este tipo de mobiliario hará que tu salón se vea mucho más desahogado.</p>
+                
+                <h7>Almacenar debajo de las mesas</h7>
+                
+                <p>Una opción para aprovechar al máximo los escasos metros se puede elegir un mueble de diseño muy ligero y en la parte baja aprovechar para colocar una caja de gran tamaño.
+</p>
+                <img data-thumb="http://lorempixel.com/g/315/470/" alt="" src="http://lorempixel.com/g/315/470/">
+                
+                <h7>Un escritorio tras el sofá</h7>
+                
+                <p>Una buena idea también es aprovechar la parte trasera del sillón para montar una reducida zona de trabajo. En este caso, es clave la elección de muebles con poco fondo para ampliar la sensación de espacio y permitir el paso.</p>
+                
+                <h7>La librería</h7>
+                
+                <p>Un modelo empotrado a la pared tiene las ventajas de ser una pieza con gran capacidad de almacenaje que permite además integrar elementos poco atractivos.</p>
+               
+                <img data-thumb="http://lorempixel.com/315/470/sports/1/" alt="" src="http://lorempixel.com/315/470/sports/1/">
+                
+                <h7>Con cajones</h7>
+                
+                <p>Un cúmulo de objetos diminutos —facturas, llaves…— pueden arruinar el salón. Tenlos a raya en la librería, dentro de cajones o cestas. Si te falta espacio, colócala detrás del sofá. Librería, de Oficios de Ayer.
+</p>
+                <h7>Multifunción</h7>
+                
+                <p>Aprovecha muebles multifuncionales como un sofá cama con cajoneras incluidas, una mesa pequeña de centro con diferentes niveles y espacio para guardar objetos o muebles colgantes son algunas de las opciones que no debes descartar para hacer que tu salón sea más cómodo y acogedor.
+</p>
+                <p>Las puertas correderas son también ideales para espacios reducidos, ya que en comparación con las puertas tradicionales, ocupan mucho menos espacio.</p>
+                
+                <p>Fuente fotos: <a href="#">micasarevista.com</a></p>
+                <p>Fuente texto: <a href="#">hogar.uncomo.com</a></p>
+                
+                <footer>
+                    <div id="likeit">
+                        <div class="btn_share">
+                            <div id="fb-root"></div>
+                            <script>(function(d, s, id) {
+                              var js, fjs = d.getElementsByTagName(s)[0];
+                              if (d.getElementById(id)) return;
+                              js = d.createElement(s); js.id = id;
+                              js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1&appId=429143090523894";
+                              fjs.parentNode.insertBefore(js, fjs);
+                            }(document, 'script', 'facebook-jssdk'));</script>
+                            <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                        </div>                    
+                        <div class="btn_share">
+                            <a href="https://twitter.com/share" class="twitter-share-button" data-lang="es">Tweet</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                        </div>      
+                    </div>
+                </footer>
+                
+            </article>
+            <aside>
+                <input type="text" name="" id="seach" value="Buscar" />
+                <a href="#" id="search_button"></a>
+                <div class="tipodesp" id="archivos">
+                    <div class="cabecera">
+                        <p><a href="#">Archivos</a></p>
+                    </div>
+                    <div class="contenido">
+                        <p><a href="#">Abril 2014</a></p>
+                        <p><a href="#">Marzo 2014</a></p>
+                        <p><a href="#">Febrero 2014</a></p>
+                        <p><a href="#">Enero 2014</a></p>
+                        <p><a href="#">Diciembre 2013</a></p>
+                        <p><a href="#">Noviembre 2013</a></p>
+                    </div>
+                </div>
+                
+                 <div class="tipodesp desp" id="tags">
+                    <div class="cabecera">
+                        <p><a href="#">Tags</a></p>
+                    </div>
+                    <div class="contenido">
+                       <div id="nube">
+                           
+                       </div>
+                    </div>
+                </div>
+                
+                <div class="tipodesp" id="categorias">
+                    <div class="cabecera">
+                        <p><a href="#">Categorias</a></p>
+                    </div>
+                    <div class="contenido">
+                        <p><a href="#">Arquitectura</a></p>
+                        <p><a href="#">Baños</a></p>
+                        <p><a href="#">celebrities</a></p>
+                        <p><a href="#">cocina</a></p>
+                        <p><a href="#">decoración</a></p>
+                        <p><a href="#">dormitorios</a></p>
+                        <p><a href="#">dormitorios</a></p>
+                    </div>
+                </div>
+                
+            </aside>
+            <div class="paginacion">
+                <p><a href="#">Volver a actualidad</a></p>
+                <ul>
+                    <li><a href="#">&laquo; Anterior post</a></li>
+                    <li><a href="#">...</a></li>
+                    <li class="select"><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">...</a></li>
+                    <li><a href="#">Siguiente post &raquo;</a></li>
+                </ul>
+            </div>
+        </div>
+        <footer>         
+            <div class="footercontent">
+                <div class="col1">
+                     <a href="#" class="logofoot openbank"><img alt="Logotipo Openbank" src="/images/logo_openbank_foot.png"></a>
+                    <a href="#" class="logofoot santander"><img alt="Logotipo Banco de Santander" src="/images/logo_altamira_foot.png"></a>
+                </div>
+                <div class="col2">
+                    <ul>
+                        <li><a href="#">&copy; Altamira Santander Real Estate 2013 </a></li>
+                        <li><a href="#">Aviso legal</a></li>
+                        <li><a href="#">Sobre Altamira Santander </a></li>
+                    </ul>
+                </div>
+                <div class="col3">
+                    <ul>
+                        <li id="rss"><a href="#">&nbsp;</a></li>
+                        <li id="tweet"><a href="#">&nbsp;</a></li>
+                        <li id="fb"><a href="#">&nbsp;</a></li>
+                        <li id="yt"><a href="#">&nbsp;</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+   </div>	
+</body>
+</html>
