@@ -2440,7 +2440,7 @@ p.volver a{
 
 
 
-/****************************************************** FICHA SUELO *******************************/
+/****************************************************** FORMULARIO CONTACTAR *******************************/
 #contactar p.titulo{
 	color: #515151;
     float: left;
@@ -2460,8 +2460,6 @@ p.volver a{
 	  font-size: 15px;
 }
 
-
-
 #contactar .formubody {
     background-color: #D2D7DB;
     float: left;
@@ -2476,65 +2474,66 @@ p.volver a{
     float: left;
     font-family: lucidagrande;
     font-size: 15px;
-    width: 70%;
+    width: 100%;
 }
 
 #contactar .formubody form .bloquedatos{
   	float: left;
-    width: 100%;
+    width: 96%;
  	border-bottom: 1px solid #FF0000;
  	padding-bottom: 10px;
  	margin-bottom: 20px;
 }
 
-#contactar .formubody form .bloquedatos .linea{
+#contactar .formubody form .linea{
 	float:left;
 	width:100%;
 	margin-bottom: 20px;
 }
 
-#contactar .formubody form .bloquedatos .linea label{
+#contactar .formubody form .linea label{
 	float: left;
-    width: 29%;
+	width:21%;
+    
 }
 
-#contactar .formubody form .bloquedatos .linea.red label{
+#contactar .formubody form .linea.red label{
 	color:red;
 	font-weight:bold;	
 }
 
-#contactar .formubody form .bloquedatos .linea input{
+#contactar .formubody form .linea input{
  	float: left;
     width: 70%;
     border: 1px solid #CCCCCC;
     padding: 2px 0;
 }
 
-#contactar .formubody form .bloquedatos .linea.red input{
+#contactar .formubody form .linea.red input{
 	width:120px;
 	text-align: right;
 }
 
-#contactar .formubody form .bloquedatos .linea select{
+#contactar .formubody form .linea select{
 	width:120px;
 	
 }
 
 #contactar .formubody form .bloquedatos .linea .tipocheck{}
 
-#contactar .formubody form .bloquedatos .linea .tipocheck label{
+#contactar .formubody form .linea .tipocheck label{
   	margin-right: 20px;
     width: auto;
 }
 
-#contactar .formubody form .bloquedatos .linea .tipocheck input{
+#contactar .formubody form .linea .tipocheck input{
 	float: none;
     vertical-align: middle;
     width: auto;
 }
 
 
-#contactar .formubody form .bloquedatos p.oblig{
+#contactar .formubody form p.oblig{
 	font-size:12px;
 	text-align: right;	
 }
@@ -2557,6 +2556,11 @@ p.volver a{
 
 #contactar .formubody form .bloquelegal .linea.check label{
 	font-size:11px;
+	width: auto;
+}
+
+#contactar .formubody form .bloquelegal .linea.check input[type="checkbox"]{
+	width: auto;
 }
                         
 #contactar .formubody form .bloquelegal .captcha{
@@ -2602,6 +2606,20 @@ p.volver a{
 	background-color: #989898;	
 }
 
+
+
+
+
+/* CON MINIFICHA */
+
+#contactar .formubody form.contact_minificha{
+	width:70%;
+}
+
+#contactar .formubody form.contact_minificha .linea label{
+	width: 29%;
+	
+}
 #contactar .formubody .bloqueminificha {
     float: right;    
     padding: 0;
@@ -2613,6 +2631,151 @@ p.volver a{
 
 
 
+
+
+/* FORMULARIO TRAE UN AMIGO */
+
+
+#contactar .formubody form.traeamigo .linea label{
+	width:180px;
+}
+
+#contactar .formubody form.traeamigo .linea .bloquelinea{
+	float:left;
+}
+
+#contactar .formubody form.traeamigo .linea .bloquelinea.tipo1 input{
+	width: 450px;
+}
+
+#contactar .formubody form.traeamigo .linea .bloquelinea.tipo2{
+	margin-left: 30px;
+}
+
+#contactar .formubody form.traeamigo .linea .bloquelinea.tipo2 label{
+	width: 60px;
+}
+
+#contactar .formubody form.traeamigo .linea .bloquelinea.tipo2 input{
+	width: 150px;
+}
+
+
+/*ZONABANCO*/
+
+#contactar .formubody form.traeamigo .bloquebanco {
+    float: left;
+    margin-bottom: -50px;
+    width: 96%;
+}
+
+#contactar .formubody form.traeamigo .bloquebanco p.cuenta{
+	color: #FF0000;
+    font-family: rotis;
+    font-size: 27px;
+    font-weight: bold;
+} 
+
+#contactar .formubody form.traeamigo .bloquebanco .bloquelinea.tipo1{
+	margin-right: 10px;
+}
+
+#contactar .formubody form.traeamigo .bloquebanco .bloquelinea.tipo1 label, #contactar .formubody form.traeamigo .bloquebanco .bloquelinea.tipo2 label{
+ 	color: #FF0000;
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-top: 3px;
+    width: auto;
+}
+
+#contactar .formubody form.traeamigo .bloquebanco .bloquelinea.tipo1 input{
+	width: 60px;
+}
+
+#contactar .formubody form.traeamigo .bloquebanco .bloquelinea.tipo2 {
+	margin:0px;
+}
+
+
+#contactar .formubody form.traeamigo .bloquebanco .bloquelinea.tipo2 input{
+	width:110px;
+}
+
+#contactar .formubody form.traeamigo .bloquebanco p.buscaofic{
+ 	color: #FF0000;
+    font-family: rotis;
+    font-size: 22px;
+}
+
+#contactar .formubody form.traeamigo .bloquebanco p.buscaofic a{
+	color:red;
+	text-decoration: underline;
+}
+
+#contactar .formubody form.traeamigo .bloquebanco p.buscaofic a::after{
+  	background: url("/images/amigoform_lupa.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    content: "";
+    display: inline-block;
+    height: 23px;
+    margin-left: 10px;
+    margin-top: 6px;
+    position: absolute;
+    width: 23px;
+}
+
+#contactar .formubody form.traeamigo .bloquebanco p.clausula{
+   	color: #515151;
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+#contactar .formubody form.traeamigo .bloquebanco p.clausula a{
+	color:red;
+}
+
+#contactar .formubody form.traeamigo .bloquebanco .linea.check{
+	clear: both;    
+    width: 520px;
+}
+
+#contactar .formubody form.traeamigo .bloquebanco .linea.check input{
+	width:auto;
+}
+
+#contactar .formubody form.traeamigo .bloquebanco .linea.check label{
+    font-size: 11px;
+    width: 460px;
+}
+
+
+#contactar .formubody form.traeamigo .bloquebanco  .botonera{
+	float: left;
+}
+
+#contactar .formubody form.traeamigo .bloquebanco  .botonera input[type="reset"]{
+  	background-color: #989898;
+    border: medium none;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    text-transform: uppercase;
+ 	width: 140px;
+}
+
+#contactar .formubody form.traeamigo .bloquebanco  .botonera input[type="submit"]{
+	background-color: red;
+    border: medium none;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    text-transform: uppercase;
+ 	width: 140px;
+}
 
 /****************************************************** VIDEOLLAMADA *******************************/
 #videollamada h3{
