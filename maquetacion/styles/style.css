@@ -1146,6 +1146,7 @@ h3.linea span{
 
 .contenedor #pagyorden #paginacion ul{
 	display: inline-block;
+	width: 250px;
 	
 }
 
