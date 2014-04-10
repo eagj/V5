@@ -14,7 +14,15 @@
 @font-face {
     font-family: "lucidagrande";
     src: url('fonts/LucidaGrande.woff');
+    font-weight: normal;
 }
+
+@font-face {
+    font-family: "lucidagrande";
+    src: url('fonts/LucidaGrande-bold.woff');
+    font-weight: bold;
+}
+
 
 @font-face {
 	font-family: 'icomoon';
@@ -33,6 +41,10 @@ html{
 }
 
 
+.clearfix{
+	width:100%;
+	clear:both;
+}
 /*************************** ICOS SOCIALES PIE/HEAD **************************/
 
 /* ICO PIE RSS*/
@@ -2686,7 +2698,7 @@ p.volver a{
     font-weight: bold;
     margin-right: 10px;
     margin-top: 3px;
-    width: auto;
+	width: auto;
 }
 
 #contactar .formubody form.traeamigo .bloquebanco .bloquelinea.tipo1 input{
@@ -3841,8 +3853,370 @@ aside #categorias p{
 
 
 
+/****************************************************** ALQUILER ***************************/
+
+.zonaplana{
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 68%, rgba(231,231,231,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(68%,rgba(255,255,255,1)), color-stop(100%,rgba(231,231,231,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 68%,rgba(231,231,231,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,1) 68%,rgba(231,231,231,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 68%,rgba(231,231,231,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 68%,rgba(231,231,231,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e7e7e7',GradientType=0 ); /* IE6-9 */
+	border-bottom: 11px solid #FF0000;
+    float: left;
+    margin-left: 1%;
+    width: 99%;
+ 	margin-top: 50px;
+}
+
+.zonaplana .silueta{
+	float: left;
+    margin-bottom: -5px;
+    width:45%;
+}
+
+.zonaplana .silueta img{}
+
+.zonaplana .dcha{
+	float:left;
+	width:55%;
+}
+
+.zonaplana .dcha p.subtitulo{
+ 	color: #FF0000;
+    font-size: 24px;
+    margin: 20px auto;
+    text-align: center;
+    width: 80%;
+}
+
+.zonaplana .dcha p{
+	 color: #333333;
+    font-size: 16px;
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+}
+
+.zonaplana .dcha .tipobot{
+  	float: left;
+    margin: 10px 0;
+    width: 100%;
+}
 
 
+.zonaplana .dcha .tipobot p a{
+	background-color: #FF0000;
+    border-radius: 8px 0 0 8px;
+    color: #FFFFFF;
+    float: left;
+    font-size: 16px;
+    margin-right: -3px;
+    margin-top: 15px;
+    padding: 2px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 85%;
+}
+
+.zonaplana .dcha .tipobot .imagen{
+ 	background: url("/images/pdf_ico_sprite.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    height: 41px;
+    width: 36px;
+}
+
+.zonaplana .dcha .tipobot:hover p a{
+	background-color: #515151;
+}
+
+.zonaplana .dcha .tipobot:hover .imagen{
+	background: url("/images/pdf_ico_sprite.png") no-repeat scroll -39px 0 rgba(0, 0, 0, 0);
+}
+
+.zonaplana .dcha .tipobot.sobre .imagen{
+ 	background: url("/images/sobres_ico_alquiler_sprite.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    height: 38px;
+    margin-top: 2px;
+    width: 46px;
+}
+
+.zonaplana .dcha .tipobot.sobre:hover .imagen{
+ 	background: url("/images/sobres_ico_alquiler_sprite.png") no-repeat scroll -46px 0 rgba(0, 0, 0, 0);
+}
+ 	
+#alquiler h3.linea{
+	margin-top:50px;
+} 
+
+#alquiler .contenedor{
+	margin-bottom:50px;
+}
+
+
+
+
+
+/*********************************************** ZONA USUARIO ******************************/
+.usuario{
+	float:left;
+	width:100%;
+}
+
+.usuario .datosuser{
+  	background-color: #FF0000;
+    border-radius: 4px;
+    float: left;
+    font-family: lucidagrande;    
+    padding: 2%;
+    width: 96%;
+ 	font-size: 13px;
+}
+
+.usuario .datosuser label{
+	color: #FFFFFF;
+    margin-right: 10px;   
+    font-weight: bold;
+}
+
+.usuario .datosuser input{
+	margin-right: 20px;    
+    padding: 2px;
+    border:none;
+    color:#515151;
+}
+
+.usuario .datosuser input[type="text"]{
+	width:280px;
+}
+
+.usuario .datosuser input[type="password"]{
+	width:180px;
+}
+
+.usuario .datosuser a#eliminar{
+   	background-color: #515151;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px 2px;
+    border-radius: 2px 2px 2px 2px;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 4px;
+    text-align: center;
+    vertical-align: middle;
+    width: 110px;
+    text-transform:uppercase;
+  	margin-left: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+.usuario .datosuser a#eliminar:before {
+    content: "\e819"; 
+    font-family: icomoon;
+    margin-right: 5px;
+}
+
+.usuario .datosuser a#editar{
+	background-color: #fff;
+  	-webkit-border-radius: 2px 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px 2px;
+    border-radius: 2px 2px 2px 2px;
+    color: #515151;
+    display: inline-block;
+    padding: 4px;
+    text-align: center;
+    vertical-align: middle;
+    width: 110px;
+    text-transform:uppercase;
+    cursor: pointer;
+}
+
+.usuario .datosuser a#editar:before {
+    content: "\e723";
+    font-family: icomoon;
+    margin-right: 5px;
+}
+
+.usuario .col{
+	float: left;
+    margin-left: 2%;
+    margin-top: 40px;
+    width: 46%;
+}
+
+.usuario .col:last-child{
+	float: right;
+    width: 50%;
+}
+
+.usuario .col p.title{
+	color:red;
+	font-size:37px;
+	text-align: center;
+	border-bottom:1px solid red;
+	margin-bottom: 30px;
+	font-weight: normal;
+}
+
+.usuario .col p.title::before{
+ 	background: url("/images/campa_star_sprite.png") repeat scroll 0px 0 rgba(0, 0, 0, 0);
+    content: "";
+    display: inline-block;    
+    height: 44px;
+    margin-right: 10px;
+    width: 40px;
+}
+
+.usuario .col p.title.col2::before {
+	background: url("/images/campa_star_sprite.png") repeat scroll 40px 0 rgba(0, 0, 0, 0);
+	content: "";
+    display: inline-block;    
+    height: 44px;
+    margin-right: 10px;
+    width: 40px;
+}
+
+
+.usuario .col .contenido_col1{
+	float:left;
+	width:87%;
+	margin-left:6.5%;
+}
+
+
+.usuario .col .contenido_col1 .colizqda {
+    float: left;
+    width: 40%;
+  	margin-right: 10%;
+  	margin-bottom: 20px;
+}
+
+.usuario .col .contenido_col1 p.titulo{
+	color:red;
+	font-size:20px;
+ 	margin-bottom: 20px;
+}
+
+.usuario .col .contenido_col1 .colizqda label {
+   	color: #515151;
+    display: block;
+    font-family: lucidagrande;
+    font-size: 13px;    
+    margin: 20px 0;
+}
+
+.usuario .col .contenido_col1 .colizqda input{
+	margin-right: 5px;
+    vertical-align: middle;
+}
+
+.usuario .col .contenido_col1 .coldcha{
+   	float: left;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.usuario .col .contenido_col1 .coldcha label{
+	color: #515151;
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.usuario .col .contenido_col1 .coldcha select {
+    border: 1px solid #CCCCCC;
+    font-size: 13px;
+    padding: 2px;
+    width: 60%;
+    margin-bottom: 15px;
+}
+
+.usuario .col .contenido_col1 .colfull{
+    border-bottom: 1px solid #FF0000;
+    float: left;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+.usuario .col .contenido_col1 .colfull label {
+    display: inline-block;
+    width: 95px;
+ 	color: #515151;
+    display: inline-block;
+    font-family: lucidagrande;
+    font-size: 13px;
+    width: 95px;
+    margin-bottom: 20px;
+}
+
+.usuario .col .contenido_col1 .colfull input{
+	 vertical-align: middle;
+}
+
+.usuario .col .contenido_col1 .colfull.tratamiento{
+	font-family: lucidagrande;
+}
+
+.usuario .col .contenido_col1 .colfull.tratamiento p {
+    color: #515151;
+    font-size: 12px;
+    margin: 0 0 10px;
+}
+
+.usuario .col .contenido_col1 .colfull.tratamiento p a{
+	color:red;
+	font-family: rotis;
+	text-transform: uppercase;
+	text-decoration: underline;	
+	font-size: 15px;
+}
+
+.usuario .col .contenido_col1 .colfull.tratamiento label{
+   color: #515151;
+    font-size: 11px;
+    width: 100%;
+}
+
+.usuario .col .contenido_col1 .colfull.tratamiento p.enviar{
+	text-align: center;
+ 	margin: 20px 0;
+}
+
+.usuario .col .contenido_col1 .colfull.tratamiento p.enviar a{
+ 	background-color: #FF0000;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    padding: 5px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+
+
+
+/*MINIFICHA*/
+.usuario .col .bloqueminificha{
+ 	margin: 0 4% 1% 0;    
+    width: 44%;
+}
+
+.usuario .col .bloqueminificha.doble{
+	width:94%;
+}
+
+
+.usuario .col .bloqueminificha.doble #eliminar {
+    margin-left: 445px;
+}
 /****************************************************** PIE *******************************/
 
 footer{
