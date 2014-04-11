@@ -168,7 +168,7 @@
                      <p class="title">Mis alertas</p>
                      <div class="contenido_col1">
                          <div class="colizqda">
-                             <p class="titulo">Operación</p>
+                             <p class="titulo operac">Operación</p>
                                 <label>
                                     <input type="radio" name="operacion" value="" id="compra"/>
                                     Compra
@@ -185,7 +185,7 @@
                             </label>
                          </div>
                          <div class="coldcha">
-                             <p class="titulo">Localización</p>
+                             <p class="titulo locali">Localización</p>
                              <label>Provincia</label>
                              <select>
                                  <option>Seleccionar</option>
@@ -203,7 +203,7 @@
                          <div class="clearfix"></div>
                          
                         <div class="colizqda">
-                            <p class="titulo">Estado</p>
+                            <p class="titulo estado">Estado</p>
                             <label>
                                 <input type="checkbox" name="estado" value="" id="obranueva"/>
                                 Obra nueva
@@ -215,7 +215,7 @@
                             </label>
                          </div>
                          <div class="coldcha">
-                            <p class="titulo">Precio</p>
+                            <p class="titulo precio">Precio</p>
                             <div class="layout-slider">
                                 <input id="Slider3" type="slider" name="area" value="100000;500000" />
                             </div>
@@ -225,7 +225,7 @@
                         </div>
                         <div class="clearfix"></div>
                         <div class="colfull">
-                            <p class="titulo">Otros servicios</p>
+                            <p class="titulo otserv">Otros servicios</p>
                             <label>
                                 <input type="checkbox" name="estado" value="" id="garaje"/>
                                 Garaje
@@ -269,11 +269,73 @@
                             </label>
                             <p class="enviar"><a href="#"> Crear alerta ></a></p>
                          </div>
+                         <div class="alertas">
+                            <div class="tipodesp desp">
+                                <div class="cabecera">
+                                    <p><a href="#">Alerta 1</a></p>
+                                </div>
+                                <div class="contenido">
+                                    <ul>
+                                    	<li>Alquiler con opción a compra</li>
+                                    	<li>Segunda mano</li>
+                                    	<li>Madrid, Madrid</li>
+                                    	<li>Garaje, calefacción, trastero</li>
+                                    	<li>Entre 150.000 € - 180.000 €</li>
+                                    </ul>
+                                    <div class="acciones">
+                                        <ul>
+                                            <li><a href="#"><img src="/images/area_editar_ico.png" alt="Editar alerta" /></a></li>
+                                            <li><a href="#"><img src="/images/area_borrar_ico.png" alt="Borrar alerta"/></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tipodesp">
+                                <div class="cabecera">
+                                    <p><a href="#">Alerta 2</a></p>
+                                </div>
+                                <div class="contenido">
+                                    <ul>
+                                        <li>Alquiler con opción a compra</li>
+                                        <li>Segunda mano</li>
+                                        <li>Madrid, Madrid</li>
+                                        <li>Garaje, calefacción, trastero</li>
+                                        <li>Entre 150.000 € - 180.000 €</li>
+                                    </ul>
+                                    <div class="acciones">
+                                        <ul>
+                                            <li><a href="#"><img src="/images/area_editar_ico.png" alt="Editar alerta" /></a></li>
+                                            <li><a href="#"><img src="/images/area_borrar_ico.png" alt="Borrar alerta"/></a></li>
+                                        </ul>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <div class="tipodesp">
+                                <div class="cabecera">
+                                    <p><a href="#">Alerta 3</a></p>
+                                </div>
+                                <div class="contenido">
+                                    <ul>
+                                        <li>Alquiler con opción a compra</li>
+                                        <li>Segunda mano</li>
+                                        <li>Madrid, Madrid</li>
+                                        <li>Garaje, calefacción, trastero</li>
+                                        <li>Entre 150.000 € - 180.000 €</li>
+                                    </ul>
+                                    <div class="acciones">
+                                        <ul>
+                                            <li><a href="#"><img src="/images/area_editar_ico.png" alt="Editar alerta" /></a></li>
+                                            <li><a href="#"><img src="/images/area_borrar_ico.png" alt="Borrar alerta"/></a></li>
+                                        </ul>
+                                    </div>
+                                </div>                                
+                            </div>
+                         </div>
                      </div>
                 </div>
                 <div class="col">
                     <p class="title col2">Mis favoritos</p>
-        	       	<div class="bloqueminificha">
+    	       		<div class="bloqueminificha">
         	           <div id="eliminar"><a href="#">&nbsp;</a></div>
                         <div class="bloqueminifichacontent">
                             <a href="#" onclick="alert('Click inmueble');return false;" id="inmulink1">
@@ -327,7 +389,7 @@
                             <a class="favorite" id="favorite1" href="#"></a>
                        </div>    
                     </div>
-            	   <div class="bloqueminificha">
+        	   		<div class="bloqueminificha">
                        <div id="eliminar"><a href="#">&nbsp;</a></div>
                         <div class="bloqueminifichacontent">
                             <a id="inmulink1" onclick="alert('Click inmueble');return false;" href="#">
@@ -381,8 +443,8 @@
                             <a href="#" id="favorite1" class="favorite"></a>
                        </div>    
                     </div>
-                     <div class="bloqueminificha doble">
-                       <div id="eliminar"><a href="#">&nbsp;</a></div>
+                    <div class="bloqueminificha doble">
+                        <div id="eliminar"><a href="#">&nbsp;</a></div>
                         <div class="bloqueminifichacontent">
                             <a id="inmulink1" onclick="alert('Click inmueble');return false;" href="#">
                                 <div class="img_bloqueminificha">
@@ -435,6 +497,8 @@
                             <a href="#" id="favorite1" class="favorite"></a>
                        </div>    
                     </div>
+                
+                    <p class="comparar"><a href="#">comparar inmuebles</a></p>
                 </div>    
             </div>
         </div>
