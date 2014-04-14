@@ -4474,6 +4474,42 @@ aside #categorias p{
 
 
 
+
+/****************************************************** ERROR *******************************/
+#error .contenedor{
+	text-align:center;
+	margin-top:70px;
+}
+
+#error .contenedor p.tipoerror{
+	color:red;
+	font-size:20px;
+ 	margin-top: 35px;
+	text-transform: uppercase;	
+}
+
+#error .contenedor p.question{
+	color:red;
+	font-size:40px;
+	margin-top:25px;
+	margin-bottom:45px;
+	text-transform: uppercase;	
+}
+
+#error .contenedor p.descrip{
+	font-size:22px;
+	color:#515151;
+	margin-bottom: 35px;
+}
+
+#error .contenedor p.descrip a{
+	color:red;
+	text-decoration:underline;
+}
+
+#error .contenedor img.skyline{
+	margin-bottom:70px;
+}
 /****************************************************** PIE *******************************/
 
 footer{
