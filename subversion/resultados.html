@@ -139,7 +139,8 @@
                     </div>
                 </div>
             </form>
-            <p id="showbusc"><a href="#">Buscador <span>&or;</span></a></p>
+            <p id="showbusc"><a href="#"><span>Buscador</span></a></p>
+            <p id="hidebusc"><a href="#"><span>Buscador</span></a></p>
         </div>
         <div class="contenedor"> 
             <div id="migas">
@@ -169,36 +170,71 @@
                 </ul>
             </div>
             <div id="filtrador">
-                <div id="col1" class="col1">
-                    <div class="layout-slider" style="width: 100%">
-                        <span style="display: inline-block; width: 93%; padding: 0 5px;">
-                            <input id="Slider1" type="slider" name="price" value="0;3000000" />
-                        </span>
+                <form>
+                    <div id="col1" class="col1">
+                        <div class="bloque">
+                            <label class="titulo">Precio</label>
+                            <div class="layout-slider" style="width: 100%">
+                                <span style="display: inline-block; width: 93%; padding: 0 5px;">
+                                    <input id="Slider1" type="slider" name="price" value="100000;500000" />
+                                </span>
+                            </div>
+                            <script type="text/javascript" charset="utf-8">
+                                jQuery("#Slider1").slider({ from: 0, to: 1000000, step: 500, smooth: true, round: 0, dimension: "&nbsp;&euro;", skin: "round_plastic" });
+                            </script>
+                        </div>
+                         <div class="bloque">
+                             <label class="titulo">Dirección</label>
+                             <input type="text" name="some_name" value="Ninguna" id="some_name"/>
+                         </div>
                     </div>
-                    <script type="text/javascript" charset="utf-8">
-                        jQuery("#Slider1").slider({ from: 0, to: 3000000, step: 500, smooth: true, round: 0, dimension: "&nbsp;&euro;", skin: "round_plastic" });
-                    </script>
-                </div>
-                <div id="col2" class="col1">
-                    <div class="layout-slider" style="width: 100%">
-                        <span style="display: inline-block; width: 93%; padding: 0 5px;">
-                            <input id="Slider2" type="slider" name="price" value="0;3000000" />
-                        </span>
+                    <div id="col2" class="col1">
+                        <div class="bloque">
+                            <label class="titulo">Superficie construida m<sup>2</sup></label>
+                            <div class="layout-slider" style="width: 100%">
+                                <span style="display: inline-block; width: 93%; padding: 0 5px;">
+                                    <input id="Slider2" type="slider" name="superficie" value="100" />
+                                </span>
+                            </div>
+                            <script type="text/javascript" charset="utf-8">
+                                jQuery("#Slider2").slider({ from: 0, to: 500, step: 10, smooth: true, round: 0, dimension: "m<sup>2</sup>", skin: "round_plastic" });
+                            </script>
+                        </div>
+                        <div class="bloque">
+                             <label class="titulo">Distancia</label>
+                             <div class="layout-slider" style="width: 100%">
+                                <span style="display: inline-block; width: 93%; padding: 0 5px;">
+                                    <input id="Slider3" type="slider" name="superficie" value="8" />
+                                </span>
+                            </div>
+                            <script type="text/javascript" charset="utf-8">
+                                jQuery("#Slider3").slider({ from: 0, to: 20, step: 1, smooth: true, round: 0, dimension: "Km", skin: "round_plastic" });
+                            </script>
+                        </div>
                     </div>
-                    <script type="text/javascript" charset="utf-8">
-                        jQuery("#Slider2").slider({ from: 0, to: 3000000, step: 500, smooth: true, round: 0, dimension: "&nbsp;&euro;", skin: "round_plastic" });
-                    </script>
-                </div>
-                <div id="col3" class="col2">
-                    <div class="layout-slider" style="width: 100%">
-                        <span style="display: inline-block; width: 93%; padding: 0 5px;">
-                            <input id="Slider3" type="slider" name="price" value="0;3000000" />
-                        </span>
+                    <div id="col3" class="col2">
+                        <div class="bloque">
+                            <label class="titulo">Otros servicios</label>
+                            <label><input type="checkbox" name="Garaje" value="" id="Garaje"/>Garaje</label>
+                            <label><input type="checkbox" name="Trastero" value="" id="Trastero"/>Trastero</label>
+                            <label><input type="checkbox" name="aire" value="" id="aire"/>Aire acond.</label>                      
+                            <label><input type="checkbox" name="Ascensor" value="" id="Ascensor"/>Ascensor</label>
+                            <label><input type="checkbox" name="Piscina" value="" id="Piscina"/>Piscina</label>
+                            <label><input type="checkbox" name="Terraza" value="" id="Terraza"/>Terraza</label>
+                            <label><input type="checkbox" name="calefa" value="" id="calefa"/>Calefacción</label>
+                        </div>
+                        <div class="bloque">
+                            <label class="titulo">Multimedia</label>
+                            <div class="bloque2">
+                                <label><input type="checkbox" name="Fotos" value="" id="Fotos"/>Fotos</label>
+                                <label><input type="checkbox" name="Videos" value="" id="Videos"/>Videos</label>
+                                <label><input type="checkbox" name="Videos" value="" id="Videos"/>Visita virtual</label>
+                            </div>
+                            <input type="reset" name="reset" value="Borrar datos" id="reset"/>
+                            <input type="submit" name="submit" value="Filtrar >" id="submit"/>
+                        </div>
                     </div>
-                    <script type="text/javascript" charset="utf-8">
-                        jQuery("#Slider3").slider({ from: 0, to: 3000000, step: 500, smooth: true, round: 0, dimension: "&nbsp;&euro;", skin: "round_plastic" });
-                    </script>
-                </div>                
+                </form>                
             </div>
             <div id="bannerone">
                 <img src="http://placehold.it/993x130" alt="XXX">
