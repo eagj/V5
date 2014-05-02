@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Index</title>
+	<title>Genérica solo texto</title>
 	<link rel="stylesheet" type="text/css" href="/styles/normalize.css">
 	<link rel="stylesheet" type="text/css" href="/styles/style.css">
 	
@@ -80,7 +80,7 @@
        
 </head>
 <body>
-    <div id="index" class="content">
+    <div id="generic" class="content">
         <div id="user">
             <p>estas navegando como <span>empleado</span></p>
         </div>
@@ -318,311 +318,28 @@
     	    
     	</div>
     	<div class="contenedor">
-           <div id="carrusel">
-                <div class="slider-wrapper theme-default nivoSlider">
-                    <div class="ribbon"></div>
-                    <div id="slider">
-                        <img src="http://lorempixel.com/963/340/" alt="" data-thumb="http://lorempixel.com/963/340/" />
-                        <img src="http://lorempixel.com/g/963/340/" alt="" data-thumb="http://lorempixel.com/g/963/340/" />
-                        <img src="http://lorempixel.com/963/340/sports/1/" alt="" data-thumb="http://lorempixel.com/963/340/sports/1/" />
-                        <img src="http://lorempixel.com/963/340/sports" alt="" data-thumb="http://lorempixel.com/963/340/sports" />
-                    </div>
-                </div>                
-            </div> <!-- CARRUSEL -->
-            <div class="wait">
-                <img src="/images/wait.gif" alt="Cargando contenido" />
-            </div> 
-            <div id="carruminifich">
-                <h3 class="linea"><span>Inmuebles destacados</span></h3>
-                <div id="carrubloq_prev" class="carrubloq_bot"><a href="#"><</a></div>
-                <div id="carrubloq">    	               
-                    <!-- <div class="bloquecarru doble">
-                        <div class="bloquecarrucontent">
-                            <div class="img_bloquecarru">
-                                <img src="http://placehold.it/420x145" alt="XXX" />    	                       
-                            </div>
-                            <div class="datos_basic">
-                                <h4>Pozuelo de Alarcón</h4>
-                                <p class="direccion">Cerámica 5, 28233 - Madrid</p>
-                                <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </div>
-                            <div id="geop1" class="geop"><a onmouseover="showovermap('geop1', 'geop_hover1')" href="#"><img src="/images/geopo_ico.png"/></a></div>
-                            <div id="geop_hover1" class="geop_hover">
-                                <a href="#">
-                                    <img src="/images/geopo_ico_hover.png"/>
-                                    <p onmouseover="showovermap('geop_hover1', 'geop1')">Ver mapa</p>
-                                </a>
-                            </div>
-                            <p class="tipo">Obra nueva</p>
-                            <ul class="detalles">
-                               <li>Chalet adosado</li>
-                               <li>150m<sup>2</sup></li>
-                               <li>2 hab.</li>
-                           </ul>
-                           <div class="precio">
-                                <p class="valorprecio">10 chalets desde 525.000&euro;</p>        
-                                <p class="tipgest">Precio Compra</p>
-                           </div>
-                           <div class="precio2">
-                                <div class="col1">
-                                    <p class="tipgest">Alquiler desde</p>
-                                    <p class="valorprecio">850&euro;/mes</p>
-                               </div>
-                               <div class="col2">
-                                   <p class="tipgest">A. opc. compra desde</p>
-                                   <p class="valorprecio">850&euro;/mes</p>
-                               </div>
-                            </div>
-                            <div class="campanas">
-                                <div class="campana">
-                                    <ul>
-                                       <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
-                                       <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
-                                       <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
-                                   </ul>
-                                </div>                          
-                            </div>                               
+    	    <div id="migas">
+                <ul>
+                    <li class="bread1"><a href="#">Inicio</a></li>
+                    <li class="bread2 sub"><a href="#" onclick="showosubmigas('submigas1')">Lorem Ipsum</a>
+                        <div class="submigas" id="submigas1">
+                            <select id="tuprovincia" name="tuprovincia">
+                                <option value="1">Lorem</option><option value="2">Ipsum</option><option value="3">Dolore</option><option value="4">Sit amet</option>
+                            </select>
                         </div>
-                        <div class="social">
-                            <a href="#" id="share1" class="share"></a>
-                            <a href="#" id="mail1" class="mail"></a>
-                            <a href="#" id="favorite1" class="favorite select"></a>
-                       </div>
-                    </div> -->
-                    <div class="bloqueminificha">
-                        <div class="bloqueminifichacontent">
-                            <a id="inmulink1" onclick="alert('Click inmueble');return false;" href="#">
-                                <div class="img_bloqueminificha">
-                                    <img src="http://placehold.it/193x145" alt="XXX" />                             
-                                </div>
-                                <div class="reservado">
-                                    <p>reservado</p>
-                                </div>
-                                <div class="datos_basic">
-                                   <h4>Madrid</h4>
-                                   <p class="direccion">San Vicente Ferrer, 28233 - Madrid</p>
-                                   <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>                                                          
-                                <p class="tipo">Obra nueva</p>
-                                <ul class="detalles">
-                                    <li>Chalet adosado</li>
-                                    <li>150m<sup>2</sup></li>
-                                    <li>2 hab.</li>
-                                </ul>
-                                <div class="precio">
-                                    <p class="valorprecio">360.000&euro;</p>        
-                                    <p class="tipgest">Precio Compra</p>
-                                </div>
-                                <div class="precio2">
-                                    <div class="col1">
-                                        <p class="tipgest">Alquiler</p>
-                                        <p class="valorprecio">700&euro;/mes</p>
-                                    </div>
-                                    <div class="col2">
-                                        <p class="tipgest">A. opc. compra</p>
-                                        <p class="valorprecio">650&euro;/mes</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <div id="geop1" class="geop" onclick="alert('Has hecho click en geopo')">                       
-                                <div id="tip1_left" style="display:none;"><p style="font-size:12px;color:#3e3e3e">Ver en mapa</p></div>
-                            </div>                                
-                            <div class="campanas">
-                                <div class="campana">
-                                   <ul>                                       
-                                       <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
-                                   </ul>
-                               </div>                          
-                           </div>
-                        </div>
-                        <div class="comparar">
-                            <input type="checkbox" />
-                            <label>Comparar</label>                            
-                        </div>
-                        <div class="social">
-                            <a href="#" id="share1" class="share"></a>
-                            <a href="#" id="mail1" class="mail"></a>
-                            <a href="#" id="favorite1" class="favorite"></a>
-                       </div>    
-                    </div>
-                    
-	             	 <div class="bloqueminificha">
-                        <div class="bloqueminifichacontent">
-                            <a id="inmulink1" onclick="alert('Click inmueble');return false;" href="#">
-                                <div class="img_bloqueminificha">
-                                    <img src="http://placehold.it/193x145" alt="XXX" />                             
-                                </div>
-                                <div class="datos_basic">
-                                   <h4>Madrid</h4>
-                                   <p class="direccion">San Vicente Ferrer, 28233 - Madrid</p>
-                                   <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>                                                          
-                                <p class="tipo">Obra nueva</p>
-                                <ul class="detalles">
-                                    <li>Chalet adosado</li>
-                                    <li>150m<sup>2</sup></li>
-                                    <li>2 hab.</li>
-                                </ul>
-                                <div class="precio">
-                                    <p class="valorprecio">360.000&euro;</p>        
-                                    <p class="tipgest">Precio Compra</p>
-                                </div>
-                                <div class="precio2">
-                                    <div class="col1">
-                                        <p class="tipgest">Alquiler</p>
-                                        <p class="valorprecio">700&euro;/mes</p>
-                                    </div>
-                                    <div class="col2">
-                                        <p class="tipgest">A. opc. compra</p>
-                                        <p class="valorprecio">650&euro;/mes</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <div id="geop2" class="geop" onclick="alert('Has hecho click en geopo')">                       
-                                <div id="tip2_left" style="display:none;"><p style="font-size:12px;color:#3e3e3e">Ver en mapa</p></div>
-                            </div>                                
-                            <div class="campanas">
-                                <div class="campana">
-                                   <ul>                                       
-                                       <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
-                                       <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
-                                       <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
-                                   </ul>
-                               </div>                          
-                           </div>
-                        </div>
-                        <div class="comparar">
-                            <input type="checkbox" />
-                            <label>Comparar</label>                            
-                        </div>
-                        <div class="social">
-                            <a href="#" id="share1" class="share"></a>
-                            <a href="#" id="mail1" class="mail"></a>
-                            <a href="#" id="favorite1" class="favorite"></a>
-                       </div>    
-                    </div>
-                    
-                    <div class="bloqueminificha">
-                        <div class="bloqueminifichacontent">
-                            <a id="inmulink1" onclick="alert('Click inmueble');return false;" href="#">
-                                <div class="img_bloqueminificha">
-                                    <img src="http://placehold.it/193x145" alt="XXX" />                             
-                                </div>
-                                <div class="vendido">
-                                    <p>Vendido</p>
-                                </div>
-                                <div class="datos_basic">
-                                   <h4>Madrid</h4>
-                                   <p class="direccion">San Vicente Ferrer, 28233 - Madrid</p>
-                                   <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>                                                          
-                                <p class="tipo">Obra nueva</p>
-                                <ul class="detalles">
-                                    <li>Chalet adosado</li>
-                                    <li>150m<sup>2</sup></li>
-                                    <li>2 hab.</li>
-                                </ul>
-                                <div class="precio">
-                                    <p class="valorprecio">360.000&euro;</p>        
-                                    <p class="tipgest">Precio Compra</p>
-                                </div>
-                                <div class="precio2">
-                                    <div class="col1">
-                                        <p class="tipgest">Alquiler</p>
-                                        <p class="valorprecio">700&euro;/mes</p>
-                                    </div>
-                                    <div class="col2">
-                                        <p class="tipgest">A. opc. compra</p>
-                                        <p class="valorprecio">650&euro;/mes</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <div id="geop3" class="geop" onclick="alert('Has hecho click en geopo')">                       
-                                <div id="tip3_left" style="display:none;"><p style="font-size:12px;color:#3e3e3e">Ver en mapa</p></div>
-                            </div>                                
-                            <div class="campanas">
-                                <div class="campana">
-                                   <ul>                                       
-                                       <li><img src="/images/no_campana.png" alt="No hay campañas"></li>
-                                   </ul>
-                               </div>                          
-                           </div>
-                        </div>
-                        <div class="comparar">
-                            <input type="checkbox" />
-                            <label>Comparar</label>                            
-                        </div>
-                        <div class="social">
-                            <a href="#" id="share1" class="share"></a>
-                            <a href="#" id="mail1" class="mail"></a>
-                            <a href="#" id="favorite1" class="favorite"></a>
-                       </div>    
-                    </div>
-                    <div class="bloqueminificha">
-                        <div class="bloqueminifichacontent">
-                            <a id="inmulink1" onclick="alert('Click inmueble');return false;" href="#">
-                                <div class="img_bloqueminificha">
-                                    <img src="http://placehold.it/193x145" alt="XXX" />                             
-                                </div>
-                                <div class="datos_basic">
-                                   <h4>Madrid</h4>
-                                   <p class="direccion">San Vicente Ferrer, 28233 - Madrid</p>
-                                   <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>                                                          
-                                <p class="tipo">Obra nueva</p>
-                                <ul class="detalles">
-                                    <li>Chalet adosado</li>
-                                    <li>150m<sup>2</sup></li>
-                                    <li>2 hab.</li>
-                                </ul>
-                               <div class="precio">
-                                    <p class="consultarprecio">Consultar precio</p>
-                                </div>
-                                <div class="precio2">
-                                    <div class="col1">
-                                        <p class="tipgest">Alquiler</p>
-                                        <p class="valorprecio">700&euro;/mes</p>
-                                    </div>
-                                    <div class="col2">
-                                        <p class="tipgest">A. opc. compra</p>
-                                        <p class="valorprecio">650&euro;/mes</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <div id="geop4" class="geop" onclick="alert('Has hecho click en geopo')">                       
-                                <div id="tip4_left" style="display:none;"><p style="font-size:12px;color:#3e3e3e">Ver en mapa</p></div>
-                            </div>                                
-                            <div class="campanas">
-                                <div class="campana">
-                                   <ul>                                       
-                                       <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
-                                       <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
-                                   </ul>
-                               </div>                          
-                           </div>
-                        </div>
-                        <div class="comparar">
-                            <input type="checkbox" />
-                            <label>Comparar</label>                            
-                        </div>
-                        <div class="social">
-                            <a href="#" id="share1" class="share"></a>
-                            <a href="#" id="mail1" class="mail"></a>
-                            <a href="#" id="favorite1" class="favorite select"></a>
-                       </div>    
-                    </div>                 
-                </div> 
-                <div id="carrubloq_next" class="carrubloq_bot active"><a href="#">></a></div>         
-                </div><!-- ultimnove -->
-                
-                <div id="banners_home">
-                    <div class="banner">
-                        <a href="#"><img alt="XXX" src="http://placehold.it/455x180"></a>
-                    </div>
-                    <div class="banner last">
-                        <a href="#"><img alt="XXX" src="http://placehold.it/455x180"></a>
-                    </div>
-                </div> 	       
+                    </li>
+                </ul>
+            </div>
+    	    <div class="contenido_generic">
+                <h3 class="linea"><span>Título Título Título</span></h3>
+                <p>Raw denim hoodie readymade, synth flannel Neutra four loko banh mi 3 wolf moon narwhal stumptown hella 8-bit swag.  Disrupt cardigan ethical selfies, 8-bit post-ironic chillwave American Apparel lomo pour-over sriracha tousled.  Sriracha Godard try-hard chillwave fingerstache, selfies McSweeney's Blue Bottle PBR&amp;B Intelligentsia selvage polaroid mustache forage.  Four loko mumblecore Echo Park meh fanny pack, Tonx Pinterest readymade fap.  American Apparel Williamsburg bicycle rights, quinoa sartorial fashion axe ugh swag ethical photo booth iPhone.  Semiotics messenger bag 90's small batch Brooklyn PBR&amp;B.  Tousled jean shorts fap, banh mi Intelligentsia Cosby sweater Tonx Carles Schlitz.</p>
+                <p>Literally selvage PBR&amp;B fap.  Stumptown sustainable leggings cray flannel 8-bit literally.  You probably haven't heard of them yr blog tattooed whatever.  Literally letterpress Helvetica DIY dreamcatcher, deep v meh squid.  Sriracha viral Williamsburg pickled normcore.  Occupy ethnic paleo Portland banjo.  Echo Park gastropub next level farm-to-table ugh High Life, blog cornhole cray wayfarers selfies iPhone.</p>
+                <p>Post-ironic Wes Anderson cray tofu, letterpress dreamcatcher irony paleo asymmetrical slow-carb banjo Williamsburg.  Banh mi Truffaut cornhole pickled Thundercats.  Post-ironic YOLO kitsch, you probably haven't heard of them put a bird on it small batch ethnic twee normcore disrupt Banksy tousled flexitarian typewriter.  Hoodie normcore drinking vinegar roof party, slow-carb cred before they sold out sriracha umami artisan XOXO mixtape Portland Marfa.  8-bit forage brunch flannel authentic messenger bag, normcore farm-to-table Portland freegan scenester you probably haven't heard of them chambray.  Trust fund artisan umami, Banksy butcher 8-bit Truffaut chia.  Pug tousled banh mi, salvia cliche tote bag Portland lomo Pinterest wayfarers small batch.</p>
+                <p>Squid chia tousled, sriracha synth master cleanse sartorial food truck lo-fi selvage.  Roof party swag farm-to-table leggings selvage blog, try-hard yr 3 wolf moon bicycle rights bitters.  Readymade polaroid mlkshk gastropub authentic.  Organic Etsy cray sustainable Tumblr, kitsch banjo tousled lomo DIY tattooed direct trade  Tonx messenger bag American Apparel.  Viral ugh put a bird on it yr post-ironic.  Hashtag fap narwhal, fashion axe shabby chic plaid skateboard drinking vinegar.  Banh mi dreamcatcher typewriter, tofu mumblecore Banksy Odd Future literally drinking vinegar.</p>
+                <p>Pork belly typewriter four loko, art party mumblecore lomo wayfarers mixtape Echo Park 90's bicycle rights.  Pour-over keytar tousled, leggings meggings selfies letterpress aesthetic salvia vegan dreamcatcher normcore.  Cray skateboard actually, Tonx put a bird on it direct trade  viral messenger bag.  Selvage PBR&amp;B viral slow-carb, meh synth fanny pack cornhole ethical salvia vinyl squid trust fund Marfa jean shorts.  Shoreditch jean shorts Brooklyn, keytar Marfa ugh Etsy sartorial wayfarers narwhal Godard.  Tattooed disrupt Banksy direct trade, pork belly normcore bespoke biodiesel cray YOLO freegan locavore retro.  Selfies four loko quinoa deep v hella Blue Bottle bicycle rights, squid Helvetica hashtag banh mi American Apparel food truck.</p>
+                <p>Distillery polaroid plaid letterpress Carles.  Flexitarian kogi fingerstache, trust fund Pitchfork craft beer authentic Carles art party paleo cliche.  DIY mlkshk PBR&amp;B High Life Shoreditch brunch.  Organic Echo Park dreamcatcher Shoreditch, paleo master cleanse mumblecore fap disrupt Neutra fanny pack chambray.  Messenger bag readymade fingerstache selvage deep v, McSweeney's artisan shabby chic.  PBR&amp;B raw denim ethical, cray irony flexitarian Marfa cornhole distillery food truck.  McSweeney's Austin before they sold out typewriter.</p>               
+                                            
+            </div>             
         </div>
         <footer>
             <!-- Este P se muestra cuando la caja esta plegada -->

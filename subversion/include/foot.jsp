@@ -23,19 +23,19 @@
                  <ul>
                  	<li><a href="#"><s:text name="global.compra"/></a>
                  	    <ul>
-                 	        <li><a href="#"><s:text name="foot.guia.compra"/></a></li>
+                 	        <li><a href="/pages/guiacompra"><s:text name="foot.guia.compra"/></a></li>
                  	    </ul>
                  	</li>
-                 	<li><a href="#"><s:text name="global.alquiler"/></a>
+                 	<li><a href="/pages/alquiler"><s:text name="global.alquiler"/></a>
                  	    <ul>
                  	        <li><a href="#"><s:text name="foot.guia.alquiler"/></a></li>
                  	    </ul>
                  	</li>
                  	<li><a href="#"><s:text name="foot.sobre.plano"/></a></li>
                  	<li><a href="#"><s:text name="foot.novedades"/></a></li>
-                 	<li><a href="#"><s:text name="foot.financiacion"/></a></li>
+                 	<li><a href="/pages/financiacion"><s:text name="foot.financiacion"/></a></li>
                  	<li><a href="#"><s:text name="foot.alertas"/></a></li>
-                 	<li><a href="#"><s:text name="foot.pasos"/></a></li>
+                 	<li><a href="/pages/pasos"><s:text name="foot.pasos"/></a></li>
                  </ul>
              </div>
              <div class="col">
@@ -43,19 +43,19 @@
                  <ul>
                     <li><a href="#"><s:text name="global.compra"/></a>
                         <ul>
-                            <li><a href="#"><s:text name="foot.guia.compra"/></a></li>
+                            <li><a href="/pages/guiacompra"><s:text name="foot.guia.compra"/></a></li>
                         </ul>
                     </li>
-                    <li><a href="#"><s:text name="global.alquiler"/></a>
+                    <li><a href="/pages/alquiler"><s:text name="global.alquiler"/></a>
                         <ul>
                             <li><a href="#"><s:text name="foot.guia.alquiler"/></a></li>
                         </ul>
                     </li>
                     <li><a href="#"><s:text name="foot.sobre.plano"/></a></li>
                  	<li><a href="#"><s:text name="foot.novedades"/></a></li>
-                 	<li><a href="#"><s:text name="foot.financiacion"/></a></li>
+                 	<li><a href="/pages/financiacion"><s:text name="foot.financiacion"/></a></li>
                  	<li><a href="#"><s:text name="foot.alertas"/></a></li>
-                 	<li><a href="#"><s:text name="foot.pasos"/></a></li>
+                 	<li><a href="/pages/pasos"><s:text name="foot.pasos"/></a></li>
                  </ul>
              </div>
              <div class="col">

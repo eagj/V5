@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Comparativa</title>
+	<link rel="stylesheet" type="text/css" href="/styles/normalize.css">
+	<link rel="stylesheet" type="text/css" href="/styles/style.css">
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="/include/jquery/nivo_slider/themes/default/default.css" type="text/css" />	
+	<link rel="stylesheet" href="/include/jquery/nivo_slider/nivo-slider.css" type="text/css" />
+    <script src="/include/jquery/nivo_slider/jquery.nivo.slider.js" type="text/javascript"></script>
+    
+    <!-- jquery bubbletip CSS -->
+     <link href="/include/jquery/bubbletip/bubbletip/bubbletip.css" rel="stylesheet" type="text/css" />
+     <!--[if IE]>
+    <link href="/include/jquery/bubbletip/bubbletip/bubbletip.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <!-- jquery bubbletip JS -->
+    <script src="/include/jquery/bubbletip/jQuery.bubbletip-1.0.6.js" type="text/javascript"></script>
+    
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    <script>
+        // FUNCION PARA NIVOSLIDER
+        $(window).load(function() {
+            $('#slider').nivoSlider();
+        });
+        
+         // FUNCIONES PARA BUBBLETIP
+        $(window).bind('load', function() {
+            $('#geop1').bubbletip($('#tip1_left'), {
+                deltaDirection: 'right',
+            });
+            $('#geop2').bubbletip($('#tip2_left'), {
+                deltaDirection: 'right',
+            });
+            $('#geop3').bubbletip($('#tip3_left'), {
+                deltaDirection: 'right',
+            });
+             $('#geop4').bubbletip($('#tip4_left'), {
+                deltaDirection: 'right',
+            });
+        });
+        
+        function showsubmenu(){
+            document.getElementById("sub1").style.display="inline";
+            document.getElementById("sub1").style.height=36+"px";
+        }
+        function hidesubmenu(){
+            document.getElementById("sub1").style.display="none";
+            document.getElementById("sub1").style.height=0;
+        }
+        
+        function showovermap(hide,show){
+            document.getElementById(hide).style.visibility="hidden";
+            document.getElementById(show).style.visibility="visible";
+            
+            }
+    </script>   
+</head>
+<body>
+    <div id="contactar" class="content">
+        <header>
+            <div id="contenidohead">
+    			<div id="logoaltamira"><a href="/"><img alt="Altamira santander" src="/images/logo_altamira.png" alt="Logotipo Inmuebles Altamira"></a></div>
+    			<div id="zonacentro">
+    			    <a href="#">
+    			        <div id="tfnohead">    			            
+    			            <p><img src="/images/tfno_head.png">902 509 559</p>
+    			            <p class="leyenda">Teléfono y vídeollamada</p>
+    			        </div>    			        
+    			    </a>
+    			    <div id="socialhead">
+    			    	 <ul>
+                        <li id="tweet"><a href="#">&nbsp;</a></li>
+                        <li id="fb"><a href="#">&nbsp;</a></li>
+                        <li id="yt"><a href="#">&nbsp;</a></li>
+                    </ul>
+    			    </div>
+    			</div>
+    			<div id="logosantander"><a href="#"><img src="/images/logo_santander.png" alt="Logotipo Banco de Santander"></a></div>
+    		</div>
+    	
+        </header>
+    	<nav>
+    		<div id="contenidonav">
+    			<ul>
+    				<li class="first"><a  onclick="showsubmenu()" href="#">Residencial</a></li>
+    				<li><a onclick="hidesubmenu()" href="#">Terciario</a></li>
+    				<li><a onclick="hidesubmenu()" href="#">Suelo</a></li>
+    				<li><a onclick="hidesubmenu()" href="#">Inversores</a></li>
+    				<li class="select"><a onclick="hidesubmenu()" href="#">Campañas</a></li>
+    				<li><a onclick="hidesubmenu()" href="#">Actualidad</a></li>
+    				<li><a onclick="hidesubmenu()" href="#">Fondo social</a></li>
+    				<li class="areapriv"><a href="#">Área privada</a></li>
+    			</ul>
+    			<div class="subnav" id="sub1">
+    			    <ul>
+    			    	<li><a href="#">Compra</a></li>
+    			    	<li><a href="#">Alquiler</a></li>
+    			    	<li><a href="#">Alquiler opción a compra</a></li>
+    			    	<li><a href="#">Sobre plano</a></li>
+    			    	<li><a href="#">Novedades</a></li>
+    			    	<li><a href="#">Financiación</a></li>
+    			    	<li><a href="#">Alertas</a></li>
+    			    </ul>
+    			</div>
+    		</div>
+    	</nav>
+    	<div id="buscador_top">
+    	    <form id="buscform">
+    	        <div id="buscavanz">
+    	            <div id="colseleccion">
+    	                <ul>
+    	                    <li class="select"><a href="#">Búsqueda avanzada</a></a></li>
+    	                    <li><a href="#">Búsqueda por mapa</a></li>
+    	                    <li><a href="#">Búsqueda por cuota o referencia</a></li>
+    	                </ul>
+    	            </div>
+    	            <div id="col1">
+    	                
+    	            </div>
+    	            <div id="col2">
+    	                
+    	            </div>
+    	        </div>
+    	    </form>
+    	    <p id="showbusc"><a href="#">Buscador <span>&or;</span></a></p>
+    	</div>
+    	<div class="contenedor">
+    	    <div id="migas">
+                <ul>
+                    <li class="bread1"><a href="#">Inicio</a></li>
+                    <li class="bread2 sub"><a href="#" onclick="showosubmigas('submigas1')">Contacto</a>
+                        <div class="submigas" id="submigas1">
+                            <select id="tutipoges" name="tutipoges">
+                                <option value="1">Lorem</option><option value="2">Ipsum</option><option value="3">dolore</option>
+                            </select>
+                        </div>
+                    </li>                    
+                   
+                </ul>
+            </div>
+            <h3 class="linea"><span>Contacta con nosotros</span></h3>
+            <p class="titulo">Para solicitar visita, ampliar información, etc... Rellena el formulario o llama al <span>902 509 559 <span>(Lunes a Viernes 9:00 - 21:00h).</span></span></p>
+            <div class="formubody">
+                <form class="contact_sobreplano" action="">
+                    <div class="bloquedatos">
+                        <div class="linea">
+                            <label>Promoción</label>
+                            <input type="text" />
+                        </div> 
+                        <div class="linea">
+                            <label>Nombre y apellidos *</label>
+                            <input type="text" required="" />
+                        </div>                        
+                        <div class="linea">
+                            <label>E-mail *</label>
+                            <input type="text" required="" />
+                        </div>
+                        <div class="linea">
+                            <label>Teléfono *</label>
+                            <input type="text" required="" />
+                        </div>                       
+                        <p class="oblig">*campos obligatorios</p>
+                        <h4>Ayúdanos a conocer tus necesidades</h4>
+                        <div class="linea">
+                            <label>Nº dormitorios</label>
+                            <input type="text" />
+                        </div>      
+                        <div class="linea">
+                            <label>Nº baños</label>
+                            <input type="text" />
+                        </div>
+                        <div class="linea">
+                            <label>Plazas de garaje</label>
+                            <input type="text" />
+                        </div>
+                        <div class="linea">
+                            <label>Miembros Unid. Familiar</label>
+                            <input type="text" />
+                        </div>  
+                        <div class="linea">
+                            <label>Niños</label>
+                            <input type="text" />
+                        </div>
+                        <div class="linea">
+                            <label>Comentarios</label>
+                            <textarea></textarea>
+                        </div>        
+                    </div>
+                    <div class="bloqueminificha doble">
+                        <div class="bloqueminifichacontent">
+                            <a href="#" onclick="alert('Click inmueble');return false;" id="inmulink1">
+                                <div class="img_bloqueminificha">
+                                    <img alt="XXX" src="http://placehold.it/420x145">                             
+                                </div>
+                                <div class="datos_basic">
+                                    <h4>Madrid</h4>
+                                    <p class="direccion">San Vicente Ferrer, 28233 - Madrid</p>
+                                    <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>                                                          
+                                <p class="tipo">Obra nueva</p>
+                                <ul class="detalles">
+                                    <li>Chalet adosado</li>
+                                    <li>150m<sup>2</sup></li>
+                                    <li>2 hab.</li>
+                                </ul>
+                                <div class="precio">
+                                    <p class="valorprecio">360.000€</p>        
+                                    <p class="tipgest">Precio Compra</p>
+                                </div>
+                                <div class="precio2">
+                                    <div class="col1">
+                                        <p class="tipgest">Alquiler</p>
+                                        <p class="valorprecio">700€/mes</p>
+                                    </div>
+                                    <div class="col2">
+                                        <p class="tipgest">A. opc. compra</p>
+                                        <p class="valorprecio">650€/mes</p>
+                                    </div>
+                                </div>
+                            </a>                                                                         
+                            <div class="campanas">
+                                <div class="campana">
+                                    <ul>                                       
+                                        <li><a href="#"><img src="http://placehold.it/45x45" alt="campaña x"></a></li>
+                                        <li><a href="#"><img src="http://placehold.it/45x45" alt="campaña x"></a></li>
+                                        <li><a href="#"><img src="http://placehold.it/45x45" alt="campaña x"></a></li>
+                                    </ul>
+                                </div>                          
+                            </div>
+                        </div>                        
+                        <div class="social">
+                            <a class="share" id="share1" href="#"></a>
+                            <a class="mail" id="mail1" href="#"></a>
+                            <a class="favorite" id="favorite1" href="#"></a>
+                        </div>    
+                    </div>                
+                    
+                    <div class="bloquelegal">
+                        <div class="linea">
+                            <a href="#" id="avlegal">Aviso legal</a>
+                        </div>
+                         <div class="linea check">
+                             <label>
+                                <input type="checkbox" />
+                                He leído y acepto el Aviso Legal     
+                             </label>
+                         </div>
+                         <div class="linea check">
+                             <label>
+                                <input type="checkbox" />                                
+Altamira Asset Management, S.L. le comunica que sus datos serán utilizados en el desarrollo de acciones comerciales, publicitarias y financieras relacionadas con los inmuebles comercializados a través de esta página que podrá realizarse por correo electrónico u otro medio equivalente. En caso de que no preste su consentimiento a tal fin, puede marcar la casilla correspondiente.     
+                            </label>
+                        </div>
+                        <div class="captcha">
+                            <img src="http://www.altamirainmuebles.com/simpleCaptcha.jsp" id="captcha">
+                            <img width="38" height="38" alt="reload" onclick="reloadCaptcha()" src="http://www.altamirainmuebles.com/images/reload_captcha.gif" class="reload_captcha">
+                            <div class="texto">
+                                <div>Escribe el texto mostrado en la imagen:</div>
+                                <div><input id="answer" name="answer"></div>
+                            </div> 
+                        </div>
+                        <div class="resetsend">
+                            <input type="reset" value="borrar datos"/>
+                            <input type="submit"  value="enviar >"/>
+                        </div>
+                    </div>
+                </form>               
+          
+               
+        </div>
+        <footer>         
+            <div class="footercontent">
+                <div class="col1">
+                     <a href="#" class="logofoot openbank"><img alt="Logotipo Openbank" src="/images/logo_openbank_foot.png"></a>
+                    <a href="#" class="logofoot santander"><img alt="Logotipo Banco de Santander" src="/images/logo_altamira_foot.png"></a>
+                </div>
+                <div class="col2">
+                    <ul>
+                        <li><a href="#">&copy; Altamira Santander Real Estate 2013 </a></li>
+                        <li><a href="#">Aviso legal</a></li>
+                        <li><a href="#">Sobre Altamira Santander </a></li>
+                    </ul>
+                </div>
+                <div class="col3">
+                    <ul>
+                        <li id="rss"><a href="#">&nbsp;</a></li>
+                        <li id="tweet"><a href="#">&nbsp;</a></li>
+                        <li id="fb"><a href="#">&nbsp;</a></li>
+                        <li id="yt"><a href="#">&nbsp;</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+   </div>	
+</body>
+</html>

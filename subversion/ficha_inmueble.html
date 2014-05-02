@@ -26,13 +26,13 @@
     <script type="text/javascript" src="/include/jquery/jslider/js/jquery.slider.js"></script>
     	
    
-     <!-- jquery bubbletip CSS -->
-     <link href="/include/jquery/bubbletip/bubbletip/bubbletip.css" rel="/stylesheet" type="text/css" />
+     <!-- jquery bubbletip CSS 
+     <link href="/include/jquery/bubbletip/bubbletip/bubbletip.css" rel="/stylesheet" type="text/css" />-->
      <!--[if IE]>
     <link href="/include/jquery/bubbletip/bubbletip/bubbletip.css" rel="/stylesheet" type="text/css" />
     <![endif]-->
- 	<!-- jquery bubbletip JS -->
-  	<script src="/include/jquery/bubbletip/jQuery.bubbletip-1.0.6.js" type="text/javascript"></script>
+ 	<!-- jquery bubbletip JS 
+  	<script src="/include/jquery/bubbletip/jQuery.bubbletip-1.0.6.js" type="text/javascript"></script>-->
 	
     <script type="text/javascript">
      $(window).load(function() {
@@ -61,12 +61,13 @@
         });
         
         // FUNCIONES PARA BUBBLETIP
-        $(window).bind('load', function() {
+       /* $(window).bind('load', function() {
             $('#vermas').bubbletip($('#tip1_down'), {
                 deltaDirection: 'down',
                 offsetLeft: -0
             });           
         });
+        */
                              
         function showsubmenu(){
             document.getElementById("sub1").style.display="inline";
@@ -296,11 +297,25 @@
                             <p class="right">700&euro;/mes</p>
                         </div>
                     </div>
-                    
-                    <p id="vermas"><a href="#"> Aviso legal</a></p>
-                    <div id="tip1_down" style="display:none;">
-                        <p style="font-size:12px;color:#3e3e3e;width:300px;">*Cuota calculada para un préstamo con garantía hipotecaria por importe de 65.000 euros (financiando el 100% de la compra), plazo de 40 años y tipo de interés del 3,254%: Euribor + 1,25. TAE: 3,316% (según Euribor hipotecario a un año correspondiente al mes de diciembre 2011, publicado en el BOE el 3/1/2012 -2,004%- ) y cuotas mensuales. Comisión de apertura: 0,20%. Comisión de cancelación por desistimiento (en caso de cancelación por subrogación total o parcial) del 0,50% del capital amortizado anticipadamente si la amortización se produce dentro de los 5 primeros años de vida de la operación, y del 0,25% si han transcurrido ya 5 años. Con domiciliación de nómina o pensión y contratación de seguro de daños e incendios de la vivienda hipotecada designando al Banco como beneficiario. Operación sujeta a la previa aprobación por parte de Banco Santander.</p>
-                    </div>
+                    <div class="vermas">
+                        <p id="vermas"><a href="#"> Aviso legal</a></p>
+                        <div class="bubble top">
+                        <div class="arrow"></div>
+                            <p>*Cuota calculada para un préstamo con garantía hipotecaria por importe de
+                             65.000 euros (financiando el 100% de la compra),plazo de 40 años y tipo
+                             de interés del 3,254%: Euribor + 1,25. TAE: 3,316% (según Euribor hipotecario
+                             a un año correspondiente al mes de diciembre 2011, publicado en el 
+                             BOE el 3/1/2012 -2,004%- ) y cuotas mensuales. Comisión de apertura:
+                             0,20%. Comisión de cancelación por desistimiento (en caso de cancelación
+                             por subrogación total o parcial) del 0,50% del capital amortizado anticipadamente
+                             si la amortización se produce dentro de los 5 primeros años de vida 
+                             de la operación, y del 0,25% si han transcurrido ya 5 años. Con domiciliación
+                             de nómina o pensión y contratación de seguro de daños e incendios de la vivienda
+                             hipotecada designando al Banco como beneficiario. Operación sujeta a la previa 
+                             aprobación por parte de Banco Santander.</p>
+                        </div>
+                    </div>        
+                   
                      <p id="verprecios"><a href="#">Ver precios en la zona</a></p>
                     
                     <div id="campana">

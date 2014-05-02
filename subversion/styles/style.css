@@ -48,6 +48,7 @@
 html{
 	font-family: "rotis",trebuchet MS;
 	text-rendering: optimizelegibility;
+	color: #515151;
 }
 
 
@@ -1182,6 +1183,121 @@ nav #contenidonav #login p.recupass{
 	color:#3e3e3e;
 }
 
+.content .contenedor .bloqueminificha .geop:hover .bubble{
+	display:inline;
+}
+
+
+/*BURBUJAS INFORMACIÓN*/
+/*LEFT*/
+.bubble.left{	
+    margin-left: 33px;
+    margin-top: -5px;
+    position: absolute;
+    display:none;
+}
+	.bubble.left .arrow{
+		background: url("/images/sprite_triangle_bubble.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+		height: 10px;
+    	margin-left: -9px;
+    	margin-top: 9px;
+    	position: absolute;
+    	width: 10px;
+	}
+	.bubble.left p{
+		background-color: #FFFFFF;
+    	border: 1px solid #515151;
+		padding: 5px 10px;
+	    text-align: center;
+	    white-space: pre;
+	    font-size:12px;
+	    color:#3e3e3e
+	}
+
+
+
+
+/*RIGHT*/
+.bubble.right{	
+    margin-left: -89px;
+    margin-top: -5px;
+    position: absolute;
+    display:none;
+}
+	.bubble.right .arrow{
+		height: 10px;
+    	margin-left: 80px;
+    	margin-top: 9px;
+    	position: absolute;
+    	width: 10px;
+    	background: url("/images/sprite_triangle_bubble.png") no-repeat scroll -10px 0 rgba(0, 0, 0, 0);	
+	}
+	.bubble.right p{
+		background-color: #FFFFFF;
+    	border: 1px solid #515151;
+		padding: 5px 10px;
+	    text-align: center;
+	    white-space: pre;
+	    font-size:12px;
+	    color:#3e3e3e
+	}
+	
+
+
+
+/*TOP*/
+.bubble.top{    
+    position: absolute;
+     display:none;
+}
+	.bubble.top .arrow{
+	 	background: url("/images/sprite_triangle_bubble.png") no-repeat scroll -10px -10px rgba(0, 0, 0, 0);
+    	height: 10px;
+    	margin-left: 48%;
+    	margin-top: -9px;
+    	position: absolute;
+    	width: 10px;
+	}
+	.bubble.top p{
+		background-color: #FFFFFF;
+    	border: 1px solid #515151;
+		padding: 5px 10px;
+	    text-align: center;
+	    white-space: pre-line;
+	    font-size:12px;
+	    color:#3e3e3e
+	}
+
+
+
+
+/*BOTTOM ESTE NO USAR SI HAY MAS DE UNA LINEA*/
+.bubble.bottom{    
+    position: absolute;
+     display:none;
+}
+	.bubble.bottom .arrow{
+	 	background: url("/images/sprite_triangle_bubble.png") no-repeat scroll 0px -10px rgba(0, 0, 0, 0);
+    	height: 10px;
+    	margin-left: 48%;
+    	margin-top: 25px;
+    	position: absolute;
+    	width: 10px;
+	}
+	.bubble.bottom p{
+		background-color: #FFFFFF;
+    	border: 1px solid #515151;
+		padding: 5px 10px;
+	    text-align: center;
+	    white-space: pre;
+	    font-size:12px;
+	    color:#3e3e3e
+	}
+
+
+
+
+
 
 
 
@@ -1418,6 +1534,7 @@ nav #contenidonav #login p.recupass{
 	}
 	.content .contenedor .bloqueminificha.doble .precio2 .col1, .content .contenedor .bloqueminificha.doble .precio2 .col2{
 		text-align: center;
+		border-right: none;
 	}
 		.content .contenedor .bloqueminificha.doble .precio2 .col1 p.tipgest, .content .contenedor .bloqueminificha.doble .precio2 .col2 p.tipgest {
 			display: inline-block;
@@ -1427,6 +1544,37 @@ nav #contenidonav #login p.recupass{
 		}
 		.content .contenedor .bloqueminificha.doble .precio2 .col1 p.valorprecio, .content .contenedor .bloqueminificha.doble .precio2 .col2 p.valorprecio{
 			display: inline-block;
+		}
+		
+		
+		
+		
+.content .contenedor .bloqueminificha.doble .bloqueminifichacontent .botonera{
+	float:left;
+	width:100%;
+	text-align: center;
+	margin:20px 0;
+}
+	.content .contenedor .bloqueminificha.doble .bloqueminifichacontent .botonera a{	 	
+    	-webkit-border-radius: 4px;
+    	-moz-border-radius: 4px;
+    	border-radius: 4px;    	
+    	padding: 5px 100px;
+    	text-transform: uppercase;
+	}
+		.content .contenedor .bloqueminificha.doble .bloqueminifichacontent .botonera a.apuntate{
+			background-color: #d2d7db;
+			color:#333333
+		}
+		.content .contenedor .bloqueminificha.doble .bloqueminifichacontent .botonera a.verficha{
+			background-color: red;
+			color:#fff;
+		}
+		.content .contenedor .bloqueminificha.doble .bloqueminifichacontent .botonera a::after{
+			content:"\e6d9";
+			font-family: icomoon;
+		 	margin-left: 10px;
+    		vertical-align: top;
 		}
 
 
@@ -1593,6 +1741,15 @@ h3.linea{
 	
 	
 	
+.center{text-align:center;}
+
+
+
+
+
+
+
+
 /********************************* FIN ELEMENTOS COMUNES ************************/
 
 
@@ -1619,6 +1776,23 @@ h3.linea{
     margin-left:2%;
     margin-bottom: 25px;
     width: 96%;
+   	min-height:200px;
+    position: relative;
+    z-index: 2;
+}
+	.content .contenedor #carrusel img{
+		z-index:2;
+	}
+
+
+
+
+.content .contenedor .wait{
+	z-index: 1;
+ 	text-align: center; 
+ 	margin-top: 75px; 
+ 	position: absolute; 
+ 	left: 46%;
 }
 
 
@@ -1992,6 +2166,50 @@ h3.linea{
 }
 
 
+
+
+
+
+
+
+
+/****************************************************** RESULTADOS SOBRE PLANO*******************************/
+#bot_pasosaseguir{
+	float: left;
+	background-color: red;
+ 	margin: 50px 0;
+ 	width: 100%;
+ 	-webkit-border-radius: 4px;
+ 	-moz-border-radius: 4px;
+ 	border-radius: 4px;
+}
+	#bot_pasosaseguir p{
+		font-size:22px;
+		color:#fff;
+		padding:20px 0;
+		text-indent: 15px;	
+	}
+		#bot_pasosaseguir p a{
+			 background-color: #FFFFFF;
+    		color: #FF0000;
+			float: right;
+    		font-size: 15px;
+    		padding: 2px 61px;
+    		text-align: center;
+    		text-transform: uppercase;
+    		text-indent: 0px;
+    		margin-top: 5px;
+		}
+	 	#bot_pasosaseguir p a:before {
+		    background: url("/images/house_seramigo.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+		    content: "";
+		    height: 35px;
+		    margin-left: -93px;
+		    margin-top: -13px;
+		    position: absolute;
+		    width: 44px;
+		    z-index: 2;
+		}
 
 
 
@@ -2423,7 +2641,24 @@ h3.linea{
 	}
 	#fichacontent #fichacontent_col2 p#vermas a:hover{
 		color:red;
+	}	
+		#fichacontent #fichacontent_col2 .vermas:hover .bubble.top{
+			display:block;	
+		}
+
+
+
+
+#fichacontent #fichacontent_col2 .vermas .bubble.top{
+	z-index: 100;
+	margin-left: -160px;
+    margin-top: 195px;
+}
+	#fichacontent #fichacontent_col2 .vermas .bubble.top p{
+		text-align:left;
 	}
+
+
 
 
 
@@ -3132,6 +3367,97 @@ p.volver{
 
 
 /****************************************************** FORMULARIO CONTACTAR *******************************/
+/* FORMULARIO GENERICO */
+#contactar .formubody form.contact_generico{
+	width:100%;
+}
+	#contactar .formubody form.contact_generico .bloquedatos{
+		width:100%;
+	}
+		#contactar .formubody form.contact_generico .bloquedatos input{
+			width:78%;
+		}
+	
+	
+#contactar .formubody form.contact_generico .linea .bloque {
+    float: left;
+    width: 62%;
+}
+	#contactar .formubody form.contact_generico .linea .bloque label {
+    	width: 28%;
+	}
+	#contactar .formubody form.contact_generico .linea .bloque input {
+		float: right;
+		width: 66%;
+	}
+	
+	
+	
+	
+#contactar .formubody form.contact_generico .linea .bloque.tipo2 {
+    margin-left: 4%;
+    width: 33%;
+}
+	#contactar .formubody form.contact_generico .linea .bloque.tipo2 input {
+    	float: left;
+    	width: 71%;
+	}
+
+
+
+
+#contactar .formubody form.contact_generico .linea .tipocheck input {
+   vertical-align: baseline;
+    width: auto;
+    margin-right: 5px;
+}
+
+
+
+
+#contactar .formubody form.contact_generico .bloquelegal .resetsend {
+  	float: right;
+    margin-top: 20px;
+    width: 375px;
+}
+	#contactar .formubody form.contact_generico .bloquelegal .resetsend input{
+		width:40%;
+		margin-right:2%;
+		float: right;
+	}
+
+
+
+
+#contactar .formubody form.contact_generico .linea .selectbox {
+    background: url("/images/select_cursor.png") no-repeat scroll right center #FFFFFF;
+    border: 1px solid #BEC3C5;
+    float: left;
+    overflow: hidden;
+    width: 14%;
+    margin-top: -5px;
+}
+	#contactar .formubody form.contact_generico .linea .selectbox select{
+		 background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    	border: medium none;
+    	margin: 0;
+    	padding: 2px 0;
+    	width: 113%
+	}
+
+
+
+
+#contactar .formubody form.contact_generico .linea textarea {
+    border: 1px solid #CCCCCC;
+    float: left;
+    width: 78%;
+}
+
+
+
+
+
 #contactar p.titulo{
 	color: #515151;
     float: left;
@@ -3246,10 +3572,12 @@ p.volver{
 
 #contactar .formubody form .bloquelegal .linea.check label{
 	font-size:11px;
-	width: auto;
+	/*width: auto; COMENTADO POR ERROR EN STRUTS*/
+	width:100%; 
 }
 #contactar .formubody form .bloquelegal .linea.check input[type="checkbox"]{
 	width: auto;
+	margin-right:5px;
 }
 			
                         
@@ -3298,6 +3626,11 @@ p.volver{
 
 
 
+
+
+
+
+
 /* CON MINIFICHA */
 
 #contactar .formubody form.contact_minificha{
@@ -3306,6 +3639,7 @@ p.volver{
 	#contactar .formubody form.contact_minificha .linea label{
 		width: 29%;	
 	}
+		
 	
 	
 	
@@ -3317,6 +3651,11 @@ p.volver{
 	#contactar .formubody .bloqueminificha .bloqueminifichacontent{
 		background-color: #fff;
 	}
+
+
+
+
+
 
 
 
@@ -3462,6 +3801,63 @@ p.volver{
 
 
 
+
+
+
+
+/* CONTACTO SOBRE PLANO */
+
+#contactar .formubody form.contact_sobreplano .bloquedatos {
+    width: 45%;
+    border-bottom: none;
+}
+	#contactar .formubody form.contact_sobreplano .bloquedatos h4{
+		color:red;
+		margin:30px 0 20px;
+		font-family:rotis;
+		font-size:26px;
+	}
+	#contactar .formubody form.contact_sobreplano .bloquedatos .linea{
+		margin-bottom: 10px;
+	}
+		#contactar .formubody form.contact_sobreplano .bloquedatos .linea label{
+			width: 50%;
+		}
+		#contactar .formubody form.contact_sobreplano .bloquedatos .linea input, #contactar .formubody form.contact_sobreplano .bloquedatos .linea textarea{
+			float: right;
+			width: 48%;
+			border:1px solid #ccc;
+		}
+		#contactar .formubody form.contact_sobreplano .bloquedatos .linea textarea{
+			height: 85px;
+		}
+		/*HACK FIREFOX*/
+		@-moz-document url-prefix() {
+  		#contactar .formubody form.contact_sobreplano .bloquedatos .linea textarea {
+     		height: 74px;
+  		}
+	}
+
+
+
+
+
+#contactar .formubody form.contact_sobreplano .bloqueminificha.doble{
+	width:50%;	
+}
+	#contactar .formubody form.contact_sobreplano .bloqueminificha.doble .contact_sobreplano .bloqueminifichacontent {
+		 height: 470px;
+	}
+  	
+
+
+.contact_sobreplano .bloquelegal {
+    border-top: 1px solid #FF0000;
+    float: left;
+    margin-top: 20px;
+    padding-top: 20px;
+    width: 100%;
+}
 
 
 
@@ -3775,6 +4171,7 @@ p.volver{
 	    display: inline-block;
 	    padding: 0 20px;
 	    font-size: 15px;
+     	text-transform: uppercase;
 	}
 	#guiacompra .pdf_guia img{
 	  	margin-left: -6px;
@@ -3790,6 +4187,153 @@ p.volver{
 
 
 
+/****************************************************** GUIA DE CONSTRUCCION *******************************/
+
+#guiacontruccion .contenedor {
+    margin-bottom: 50px;
+}
+
+
+
+
+#guiacontruccion h3{
+	margin:50px 2%;
+}
+
+
+
+
+.guiacompra{
+  	float: left;
+    margin-bottom: 50px;
+    margin-left: 2%;    
+    width: 96%;
+}
+	#guiacontruccion .col{
+	  	float: left;
+	    margin-right: 1%;
+	    width: 23.75%;
+	}
+	#guiacontruccion .col.first{
+		margin-left:1%;
+	}
+	
+	
+	
+	
+#guiacontruccion .col .imagen{
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+ 	border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 0 2px 2px #CCCCCC;
+    float: left;
+    text-align: center;
+    width: 97%;
+}
+	#guiacontruccion .col .imagen img{
+		float: left;
+	    padding: 1%;
+	    text-align: center;
+	}
+
+
+
+
+#guiacontruccion .col p.titulo{
+ 	color: #FF0000;
+    float: left;
+    font-size: 26px;
+    line-height: 26px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+
+
+
+#guiacontruccion .col p.texto{
+ 	color: #515151;
+    font-size: 15px;
+    margin-bottom: 20px;
+ 	width: 97%;
+}
+	#guiacontruccion .col p.texto span{
+		color:red;
+	}
+
+
+
+
+#guiacontruccion .col .tfno{
+	color: #515151;
+}
+	#guiacontruccion .col .tfno p{
+	 	font-size: 22px;
+	    font-weight: bold;
+	}
+		#guiacontruccion .col .tfno p span{
+		    float: left;
+		    font-size: 12px;
+		    font-weight: normal;
+		}
+
+
+
+
+#guiacontruccion .col .tfno a{
+  	background-color: #FF0000;
+  	-moz-border-radius: 4px 4px 4px 4px;
+  	-webkit-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    clear: both;
+    color: #FFFFFF;
+    float: left;
+    margin-top: 10px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
+
+
+
+
+#guiacontruccion .pdf_guia{
+  	float: left;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 100%;
+}
+	#guiacontruccion .pdf_guia p{
+	  	color: #FF0000;
+	    display: inline-block;
+	    font-size: 20px;
+	}
+	#guiacontruccion .pdf_guia a{
+	 	background-color: #FF0000;
+	    -moz-border-radius: 4px 0 0 4px;
+	    -webkit-border-radius: 4px 0 0 4px;
+	    border-radius: 4px 0 0 4px;
+	    color: #FFFFFF;
+	    display: inline-block;
+	    padding: 0 20px;
+	    font-size: 15px;
+     	text-transform: uppercase;
+	}
+	#guiacontruccion .pdf_guia img{
+	  	margin-left: -6px;
+	    margin-top: -12px;
+	    position: absolute;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 /****************************************************** ACTUALIDAD *******************************/
 #actualidad .bloque {
     margin-top: 50px;
@@ -5311,6 +5855,449 @@ aside #categorias p{
 #error .contenedor img.skyline{
 	margin-bottom:70px;
 }
+
+
+
+
+
+
+
+
+
+/***************************************** PÁGINAS GENERICAS *******************************/
+.contenido_generic{
+	float:left;
+	width:96%;
+	margin-left: 2%;
+	margin-bottom: 30px;
+}
+	.contenido_generic h3.linea{
+		width:100%;
+		margin-left:0;
+	 	margin-bottom: 30px;
+	}
+	.contenido_generic img{
+		float:left;
+		margin-right:20px;
+		margin-bottom: 10px;
+		-webkit-border-radius:8px;
+		-moz-border-radius:8px;
+		border-radius:8px;
+		-moz-box-shadow:1px 2px 2px #515151;
+   		-webkit-box-shadow:1px 2px 2px #515151;
+    	box-shadow:1px 2px 2px #515151;
+	
+	}
+	.contenido_generic p{
+    	font-family: lucidagrande;
+    	font-size: 14px;
+    	font-weight: normal;
+    	margin-bottom: 20px;
+    	text-align: justify;	 	
+	}
+	.contenido_generic .col{
+    	float: left;    
+    	width: 48%	 	
+	}
+	.contenido_generic .col:nth-last-child(odd){
+		float:right;
+	}
+
+
+
+
+
+
+
+
+
+/****************************************************** BUSCADOR SUELO *******************************/
+#buscsuelo .contenedor{
+	margin-bottom: 50px;
+}
+
+
+
+
+.contenedor #filtro {
+    float: left;
+    margin-left: 3%;
+    margin-top: 40px;
+    padding-bottom: 25px;
+    width: 95%;
+}
+	.contenedor #filtro .col{
+		margin-right:3%;
+	}
+		.contenedor #filtro .col p.titulo{
+			color:red;
+			font-size:20px;
+		 	margin-bottom: 10px
+		}
+		
+		
+		
+
+
+.contenedor #filtro .col p.titulo::before{
+	content: "";
+    display: inline-block;
+    height: 32px;
+    margin-left: -25px;
+    margin-right: 5px;
+    vertical-align: middle;
+    width: 32px;	
+}
+.contenedor #filtro .col p.titulo.buscsuelo:before {
+    background: url("/images/sprite_buscador_suelo.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);    
+}
+.contenedor #filtro .col p.titulo.localizacion:before {
+    background: url("/images/sprite_buscador_suelo.png") no-repeat scroll -32px 0 rgba(0, 0, 0, 0);  
+}
+.contenedor #filtro .col p.titulo.caracteri:before {
+    background: url("/images/sprite_buscador_suelo.png") no-repeat scroll -64px 0 rgba(0, 0, 0, 0);   
+}
+
+
+
+		
+.contenedor #filtro .col .bloque{
+	float: left;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	width: 100%;				
+}
+	.contenedor #filtro .col .bloque label{
+		float: left;    			
+		width: 100%;
+		font-size: 13px;
+		font-weight:bold;
+	 	font-family: lucidagrande;		
+	}
+	.contenedor #filtro .col .bloque .selectbox {
+		background: url("/images/select_cursor.png") no-repeat scroll right center #FFFFFF;
+		float: left;    					
+		overflow: hidden;
+		width: 135px;
+		border: 1px solid #BEC3C5;
+	}
+		.contenedor #filtro .col .bloque .selectbox select{
+			background: transparent;									
+			width:113%;
+			border:none;
+			padding:2px 0;
+			margin:0px;
+		}
+	
+	
+	
+	
+.contenedor #filtro .col.col1 {
+	float: left;
+	width: 30.5%;
+}		
+	.contenedor #filtro .col.col1 .radios label{
+ 		font-family: lucidagrande;
+		font-size: 13px;
+		margin-right: 20px;
+	}
+		.contenedor #filtro .col.col1 .radios label input{
+			 vertical-align: middle;
+			 margin-right:5px;
+		}
+	
+	
+	
+	
+.contenedor #filtro .col.col2 {
+	float: left;
+	width: 18%;
+}
+
+
+
+
+.contenedor #filtro .col.col3 {
+	float: left;
+	margin-right: 0;
+    width: 45.5%;
+}
+	.contenedor #filtro .col.col3 .bloque {
+		width: 48% !important;
+	}
+		.contenedor #filtro .col.col3 .botonera{
+			float: right;
+    		margin-right: 20px;
+    		margin-top: 10px;
+		}
+			.contenedor #filtro .col.col3 .botonera input[type="reset"] {
+	    		background-color: #989898;
+			    border: medium none;
+			    border-radius: 4px;
+			    color: #FFFFFF;
+			    float: left;
+			    font-size: 15px;
+			    margin: 5px 0;
+			    padding: 5px 0;
+			    text-align: center;
+			    text-transform: uppercase;
+			    width: 120px;
+			}
+			.contenedor #filtro .col.col3 .botonera input[type="submit"] {
+			    background-color: #FF0000;
+			    border: medium none;
+			    border-radius: 4px;
+			    color: #FFFFFF;
+			    float: left;
+			    font-size: 15px;
+			    margin: 5px 10px;
+			    padding: 5px 0;
+			    text-align: center;
+			    text-transform: uppercase;
+			    width: 120px;
+			}		
+
+
+
+
+.tipos_suelo{
+ 	float: left;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-left: 2%;
+    width: 96%;
+}
+	.tipos_suelo .col{
+		 float: left;
+    	margin: 0 2%;
+    	width: 32%;
+	}
+	.tipos_suelo .col:first-child, .tipos_suelo .col:last-child{
+		margin: 0;
+	}
+		
+
+
+
+.tipos_suelo .col .imagen p.masinfo{
+	 margin-left: 225px;
+	margin-top: -50px;
+	position: absolute;
+}
+	.tipos_suelo .col .imagen p.masinfo a {
+		background-color: #FF0000;
+		border-radius: 4px 0 0 4px;
+		color: #FFFFFF;
+		float: left;
+		padding: 3px 10px;
+		text-align: center;
+		width: 60px;
+	}
+
+
+
+
+.tipos_suelo .col .imagen{
+	float: left;
+	width: 100%;
+}
+	.tipos_suelo .col .imagen img{
+		-moz-border-radius:8px;
+		-webkit-border-radius:8px;
+		border-radius:8px;
+	}
+
+
+
+
+.tipos_suelo .col .texto{
+	float:left;
+	width:98%;
+	margin-left: 1%;
+ 	margin-top: 30px;
+}
+	.tipos_suelo .col .texto p{
+		font-family: lucidagrande;
+		font-size: 13px;
+		text-align: justify;
+	}
+		.tipos_suelo .col .texto p span{
+			color:red;
+		}
+
+
+
+
+#buscsuelo p.center{
+	color:red;
+	font-size: 20px;
+ 	margin-bottom: 10px;
+}
+	#buscsuelo p.center a{
+		background-color: red;
+		color:#fff;
+		font-size: 15px;
+		padding: 5px;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+	}
+
+
+
+
+
+
+
+
+
+/****************************************************** OPORTUNIDADES PARA INVERTIR *******************************/
+#inversores h3 {
+    margin: 50px 2%;
+}
+
+
+
+
+.oportinvertir{
+	float: left;
+    margin-bottom: 50px;
+    margin-left: 2%;
+    width: 96%;
+}
+
+
+
+
+.oportinvertir .col{
+	width: 54%;
+	float: left;
+}
+	.oportinvertir .col img {
+    	border: 1px solid #CCCCCC;
+    	-moz-border-radius: 4px;
+    	-webkit-border-radius: 4px;
+    	border-radius: 4px;
+    	box-shadow: 0 0 2px 2px #CCCCCC;
+    	padding: 1%;
+	}
+	.oportinvertir .col p#avisolegal{
+		text-decoration: underline;
+		text-transform: uppercase;
+		font-size:13px;
+		margin-top: 10px;
+	}
+		.oportinvertir .col p#avisolegal a{
+			color:#330099;
+		}
+		.oportinvertir .col #masinfo{
+			float: left;
+			width:100%;;
+			text-align:center;
+		}
+			.oportinvertir .col #masinfo p{
+				font-size:20px;
+				margin-top:30px;
+				color:red;
+			}
+			.oportinvertir .col #masinfo p:last-child {
+    			margin-top: 0;
+			}
+				.oportinvertir .col #masinfo p a{
+					font-size:15px;
+					background-color: red;
+					color:#fff;
+					padding: 5px 20px;
+					-webkit-border-radius: 4px;
+					-moz-border-radius: 4px;
+					border-radius: 4px;
+				}
+
+
+
+
+.oportinvertir .col2{
+	float: left;
+	width:46%;		
+}
+	.oportinvertir .col2 p{
+		font-size:14px;
+		font-family:lucidagrande;
+	 	margin: 10px 0;
+	}
+
+
+
+
+.oportinvertir .download{
+	float: left;
+	width:100%;
+ 	text-align: center;
+ 	margin: 20px 0;
+}
+	.oportinvertir .download h4{
+		color:red;
+		font-size:20px;
+	 	text-align: left;
+	 	margin-bottom: 50px;
+	}
+	.oportinvertir .download p{
+		display:inline-block;
+		margin-right: 50px;
+		text-transform: uppercase;
+	}
+		.oportinvertir .download p a{
+			color:#fff;
+			background-color: red;
+			padding:2px 20px;
+			-webkit-border-radius: 4px;
+	    	-moz-border-radius: 4px;
+	    	border-radius: 4px;
+		}
+		.oportinvertir .download p a:hover{
+			background-color: #515151;
+		}
+		.oportinvertir .download p a::after{
+			content:"";
+			background: transparent url("/images/pdf_ico.png") no-repeat 0 0;
+		  	height: 41px;
+			margin-left: 15px;
+	    	margin-top: -16px;
+	    	position: absolute;
+	    	width: 36px;    	
+		}
+		.oportinvertir .download p a:hover::after{
+			background: transparent url("/images/pdf_ico_grey.png") no-repeat 0 0;
+		}
+
+
+
+
+
+
+
+
+
+/****************************************************** Te ayudamos a financiar tu vivienda *******************************/
+#financiacion h3 {
+    margin: 50px 2%;
+}
+
+
+
+
+.financiacion .plana{
+	float: left;
+	width:100%;
+	text-align:center;
+}
+	.financiacion .plana p.nota{
+		color: #363636;
+    	font-size: 10px;
+    	margin-top: 35px;
+    	text-align: justify;
+    	width: 98%;
+	}
 
 
 

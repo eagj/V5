@@ -50,12 +50,20 @@
 
 <nav>
 	<div id="contenidonav">
+
 		<ul>
 			<s:set name="menuselected" value="%{#menuSelected}"/>
 
 			<s:iterator value="#session.menu" id="menu">
+				<!-- Primero para el area privada que es algo diferente ya que depende del usuario  -->
 				<s:if test="%{#menu.cmenu==8}">
-				    <li class="areapriv"><a onclick="showlogin(); return false;" href="#">
+					<s:if test="%{#session.user==null}">
+				    	<li class="areapriv"><a onclick="showlogin(); return false;" href="#"><s:property value="#menu.literal"/></a></li>
+				    </s:if>
+				    <s:else>
+				    	<s:url action="area-privada" var="privURL" namespace="/private"/>
+				    	<li class="areapriv"><s:a href="%{privURL}"><s:text name="cabecera.menu.area.privada"/></s:a></li>
+				    </s:else>
 				</s:if>
 				<s:elseif test="%{#menu.cmenu==#menuselected}">
 					<s:if test="%{#menu.cmenu==1}">
@@ -71,8 +79,9 @@
 				<s:else>
 				    <li><a onclick="showmenu(<s:property value="#menu.cmenu"/>); return false;" href="#">
 				</s:else>
-				
-				<s:property value="#menu.literal"/></a></li>
+				<s:if test="%{#menu.cmenu!=8}">
+					<s:property value="#menu.literal"/></a></li>
+				</s:if>
 			</s:iterator>
 		</ul>
 		<div class="subnav" id="sub1">
@@ -90,14 +99,16 @@
 			<p>
 				<s:text name="cabecera.menu.area.privada"/> <a href="#"><s:text name="global.aqui"/></a>
 			</p>
-			<form>
-				<input type="text" placeholder="Email" /> <input type="text"
-					placeholder="<s:text name="cabecera.menu.contrasena"/>" />
-				<p class="recupass">
-					<a href="#"><s:text name="cabecera.menu.recuperar"/></a>
-				</p>
-				<input type="submit" value="<s:text name="cabecera.menu.entrar"/> >" />
-			</form>
+			<s:form action="/private/login-usuario-web"> 
+					<s:textfield placeholder="Email" name="email" />
+					<s:textfield placeholder="%{getText('cabecera.menu.contrasena')}" name="pass" />
+					
+					<p class="recupass">
+						<s:url action="pagina-recuperar-enviar-mail" var="aURL" />
+						<s:a href="%{aURL}"><s:text name="cabecera.menu.recuperar"/></s:a>
+					</p>
+					<input type="submit" value="<s:text name="cabecera.menu.entrar"/> >" />
+			</s:form>	
 		</div>
 	</div>
 </nav>

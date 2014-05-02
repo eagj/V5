@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Resultado de búsqueda</title>
+    <title>Resultado de búsqueda sobre plano</title>
     <link rel="stylesheet" type="text/css" href="/styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="/styles/style.css">
     
@@ -132,91 +132,17 @@
                             </select>
                         </div>
                     </li>                    
-                    <li class="bread3 sub"><a href="#" onclick="showosubmigas('submigas2')">Compra</a>
+                    <li class="bread3 sub"><a href="#" onclick="showosubmigas('submigas2')">Sobre plano</a>
                         <div class="submigas" id="submigas2">
                             <select id="tuprovincia" name="tuprovincia">
                                 <option value="1">Álava</option><option value="2">Albacete</option><option value="3">Alicante</option><option value="4">Almería</option>
                             </select>
                         </div>
-                    </li>
-                    <li class="bread4 sub"><a href="#" onclick="showosubmigas('submigas3')">Madrid</a>
-                        <div class="submigas" id="submigas3">
-                            <select id="tuprovincia" name="tuprovincia">
-                                <option value="1">Álava</option><option value="2">Albacete</option><option value="3">Alicante</option><option value="4">Almería</option>
-                            </select>
-                        </div>
-                    </li>
+                    </li>                   
                 </ul>
-            </div>
-            <div id="filtrador">
-                <form>
-                    <div id="col1" class="col1">
-                        <div class="bloque">
-                            <label class="titulo">Precio</label>
-                            <div class="layout-slider" style="width: 100%">
-                                <span style="display: inline-block; width: 93%; padding: 0 5px;">
-                                    <input id="Slider1" type="slider" name="price" value="100000;500000" />
-                                </span>
-                            </div>
-                            <script type="text/javascript" charset="utf-8">
-                                jQuery("#Slider1").slider({ from: 0, to: 1000000, step: 500, smooth: true, round: 0, dimension: "&nbsp;&euro;", skin: "round_plastic" });
-                            </script>
-                        </div>
-                         <div class="bloque">
-                             <label class="titulo">Dirección</label>
-                             <input type="text" name="some_name" value="Ninguna" id="some_name"/>
-                         </div>
-                    </div>
-                    <div id="col2" class="col1">
-                        <div class="bloque">
-                            <label class="titulo">Superficie construida m<sup>2</sup></label>
-                            <div class="layout-slider" style="width: 100%">
-                                <span style="display: inline-block; width: 93%; padding: 0 5px;">
-                                    <input id="Slider2" type="slider" name="superficie" value="100" />
-                                </span>
-                            </div>
-                            <script type="text/javascript" charset="utf-8">
-                                jQuery("#Slider2").slider({ from: 0, to: 500, step: 10, smooth: true, round: 0, dimension: "m<sup>2</sup>", skin: "round_plastic" });
-                            </script>
-                        </div>
-                        <div class="bloque">
-                             <label class="titulo">Distancia</label>
-                             <div class="layout-slider" style="width: 100%">
-                                <span style="display: inline-block; width: 93%; padding: 0 5px;">
-                                    <input id="Slider3" type="slider" name="superficie" value="8" />
-                                </span>
-                            </div>
-                            <script type="text/javascript" charset="utf-8">
-                                jQuery("#Slider3").slider({ from: 0, to: 20, step: 1, smooth: true, round: 0, dimension: "Km", skin: "round_plastic" });
-                            </script>
-                        </div>
-                    </div>
-                    <div id="col3" class="col2">
-                        <div class="bloque">
-                            <label class="titulo">Otros servicios</label>
-                            <label><input type="checkbox" name="Garaje" value="" id="Garaje"/>Garaje</label>
-                            <label><input type="checkbox" name="Trastero" value="" id="Trastero"/>Trastero</label>
-                            <label><input type="checkbox" name="aire" value="" id="aire"/>Aire acond.</label>                      
-                            <label><input type="checkbox" name="Ascensor" value="" id="Ascensor"/>Ascensor</label>
-                            <label><input type="checkbox" name="Piscina" value="" id="Piscina"/>Piscina</label>
-                            <label><input type="checkbox" name="Terraza" value="" id="Terraza"/>Terraza</label>
-                            <label><input type="checkbox" name="calefa" value="" id="calefa"/>Calefacción</label>
-                        </div>
-                        <div class="bloque">
-                            <label class="titulo">Multimedia</label>
-                            <div class="bloque2">
-                                <label><input type="checkbox" name="Fotos" value="" id="Fotos"/>Fotos</label>
-                                <label><input type="checkbox" name="Videos" value="" id="Videos"/>Videos</label>
-                                <label><input type="checkbox" name="Videos" value="" id="Videos"/>Visita virtual</label>
-                            </div>
-                            <input type="reset" name="reset" value="Borrar datos" id="reset"/>
-                            <input type="submit" name="submit" value="Filtrar >" id="submit"/>
-                        </div>
-                    </div>
-                </form>                
-            </div>
-            <div id="bannerone">
-                <img src="http://placehold.it/993x130" alt="XXX">
+            </div>            
+            <div id="bot_pasosaseguir">
+                <p>Te informamos de los PASOS A SEGUIR para comprar una vivienda sobre plano<a href="#">Infórmate aquí</a></p>
             </div>
             <div id="pagyorden">
                 <div id="paginacion">
@@ -231,8 +157,7 @@
                     </ul>
                 </div>
                 <div id="botones">
-                    <a href="#" id="verinmumapa"> Ver inmuebles en mapa</a>
-                    <a href="#" id="compboton"> Comparar inmuebles</a>
+                    <a href="#" id="verinmumapa"> Ver inmuebles en mapa</a>                   
                 </div>
                 <div id="ordenarpor">
                     <label>Ordenar por:</label>
@@ -243,144 +168,56 @@
                         <option value="3">Superficie</option>
                     </select>
                 </div>                
-            </div>
-            <div id="mapacontent">
-                <div id="maparesult">
-                     <div id="cerrar" onclick="alert('meter aquí la funcion para cerrar el mapa y no en el a')"><a href="#">&nbsp;</a></div>
-                    <!--<img alt="XXX" src="http://placehold.it/904x490">-->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12151.675895434748!2d-3.7016809677826767!3d40.410645735849805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid!5e0!3m2!1ses!2s!4v1396593295189" width="904" height="490" frameborder="0" style="border:0"></iframe>                 
-                </div>
-                <div id="leyendamapa">
-                    <div class="comerc">
-                        <img src="/images/map_leyenda_grsantan.png" alt="comercializa Grupo Santander" />
-                        <p>Grupo Santander</p>
-                    </div>
-                    <div class="comerc">
-                        <img src="/images/map_leyenda_altamira.png" alt="comercializa Altamira" />
-                        <p>comercializa Altamira</p>
-                    </div>
-                    <div class="comerc">
-                        <img src="/images/map_leyenda_otros.png" alt="comercializa otros propietarios" />
-                        <p>otros propietarios</p>
-                    </div>                                    
-                </div>
-            </div>     
+            </div>            
             <div id="minifichas">
-                <div class="bloqueminificha">
+                <div class="bloqueminificha doble">
                     <div class="bloqueminifichacontent">
                         <a id="inmulink1" onclick="alert('Click inmueble');return false;" href="#">
                             <div class="img_bloqueminificha">
-                                <img src="http://placehold.it/193x145" alt="XXX" />                                                    
+                                <img src="http://placehold.it/420x145" alt="XXX" />                            
                             </div>
                             <div class="datos_basic">
-                                <h4>Madrid</h4>
-                                <p class="direccion">San Vicente Ferrer, 28233 - Madrid</p>
+                                <h4>Pozuelo de Alarcón</h4>
+                                <p class="direccion">Cerámica 5, 28233 - Madrid</p>
                                 <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </div>                                                          
-                            <p class="tipo">Obra nueva</p>
+                            </div>                            
+                            <p class="tipo">Obra nueva sobre plano</p>
                             <ul class="detalles">
-                                <li>Chalet adosado</li>
-                                <li>150m<sup>2</sup></li>
-                                <li>2 hab.</li>
-                            </ul>
-                            <div class="precio">
-                                <p class="valorprecio">360.000&euro;</p>        
+                               <li>Chalet adosado</li>
+                               <li>150m<sup>2</sup></li>
+                               <li>2 hab.</li>
+                           </ul>
+                           <div class="precio">
+                                <p class="valorprecio">10 chalets desde 525.000&euro;</p>        
                                 <p class="tipgest">Precio Compra</p>
-                            </div>
-                            <div class="precio2">
+                           </div>
+                           <div class="precio2">
                                 <div class="col1">
-                                    <p class="tipgest">Alquiler</p>
-                                    <p class="valorprecio">700&euro;/mes</p>
-                                </div>
-                                <div class="col2">
-                                    <p class="tipgest">A. opc. compra</p>
-                                    <p class="valorprecio">650&euro;/mes</p>
-                                </div>
+                                    <p class="tipgest">Alquiler desde</p>
+                                    <p class="valorprecio">850&euro;/mes</p>
+                               </div>
+                               <div class="col2">
+                                   <p class="tipgest">A. opc. compra desde</p>
+                                   <p class="valorprecio">850&euro;/mes</p>
+                               </div>
                             </div>
                         </a>
-                        <div id="geop1" class="geop" onclick="alert('Has hecho click en geopo')">                       
+                        <div id="geop2" class="geop" onclick="alert('Has hecho click en geopo')">                       
                             <div class="bubble left">
                                 <div class="arrow"></div>
                                 <p>Ver en mapa</p>
                             </div>
-                        </div>                                
-                        <div class="campanas">
-                            <div class="campana">
-                                <ul>                                       
-                                    <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
-                                </ul>
-                            </div>                          
-                        </div>
-                    </div>
-                    <div class="comparar">
-                        <input type="checkbox" />
-                        <label>Comparar</label>                            
-                    </div>
+                        </div> 
+                        <div class="botonera">
+                            <p><a class="apuntate" href="#">apúntate</a></p>
+                        </div>                             
+                    </div>                   
                     <div class="social">
                         <a href="#" id="share1" class="share"></a>
                         <a href="#" id="mail1" class="mail"></a>
-                        <a href="#" id="favorite1" class="favorite"></a>
-                    </div>    
-                </div>
-                
-                
-                <div class="bloqueminificha">
-                    <div class="bloqueminifichacontent">
-                        <a id="inmulink1" onclick="alert('Click inmueble');return false;" href="#">
-                            <div class="img_bloqueminificha">
-                                <img src="http://placehold.it/193x145" alt="XXX" />                                                    
-                            </div>
-                            <div class="datos_basic">
-                                <h4>Madrid</h4>
-                                <p class="direccion">San Vicente Ferrer, 28233 - Madrid</p>
-                                <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </div>                                                          
-                            <p class="tipo">Obra nueva</p>
-                            <ul class="detalles">
-                                <li>Chalet adosado</li>
-                                <li>150m<sup>2</sup></li>
-                                <li>2 hab.</li>
-                            </ul>
-                            <div class="precio">
-                                <p class="valorprecio">360.000&euro;</p>        
-                                <p class="tipgest">Precio Compra</p>
-                            </div>
-                            <div class="precio2">
-                                <div class="col1">
-                                    <p class="tipgest">Alquiler</p>
-                                    <p class="valorprecio">700&euro;/mes</p>
-                                </div>
-                                <div class="col2">
-                                    <p class="tipgest">A. opc. compra</p>
-                                    <p class="valorprecio">650&euro;/mes</p>
-                                </div>
-                            </div>
-                        </a>
-                        <div id="geop1" class="geop" onclick="alert('Has hecho click en geopo')">                       
-                            <div class="bubble left">
-                                <div class="arrow"></div>
-                                <p>Ver en mapa</p>
-                            </div>
-                        </div>                                
-                        <div class="campanas">
-                            <div class="campana">
-                                <ul>                                       
-                                    <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
-                                </ul>
-                            </div>                          
-                        </div>
+                        <a href="#" id="favorite1" class="favorite select"></a>
                     </div>
-                    <div class="comparar">
-                        <input type="checkbox" />
-                        <label>Comparar</label>                            
-                    </div>
-                    <div class="social">
-                        <a href="#" id="share1" class="share"></a>
-                        <a href="#" id="mail1" class="mail"></a>
-                        <a href="#" id="favorite1" class="favorite"></a>
-                    </div>    
                 </div>
-                
                 <div class="bloqueminificha doble">
                     <div class="bloqueminifichacontent">
                         <a id="inmulink1" onclick="alert('Click inmueble');return false;" href="#">
@@ -414,25 +251,15 @@
                             </div>
                         </a>
                         <div id="geop2" class="geop" onclick="alert('Has hecho click en geopo')">                       
-                            <div class="bubble right">
+                            <div class="bubble left">
                                 <div class="arrow"></div>
                                 <p>Ver en mapa</p>
                             </div>
                         </div> 
-                        <div class="campanas">
-                            <div class="campana">
-                                <ul>
-                                    <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
-                                    <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
-                                    <li><a href="#"><img alt="campaña x" src="http://placehold.it/45x45"></a></li>
-                                </ul>
-                            </div>                          
-                        </div>                               
-                    </div>
-                    <div class="comparar">
-                        <input type="checkbox" />
-                        <label>Comparar</label>                            
-                    </div>
+                        <div class="botonera">
+                            <p><a class="verficha" href="#">Ver ficha</a></p>
+                        </div>                            
+                    </div>                   
                     <div class="social">
                         <a href="#" id="share1" class="share"></a>
                         <a href="#" id="mail1" class="mail"></a>
@@ -454,8 +281,7 @@
                     </ul>
                 </div>
                 <div id="botones">
-                    <a href="#" id="verinmumapa"> Ver inmuebles en mapa</a>
-                    <a href="#" id="compboton"> Comparar inmuebles</a>
+                    <a href="#" id="verinmumapa"> Ver inmuebles en mapa</a>                   
                 </div>
                 <div id="ordenarpor">
                     <label>Ordenar por:</label>

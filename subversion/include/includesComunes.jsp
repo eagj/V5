@@ -24,8 +24,6 @@
 <!-- INCLUDES JQUERY -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
 <script src="<s:url value='/include/jquery/nivo_slider/jquery.nivo.slider.js'/>" type="text/javascript"></script>
-<!-- jquery bubbletip JS -->
-<script src="<s:url value='/include/jquery/bubbletip/jQuery.bubbletip-1.0.6.js'/>" type="text/javascript"></script>
 <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->

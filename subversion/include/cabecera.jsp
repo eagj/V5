@@ -1,6 +1,15 @@
 <div id="user">
 	<p>
-		estas navegando como <span>empleado</span>
+		<s:if test="%{#session.user!=null}">
+			<s:text name="cabecera.navegandocomo">
+				<s:param name="value" value="%{#session.user.email}"/>
+			</s:text>
+		</s:if>
+		<s:else>
+			<s:text name="cabecera.navegandocomo">
+				<s:param name="value" value="%{getText('cabecera.usuarioanonimo')}"/>
+			</s:text>
+		</s:else>
 	</p>
 </div>
 <header>
